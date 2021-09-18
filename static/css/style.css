@@ -153,6 +153,10 @@ input::-webkit-input-placeholder {
     border: none;
 }
 
+.makeaccount {
+    font-family: 'Open Sans', sans-serif;
+}
+
 @media (min-width: 1200px) {
 
     .navbar-brand h1{
