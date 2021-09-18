@@ -33,23 +33,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">FeedMe Recipes</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('your_recipes', username=session['user'])}}">Your
-                            Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Add Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('logout')}}">Log out</a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('login')}}">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('register')}}">Register</a>
-                    </li>
+                    {% if session.user %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('your_recipes', username=session['user'])}}">Your
+                                Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Add Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('logout')}}">Log out</a>
+                        </li>
+                   {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login')}}">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('register')}}">Register</a>
+                        </li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
