@@ -5,12 +5,12 @@
         <div class="row main">
             <div class="panel-heading">
                <div class="panel-title text-center">
-                       <h2 class="title">Login</h2>
+                       <h2 class="title">Log in</h2>
                        <hr />
                    </div>
             </div> 
             <div class="main-login main-center">
-                <form class="form-horizontal" method="POST" action="{{ url_for('register') }}">
+                <form class="form-horizontal" method="POST" action="{{ url_for('login') }}">
 
                     <div class="form-group">
                         <label for="username" class="cols-sm-2 control-label">
@@ -50,7 +50,7 @@
             </div>
             <div class="row mt-4">
                 <div class="text-center">
-                    <p>
+                    <p class="makeaccount">
                         New here? <a href="{{ url_for('register')}}">Register Account</a>
                     </p>
                 </div>
