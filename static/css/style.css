@@ -138,6 +138,8 @@ input::-webkit-input-placeholder {
 
 .login-button{
 	margin-top: 10px;
+    background-color:#ACE1AF;
+    border: none;
 }
 
 @media (min-width: 1200px) {
