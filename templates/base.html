@@ -13,12 +13,104 @@
     <title>FeedMe</title>
 </head>
 <body>
-    {% include 'navbar.html' %}
-      
+    <header class="nav fixed-top">
+        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="{{ url_for('get_recipes')}}">
+                <h1>FeedMe <i class="fas fa-cookie"></i></h1>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('get_recipes')}}">Home</i></a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FeedMe Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Your
+                            Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log out</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('register')}}">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
     {% block content %}
     {% endblock %}
-
-    {% include 'footer.html' %}
+    
+    <footer id="footer" class="container-fluid mx-auto">
+        <div class="row mx-auto" style="width: 80%;">
+            <div class="col-md-3 col-6">
+                <a href="#" class="nav-link">
+                    <h2 class="mt-4">FeedMe<i class="fas fa-cookie"></i></h2>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-square fa-2x text-black ml-5 mb-3"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter-square fa-2x text-black ml-3"></i>
+                </a><br>
+                <a href="#" target="_blank">
+                    <i class="fab fa-pinterest-square fa-2x text-black ml-5"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram fa-2x text-black ml-3"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="mt-5"><strong>Contact us</strong></h5>
+                <ul>
+                    <li>Sales@FeedMe.com</li>
+                    <li>Tel: 029 678 2342</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="mt-5"><strong>Recipes</strong></h5>
+                <ul>
+                    <li><a href="">Appetizer</a></li>
+                    <li><a href="">Meal</a></li>
+                    <li><a href="">Side</a></li>
+                    <li ><a href="">Breakfast</a></li>
+                    <li><a href="">Dessert</a></li>
+                    <li><a href="">Drinks</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="mt-5"><strong>My account</strong></h5>
+                <ul>
+                    <li><a href="">Your Recipes</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </div>
+            <div class="col-12 mt-5 text-center">
+                <small>© FeedMe 2021</small>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
