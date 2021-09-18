@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap');
 
+/** Navbar **/
+
 nav {
     background: #ACE1AF;
     height: 140px; 
@@ -40,6 +42,8 @@ nav li {
  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 
+/** Navbar **/
+
 @media (min-width: 1200px) {
 
     .navbar-brand h1{
@@ -62,6 +66,8 @@ nav li {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    /** Navbar **/
 
     .navbar-brand h1{
         font-family: 'Love ya like a sister', sans-serif;
@@ -88,9 +94,13 @@ nav li {
     .active {
         border-bottom: 1px solid black;
     }
+
+    /** Navbar **/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+    /** Navbar **/
 
     .navbar-brand h1{
         font-family: 'Love ya like a sister', sans-serif;
@@ -113,13 +123,18 @@ nav li {
        padding-top: 0px; 
        margin-top: 17px;
        margin-bottom: 20px;
-       background-image: #ACE1AF;
+       background-color: #ACE1AF;
     }
+
+    /** Navbar **/
 
 }
 
 @media (max-width: 767px) {
 
+
+    /** Navbar **/
+    
     .navbar-brand h1{
         font-family: 'Love ya like a sister', sans-serif;
         color: black;
@@ -142,6 +157,8 @@ nav li {
        padding-top: 0px;
        margin-top: 10px;
        margin-bottom: 20px;
-       background-image: #ACE1AF;
+       background-color: #ACE1AF;
+ 
     }
+    /** Navbar **/
 }
