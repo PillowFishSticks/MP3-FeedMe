@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#">FeedMe Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Your
+                        <a class="nav-link" href="{{ url_for('your_recipes', username=session['user'])}}">Your
                             Recipes</a>
                     </li>
                     <li class="nav-item">
