@@ -54,6 +54,9 @@ footer h2 {
     font-family: 'Love ya like a sister', sans-serif;
 }
 
+footer i {
+    margin-left: 20px;
+}
 footer li {
     list-style: none;
     font-family: 'Open Sans', sans-serif;
