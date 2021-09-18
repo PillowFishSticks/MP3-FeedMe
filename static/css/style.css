@@ -11,6 +11,7 @@ nav {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 25px;
+    font-family: 'Love ya like a sister', sans-serif;
 } 
 
 .navbar-nav { 
@@ -49,6 +50,14 @@ nav li {
     background-color: #ACE1AF;
 }
 
+footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer h2 {
+    font-family: 'Love ya like a sister', sans-serif;
+}
+
 footer li {
     list-style: none;
   }
@@ -78,7 +87,6 @@ footer a:hover {
         font-family: 'Love ya like a sister', sans-serif;
         color: black;
         font-size: 1.5em;
-        font-weight: bold;
         margin-top: 0;
         margin-bottom: 0;
         line-height: .75;
@@ -101,7 +109,6 @@ footer a:hover {
         font-family: 'Love ya like a sister', sans-serif;
         color: black;
         font-size: 1.5em;
-        font-weight: bold;
         margin-top: 0;
         margin-bottom: 0;
         line-height: .75;
@@ -111,7 +118,7 @@ footer a:hover {
         display: inline-block;
         height: 100%;
         padding-right: 40px;
-        font-family: 'Love ya like a sister', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 15px;
     }
     
@@ -134,7 +141,6 @@ footer a:hover {
         font-family: 'Love ya like a sister', sans-serif;
         color: black;
         font-size: 1.5em;
-        font-weight: bold;
         margin-top: 0;
         margin-bottom: 0;
         line-height: .75;
@@ -167,7 +173,6 @@ footer a:hover {
         font-family: 'Love ya like a sister', sans-serif;
         color: black;
         font-size: 25px;
-        font-weight: bold;
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 35px;
