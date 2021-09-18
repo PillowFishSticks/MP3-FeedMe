@@ -50,21 +50,19 @@ nav li {
     background-color: #ACE1AF;
 }
 
-footer {
-    font-family: 'Open Sans', sans-serif;
-}
-
 footer h2 {
     font-family: 'Love ya like a sister', sans-serif;
 }
 
 footer li {
     list-style: none;
+    font-family: 'Open Sans', sans-serif;
   }
 
 footer ul {
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
   }
   
 footer a {
