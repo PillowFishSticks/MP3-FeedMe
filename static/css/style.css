@@ -157,6 +157,78 @@ input::-webkit-input-placeholder {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* -------------------------------- recipe page */
+
+.recipepage{
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.recipeimage {
+    width: 470px;
+    height: 300px;
+}
+
+.ingredients {
+    margin-top: 40px;
+    background-color: #D0D0D0;
+    width: 74%;
+}
+
+.ingredients h3 {
+    font-family: 'Love ya like a sister', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ingredients p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.borderrecipe {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-right: 40px;
+}
+
+.recipename {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.recipename h1 {
+    font-family: 'Love ya like a sister', sans-serif;
+}
+
+.recipestuff {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.directions {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.directions h3 {
+    font-family: 'Love ya like a sister', sans-serif;
+}
+
+.notes {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.notes h3 {
+    font-family: 'Love ya like a sister', sans-serif;
+}
+
+
+
 @media (min-width: 1200px) {
 
     .navbar-brand h1{
