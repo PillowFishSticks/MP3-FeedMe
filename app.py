@@ -95,6 +95,17 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+
+@app.route("/add_recipe")
+def add_recipe():
+    return render_template("add_recipe.html")
+
+
+@app.route("/view_recipe")
+def view_recipe():
+    recipes = mongo.db.recipes.find()
+    return render_template("recipe.html", recipes=recipes)
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),
