@@ -39,6 +39,7 @@
                 <div class="directions">
                     <h3>Directions</h3>    
                     <ol>
+                    {% if recipe.direction == null %}
                         <li>{{ recipe.direction_1}}</li>
                         <li>{{ recipe.direction_2}}</li>
                         <li>{{ recipe.direction_3}}</li>
@@ -49,6 +50,8 @@
                         <li>{{ recipe.direction_8}}</li>
                         <li>{{ recipe.direction_9}}</li>
                         <li>{{ recipe.direction_10}}</li>
+                    {% endif %}
+                    
                     </ol>
                 </div>
                 <div class="notes">

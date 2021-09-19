@@ -17,12 +17,22 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+@app.route("/")
+@app.route("/home")
+def home():
+    if "user" in session:
+        user = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+        return render_template("index.html", user=user)
+    else:
+        return render_template("index.html")
+
 
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     recipes = mongo.db.recipes.find()
-    return render_template("recipe.html", recipes=recipes)
+    return render_template("your_recipes.html", recipes=recipes)
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
