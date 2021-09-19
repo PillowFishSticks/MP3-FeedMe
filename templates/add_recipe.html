@@ -9,7 +9,7 @@
                         <h3>Add recipe</h3>
                     </div>
                 </div>
-                <form method="POST" action="#">
+                <form method="POST" action="{{ url_for('add_recipe') }}">
                     <div class="form-group">
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <label for="recipe_name">Recipe Name</label>
