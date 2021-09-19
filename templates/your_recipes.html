@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-
-<section class="padding text-style">
     
-    <h3>
-        {{ username }}'s Recipes
-    </h3>
-    
-    <div>
-        {% for recipe in recipes %}
-        <img class="recipeimage" src="{{ recipe.image_url }}">
-        {% endfor %}
+{% for recipe in recipes %}
+<section class="text-style container-fluid recipepage">
+    <div class="row">
+        <div class="col-6">
+            <div>
+                <a href="#">
+                <img class="recipeimage" src="{{ recipe.image_url }}">
+                </a>
+            </div>
+        </div>
     </div>
-    
 </section>
-
+{% endfor %}
 {% endblock %}

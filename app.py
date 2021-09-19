@@ -31,7 +31,7 @@ def home():
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
-    recipes = mongo.db.recipes.find()
+    recipes = list(mongo.db.recipes.find())
     return render_template("your_recipes.html", recipes=recipes)
 
 @app.route("/register", methods=["GET", "POST"])
@@ -77,6 +77,7 @@ def login():
             return redirect(url_for("login"))
             
     return render_template("login.html")
+
 
 @app.route("/your_recipes/<username>", methods=["GET", "POST"])
 def your_recipes(username):
