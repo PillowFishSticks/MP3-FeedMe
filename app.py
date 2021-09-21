@@ -121,7 +121,7 @@ def add_recipe():
             "direction_7": request.form.get("direction_7"),
             "direction_8": request.form.get("direction_8"),
             "direction_9": request.form.get("direction_9"),
-            "notes": request.form.get("notes")
+            "notes": request.form.get("notes"),
         }
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added")
