@@ -6,22 +6,28 @@
     <div class="row">
         <div class="col-6">
             <div>
+                {% if session.user|lower == recipe.created_by|lower %}
                 <a href="{{ url_for('view_recipe')}}">
                 <img class="recipeimage" src="{{ recipe.image_url }}">
                 </a>
+                {% endif %}
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group text-center ">
+                            {% if session.user|lower == recipe.created_by|lower %}
                             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
                                 Edit
                             </a>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-group text-center ">
+                            {% if session.user|lower == recipe.created_by|lower %}
                             <a href="" class="btn btn-success btn-lg btn-block login-button">
                                 Delete
                             </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

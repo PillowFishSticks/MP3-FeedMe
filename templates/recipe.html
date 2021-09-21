@@ -6,19 +6,24 @@
     <div class="row">
         <div class="col-6">
             <div class="form-group text-center ">
+                {% if session.user|lower == recipe.created_by|lower %}
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
                     Edit
                 </a>
+                {% endif %}
             </div>
         </div>
         <div class="col-6">
             <div class="form-group text-center ">
+                {% if session.user|lower == recipe.created_by|lower %}
                 <button type="submit" class="btn btn-success btn-lg btn-block login-button">
                     Delete
                 </button>
+                {% endif %}
             </div>
         </div>
     </div>
+    {% if session.user|lower == recipe.created_by|lower %}
     <div class="row">
         <div class="col-6">
             <div>
@@ -42,6 +47,9 @@
             <div class="borderrecipe">
                 <div class="recipename">
                     <h1>{{ recipe.recipe_name}}</h1>
+                </div>
+                <div class="recipename">
+                    <p>{{ recipe.created_by}}</p>
                 </div>
                     <div class="row recipestuff">
                         <div class="col-3">
@@ -76,6 +84,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
 </section>
 {% endfor %}
 {% endblock %}
