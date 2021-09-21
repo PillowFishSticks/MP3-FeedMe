@@ -227,47 +227,12 @@ input::-webkit-input-placeholder {
     font-family: 'Love ya like a sister', sans-serif;
 }
 
+
 /* -------------- accordian on add recipe page */
-
-.accordion {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    font-size: 15px;
-    transition: 0.4s;
-    margin-bottom: 20px ;
-}
-
-.active, .accordion:hover {
-   background-color: #C8C8C8;
-}
-
-.accordion:after {
-    content: '\002B';
-    color: #C8C8C8;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.paneldrop {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
 
 .accordianpadding {
-    padding-top: 20px;
+    padding-bottom: 10px;
 }
-
-/* -------------- accordian on add recipe page */
 
 @media (min-width: 1200px) {
 
