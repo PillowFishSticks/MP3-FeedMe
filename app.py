@@ -135,6 +135,35 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    if request.method == "POST":
+        submit = {
+            "recipe_name": request.form.get("recipe_name"),
+            "image_url": request.form.get("image_url"),
+            "time": request.form.get("time"),
+            "servings": request.form.get("servings"),
+            "ingredient_1": request.form.get("ingredient_1"),
+            "ingredient_2": request.form.get("ingredient_2"),
+            "ingredient_3": request.form.get("ingredient_3"),
+            "ingredient_4": request.form.get("ingredient_4"),
+            "ingredient_5": request.form.get("ingredient_5"),
+            "ingredient_6": request.form.get("ingredient_6"),
+            "ingredient_7": request.form.get("ingredient_7"),
+            "ingredient_8": request.form.get("ingredient_8"),
+            "ingredient_9": request.form.get("ingredient_9"),
+            "direction_1": request.form.get("direction_1"),
+            "direction_2": request.form.get("direction_2"),
+            "direction_3": request.form.get("direction_3"),
+            "direction_4": request.form.get("direction_4"),
+            "direction_5": request.form.get("direction_5"),
+            "direction_6": request.form.get("direction_6"),
+            "direction_7": request.form.get("direction_7"),
+            "direction_8": request.form.get("direction_8"),
+            "direction_9": request.form.get("direction_9"),
+            "notes": request.form.get("notes")
+        }
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
+        flash("Recipe Successfully Edited")
+
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("edit_recipe.html", recipe=recipe)
 
