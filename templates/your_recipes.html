@@ -9,6 +9,22 @@
                 <a href="{{ url_for('view_recipe')}}">
                 <img class="recipeimage" src="{{ recipe.image_url }}">
                 </a>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group text-center ">
+                            <button type="submit" class="btn btn-success btn-lg btn-block login-button">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group text-center ">
+                            <button type="submit" class="btn btn-success btn-lg btn-block login-button">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
