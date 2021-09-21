@@ -1,24 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-    
+
+<div class="row">
+    <form method="POST" action="{{ url_for('search') }}">
+        <div class="form-group">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <label for="query">Search</label>
+            <input type="text" class="validate form-control" id="query" name="query" required>
+        </div>
+        <div class="form-group text-center ">
+            <a href="{{ url_for('site_recipes')}}" class="btn btn-success btn-lg btn-block login-button">
+                Cancel
+            </a>
+            <button type="submit" class="btn btn-success btn-lg btn-block login-button">
+                Search
+            </button>
+        </div>
+    </form>
+</div>
+
 {% for recipe in recipes %}
 <section class="text-style container-fluid recipepage">
-    <div class="row">
-        <form method="POST" action="{{ url_for('search') }}">
-            <div class="form-group">
-                <i class="fa fa-book" aria-hidden="true"></i>
-                <label for="query">Search</label>
-                <input type="text" class="validate form-control" id="query" name="query" required>
-            </div>
-            <div class="form-group text-center ">
-                <a href="{{ url_for('site_recipes')}}" class="btn btn-success btn-lg btn-block login-button">
-                    Cancel
-                </a>
-                <button type="submit" class="btn btn-success btn-lg btn-block login-button">
-                    Search
-                </button>
-            </div>
-        </form>
     <div class="row">
         <div class="col-6">
             <div>
