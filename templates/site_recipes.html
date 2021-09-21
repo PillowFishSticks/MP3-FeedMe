@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    
+{% for recipe in recipes %}
+<section class="text-style container-fluid recipepage">
+    <div class="row">
+        <div class="col-6">
+            <div>
+                <a href="{{ url_for('feedme_recipe')}}">
+                <img class="recipeimage" src="{{ recipe.image_url }}">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+{% endblock %}

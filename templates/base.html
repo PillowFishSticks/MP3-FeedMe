@@ -31,11 +31,11 @@
                     </li>
                   
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FeedMe Recipes</a>
+                        <a class="nav-link" href="{{ url_for('site_recipes' )}}">FeedMe Recipes</a>
                     </li>
                     {% if session.user %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('get_recipes', username=session['user'])}}">Your
+                            <a class="nav-link" href="{{ url_for('get_recipes' )}}">Your
                                 Recipes</a>
                         </li>
                         <li class="nav-item">

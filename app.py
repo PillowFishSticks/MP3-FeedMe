@@ -34,6 +34,14 @@ def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("your_recipes.html", recipes=recipes)
 
+
+@app.route("/")
+@app.route("/site_recipes")
+def site_recipes():
+    recipes = mongo.db.recipes.find()
+    return render_template("site_recipes.html", recipes=recipes)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -77,17 +85,6 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html")
-
-
-@app.route("/your_recipes/<username>", methods=["GET", "POST"])
-def your_recipes(username):
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    
-    if session ["user"]:
-        return render_template("your_recipes.html", username=username)
-    
-    return redirect(url_for("login"))
 
 
 @app.route("/logout")
@@ -177,8 +174,13 @@ def delete_recipe(recipe_id):
 
 @app.route("/view_recipe")
 def view_recipe():
-    recipes = list(mongo.db.recipes.find())
+    recipes = mongo.db.recipes.find()
     return render_template("recipe.html", recipes=recipes)
+
+@app.route("/feedme_recipe")
+def feedme_recipe():
+    recipes = mongo.db.recipes.find()
+    return render_template("feedme_recipe.html", recipes=recipes)
 
 
 if __name__ == "__main__":
