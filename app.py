@@ -75,7 +75,7 @@ def login():
         else:
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-            
+
     return render_template("login.html")
 
 
@@ -88,6 +88,7 @@ def your_recipes(username):
         return render_template("your_recipes.html", username=username)
     
     return redirect(url_for("login"))
+
 
 @app.route("/logout")
 def logout():
@@ -136,6 +137,7 @@ def add_recipe():
 def view_recipe():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipe.html", recipes=recipes)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
