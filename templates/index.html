@@ -5,10 +5,19 @@
     
    <h1>homepage</h1>
    {% for recipe in recipes %}
-      <div>
-         <img class="recipeimage" src="{{ recipe.image_url }}">
-      </div>
-   {% endfor %}
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <a href="{{ url_for('feedme_recipe')}}">
+                    <img class="recipeimage" src="{{ recipe.image_url }}">
+                    </a>
+                </div>
+                <div class="recipename">
+                    <h1>{{ recipe.recipe_name}}</h1>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
     
 </section>
 
