@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
     
-{% for recipe in recipes %}
+
 <section class="text-style container-fluid recipepage">
+    <div class="text-center">
+        <a href="{{ url_for('site_recipes' )}}" class="btn btn-success btn-lg btn-block login-button">
+            Add a new recipe
+        </a>
+    </div>
+    {% for recipe in recipes %}
     <div class="row">
         <div class="col-6">
             <div>
@@ -34,6 +40,7 @@
             </div>
         </div>
     </div>
+    {% endfor %}
 </section>
-{% endfor %}
+
 {% endblock %}
