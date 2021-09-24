@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap');
 
 
-/** Genral **/
+/** carousel **/
 
 .imagesize {
     height:400px;
+}
+
+/** Genral **/
+
+
+
+.text-styleheading {
+    font-family: 'Love ya like a sister', sans-serif;
 }
 
 .text-style {
