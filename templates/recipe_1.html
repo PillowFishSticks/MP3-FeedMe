@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+    
+{% for recipe in recipes %}
+<section class="text-style container-fluid recipepage">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group text-center ">
+                {% if session.user|lower == recipe.created_by|lower %}
+                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
+                    Edit
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group text-center ">
+                {% if session.user|lower == recipe.created_by|lower %}
+                <button type="submit" class="btn btn-success btn-lg btn-block login-button">
+                    Delete
+                </button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if session.user|lower == recipe.created_by|lower %}
+    <div class="row">
+        <div class="col-6">
+            <div>
+                <img class="recipeimage" src="{{ recipe.image_url }}">
+            </div>
+            <div class="ingredients">
+                <h3>Ingredients</h3>
+                    <p>{{ recipe.ingredient_1}}</p>
+                    <p>{{ recipe.ingredient_2}}</p>
+                    <p>{{ recipe.ingredient_3}}</p>
+                    <p>{{ recipe.ingredient_4}}</p>
+                    <p>{{ recipe.ingredient_5}}</p>
+                    <p>{{ recipe.ingredient_6}}</p>
+                    <p>{{ recipe.ingredient_7}}</p>
+                    <p>{{ recipe.ingredient_8}}</p>
+                    <p>{{ recipe.ingredient_9}}</p>
+                    <p>{{ recipe.ingredient_10}}</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="borderrecipe">
+                <div class="recipename">
+                    <h1>{{ recipe.recipe_name}}</h1>
+                </div>
+                <div class="recipename">
+                    <p>{{ recipe.created_by}}</p>
+                </div>
+                    <div class="row recipestuff">
+                        <div class="col-3">
+                            <p><i class="fas fa-clock"></i> {{ recipe.time}} </p>
+                        </div>
+                        <div class="col-3">
+                            <p><i class="fas fa-users"></i> {{ recipe.servings}}</p>
+                        </div>
+                    </div>
+                <div class="directions">
+                    <h3>Directions</h3>    
+                    <ol>
+                        <li>{{ recipe.direction_1}}</li>
+                        <li>{{ recipe.direction_2}}</li>
+                        <li>{{ recipe.direction_3}}</li>
+                        <li>{{ recipe.direction_4}}</li>
+                        <li>{{ recipe.direction_5}}</li>
+                        <li>{{ recipe.direction_6}}</li>
+                        <li>{{ recipe.direction_7}}</li>
+                        <li>{{ recipe.direction_8}}</li>
+                        <li>{{ recipe.direction_9}}</li>
+                        <li>{{ recipe.direction_10}}</li>
+                    </ol>
+                </div>
+                <div class="notes">
+                    <h3>Notes</h3>
+                    <p>{{ recipe.notes}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</section>
+{% endfor %}
+{% endblock %}
