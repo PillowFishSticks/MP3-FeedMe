@@ -3,6 +3,10 @@
 
 /** Genral **/
 
+.imagesize {
+    height:400px;
+}
+
 .text-style {
     font-family: 'Open Sans', sans-serif;
 }
