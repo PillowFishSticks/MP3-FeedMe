@@ -112,11 +112,13 @@
                 </ul>
             </div>
             <div class="col-md-3 col-6">
+                {% if session.user %}
                 <h5 class="mt-5"><strong>My account</strong></h5>
                 <ul>
-                    <li><a href="">Your Recipes</a></li>
-                    <li><a href="">Logout</a></li>
+                    <li><a href="{{ url_for('get_recipes' )}}">Your Recipes</a></li>
+                    <li><a href="{{ url_for('logout')}}">Logout</a></li>
                 </ul>
+                {% endif %}
             </div>
             <div class="col-12 mt-5 text-center">
                 <small>© FeedMe 2021</small>
