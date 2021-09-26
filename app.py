@@ -46,7 +46,6 @@ def search():
 @app.route("/")
 @app.route("/site_recipes")
 def site_recipes():
-    page = request.args.get("page", 1, type=int)
     recipes = mongo.db.recipes.find()
     return render_template("site_recipes.html", recipes=recipes)
 
