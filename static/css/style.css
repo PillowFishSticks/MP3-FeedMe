@@ -255,6 +255,10 @@ input::-webkit-input-placeholder {
     padding-bottom: 10px;
 }
 
+/* -------------- accordian on add recipe page */
+
+
+
 @media (min-width: 1200px) {
 
     .navbar-brand h1{
