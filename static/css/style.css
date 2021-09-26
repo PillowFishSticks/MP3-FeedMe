@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap');
 
 
-/** carousel **/
+/** homepage **/
 
 .imagesize {
     height:400px;
@@ -10,6 +10,10 @@
 .hpimage {
     width: 250px;
     height: 200px;
+}
+
+.toprecipes {
+    padding-top: 20px;
 }
 
 /** Genral **/
