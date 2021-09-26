@@ -16,6 +16,9 @@
                 <a href="{{ url_for('view_recipe')}}">
                 <img class="recipeimage" src="{{ recipe.image_url }}">
                 </a>
+                <div class="recipename">
+                    <h1>{{ recipe.recipe_name}}</h1>
+                </div>
                 {% endif %}
                 <div class="row">
                     <div class="col-6">
