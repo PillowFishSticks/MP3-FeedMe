@@ -16,6 +16,12 @@
     padding-top: 20px;
 }
 
+.toprecipes a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .imagebuttons {
     height: 200px;
     width: 200px;
