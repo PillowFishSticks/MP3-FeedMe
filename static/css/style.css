@@ -8,8 +8,8 @@
 }
 
 .hpimage {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
 }
 
 /** Genral **/
@@ -217,7 +217,7 @@ input::-webkit-input-placeholder {
     padding-top: 10px;
 }
 
-.recipename h1 {
+.recipename h1, h3 {
     font-family: 'Love ya like a sister', sans-serif;
 }
 
