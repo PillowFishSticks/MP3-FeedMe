@@ -190,6 +190,26 @@ def feedme_recipe():
     recipes = mongo.db.recipes.find()
     return render_template("feedme_recipe.html", recipes=recipes)
 
+@app.route("/recipe_1")
+def recipe_1():
+    return render_template("recipe_1.html")
+
+
+@app.route("/recipe_2")
+def recipe_2():
+    return render_template("recipe_2.html")
+
+
+@app.route("/recipe_3")
+def recipe_3():
+    return render_template("recipe_3.html")
+
+
+@app.route("/recipe_4")
+def recipe_4():
+    return render_template("recipe_4.html")
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
