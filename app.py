@@ -43,7 +43,6 @@ def search():
     
 
 
-@app.route("/")
 @app.route("/site_recipes")
 def site_recipes():
     recipes = mongo.db.recipes.find()
