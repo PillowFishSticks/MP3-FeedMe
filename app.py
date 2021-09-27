@@ -20,12 +20,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
-    if "user" in session:
-        user = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-        return render_template("index.html", user=user)
-    else:
-        return render_template("index.html")
+    return render_template("index.html")
 
 
 @app.route("/")
@@ -40,8 +35,19 @@ def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("site_recipes.html", recipes=recipes)
-    
 
+
+@app.route("/category_appetizer")
+def category_appetizer():
+    recipes = mongo.db.recipes.find({ "category_name": "Appetizer" })
+    return render_template("site_recipes.html", recipes=recipes)
+
+
+@app.route("/category_meal")
+def category_meal():
+    recipes = mongo.db.recipes.find({ "category_name": "Meal" })
+    return render_template("site_recipes.html", recipes=recipes)    
+    
 
 @app.route("/site_recipes")
 def site_recipes():
@@ -217,7 +223,6 @@ def recipe_4():
 def admin():
     recipes = mongo.db.recipes.find()
     return render_template("admin_page.html", recipes=recipes)
-
 
 
 if __name__ == "__main__":

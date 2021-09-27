@@ -4,15 +4,15 @@
 
 <section class="text-style container-fluid recipepage">
     <div class="text-center">
-        <a href="{{ url_for('site_recipes' )}}" class="btn btn-success btn-lg btn-block login-button">
+        <a href="{{ url_for('add_recipe' )}}" class="btn btn-success btn-lg btn-block login-button">
             Add a new recipe
         </a>
     </div>
-    {% for recipe in recipes %}
     <div class="row">
+        {% for recipe in recipes %}
         <div class="col-6">
+            {% if session.user|lower == recipe.created_by|lower %}
             <div>
-                {% if session.user|lower == recipe.created_by|lower %}
                 <a href="{{ url_for('view_recipe')}}">
                 <img class="recipeimage" src="{{ recipe.image_url }}">
                 </a>
@@ -42,8 +42,8 @@
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </section>
 
 {% endblock %}
