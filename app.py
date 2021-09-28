@@ -46,8 +46,32 @@ def category_appetizer():
 @app.route("/category_meal")
 def category_meal():
     recipes = mongo.db.recipes.find({ "category_name": "Meal" })
-    return render_template("site_recipes.html", recipes=recipes)    
-    
+    return render_template("site_recipes.html", recipes=recipes)
+
+
+@app.route("/category_drinks")
+def category_drinks():
+    recipes = mongo.db.recipes.find({ "category_name": "Drinks" })
+    return render_template("site_recipes.html", recipes=recipes)
+
+      
+@app.route("/category_side")
+def category_side():
+    recipes = mongo.db.recipes.find({ "category_name": "Side" })
+    return render_template("site_recipes.html", recipes=recipes) 
+
+
+@app.route("/category_breakfast")
+def category_breakfast():
+    recipes = mongo.db.recipes.find({ "category_name": "Breakfast" })
+    return render_template("site_recipes.html", recipes=recipes)
+
+
+@app.route("/category_dessert")
+def category_dessert():
+    recipes = mongo.db.recipes.find({ "category_name": "Dessert" })
+    return render_template("site_recipes.html", recipes=recipes)
+   
 
 @app.route("/site_recipes")
 def site_recipes():
