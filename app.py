@@ -213,15 +213,16 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
-@app.route("/view_recipe")
-def view_recipe():
-    recipes = mongo.db.recipes.find()
-    return render_template("recipe.html", recipes=recipes)
+@app.route("/view_recipe/<recipe_id>", methods=["GET"])
+def view_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("recipe.html", recipe=recipe)
 
-@app.route("/feedme_recipe")
-def feedme_recipe():
-    recipes = mongo.db.recipes.find()
-    return render_template("feedme_recipe.html", recipes=recipes)
+@app.route("/feedme_recipe/<recipe_id>", methods=["GET"])
+def feedme_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("feedme_recipe.html", recipe=recipe)
+
 
 @app.route("/recipe_1")
 def recipe_1():

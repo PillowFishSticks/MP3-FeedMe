@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    
-{% for recipe in recipes %}
+
 <section class="text-style container-fluid recipepage">
     <div class="row">
         <div class="col-6">
@@ -26,7 +25,7 @@
     <div class="row">
         <div class="col-6">
             <div>
-                <img class="recipeimage" src="{{ recipe.image_url }}">
+                <img  class="recipeimage" src="{{ recipe.image_url }}">
             </div>
             <div class="ingredients">
                 <h3>Ingredients</h3>
@@ -49,6 +48,9 @@
                 </div>
                 <div class="recipename">
                     <p>{{ recipe.created_by}}</p>
+                </div>
+                <div class="recipename">
+                    <p>{{ recipe.category_name }}</p>
                 </div>
                     <div class="row recipestuff">
                         <div class="col-3">
@@ -81,5 +83,4 @@
         </div>
     </div>
 </section>
-{% endfor %}
 {% endblock %}
