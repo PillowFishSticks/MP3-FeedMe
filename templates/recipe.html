@@ -30,16 +30,42 @@
             </div>
             <div class="ingredients">
                 <h3>Ingredients</h3>
+                    {% if recipe.ingredient_1 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_1}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_2 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_2}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_3 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_3}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_4 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_4}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_5 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_5}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_6 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_6}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_7 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_7}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_8 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_8}}</p>
+                    {% endif %}
+                    {% if recipe.ingredient_9 == "" %}
+                    {% else %}
                     <p>{{ recipe.ingredient_9}}</p>
-
+                    {% endif %}
             </div>
         </div>
         <div class="col-6">
@@ -63,17 +89,43 @@
                     </div>
                 <div class="directions">
                     <h3>Directions</h3>    
-                    <ol>
+                    <ol>   
+                        {% if recipe.direction_1 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_1}}</li>
+                        {% endif %}
+                        {% if recipe.direction_2 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_2}}</li>
+                        {% endif %}
+                        {% if recipe.direction_3 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_3}}</li>
+                        {% endif %}
+                        {% if recipe.direction_4 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_4}}</li>
+                        {% endif %}
+                        {% if recipe.direction_5 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_5}}</li>
+                        {% endif %}
+                        {% if recipe.direction_6 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_6}}</li>
+                        {% endif %}
+                        {% if recipe.direction_7 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_7}}</li>
+                        {% endif %}
+                        {% if recipe.direction_8 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_8}}</li>
+                        {% else %}
+                        {% if recipe.direction_9 == "" %}
+                        {% else %}
                         <li>{{ recipe.direction_9}}</li>
-                        <li>{{ recipe.direction_10}}</li>
+                        {% else %}
                     </ol>
                 </div>
                 <div class="notes">
