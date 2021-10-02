@@ -18,6 +18,7 @@
     text-decoration: none;
     color:black;
     font-family: 'Open Sans', sans-serif;
+    background-color: #F6F6F6;
 }
 
 .recipename. {
@@ -29,6 +30,22 @@
     width: 200px;
     border-radius: 50%;
 }
+
+.btn-grey {
+    background: #9dacb2;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+.btn-grey:hover,
+.btn-grey:active,
+.btn-grey:focus {
+    background: #a5ccd1;
+    color: black;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+  }
 
 /** Genral **/
 
