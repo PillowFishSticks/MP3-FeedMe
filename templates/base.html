@@ -63,17 +63,18 @@
         </div>
     </header>
 
-    <section class="flash text-center">
+    <section>
+        <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div>
-                        <h2 class="bgcolor">{{ message }}</h2>
-                    </div>
-                {% endfor %}
-            {% endif %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert success flashes">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>{{ message }}</strong>
+        </div>
+        {% endfor %}
+        {% endif %}
         {% endwith %}
-
     </section>
 
     {% block content %}
