@@ -3,6 +3,7 @@
 body { 
     padding-top: 150px;
     height: 100%;
+    background-color: #fcf7f2;;
 }
 
 /** Flash messages **/
@@ -85,8 +86,6 @@ body {
   }
 
 /** Genral **/
-
-
 
 .text-styleheading {
     font-family: 'Love ya like a sister', sans-serif;
@@ -248,15 +247,42 @@ input::-webkit-input-placeholder {
 
 /* -------------------------------- recipe page */
 
-.recipepage{
-    padding-left: 40px;
-    margin-bottom: 30px;
+.recipeimage {
+    width: 400px;
+    height: 270px;
+    border-radius: 5px;
 }
 
-.recipeimage {
-    width: 470px;
-    height: 300px;
+.hide {
+    display: none;
 }
+     
+.recipeimage:hover {
+    opacity: 0.4;
+}
+
+.recipeimage:hover + .hide {
+    display: inline-block;
+}
+
+.recipe-card {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.recipe-card div {
+    color: black;
+    border: 1px solid black;
+    font-weight: 800;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .ingredients {
     margin-top: 40px;
