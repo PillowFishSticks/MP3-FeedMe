@@ -247,6 +247,14 @@ input::-webkit-input-placeholder {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* -------------------------------- feedme recipe page */
+
+.search-bar input {
+    height: 40px;
+     width: 60%;
+
+}
+
 /* -------------------------------- recipe page */
 
 .card {
