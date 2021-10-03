@@ -252,7 +252,6 @@ input::-webkit-input-placeholder {
 .search-bar input {
     height: 40px;
      width: 60%;
-
 }
 
 /* -------------------------------- recipe page */
@@ -304,6 +303,13 @@ input::-webkit-input-placeholder {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+/* -------------------------------- recipe page */
+
+.recipe-image {
+    width: 400px;
+    height: 270px;
+    border-radius: 5px;
+}
 
 .ingredients {
     margin-top: 40px;
@@ -321,7 +327,7 @@ input::-webkit-input-placeholder {
     font-family: 'Open Sans', sans-serif;
 }
 
-.borderrecipe {
+.border-recipe {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
@@ -329,6 +335,7 @@ input::-webkit-input-placeholder {
     -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
     margin-right: 40px;
+    background-color: white;
 }
 
 
