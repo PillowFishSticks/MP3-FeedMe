@@ -2,22 +2,24 @@
 {% block content %}
     
 
-<section class="text-style container-fluid">
-    {% for recipe in recipes %}
-        <div class="col-sm-6 col-md-6 col-lg-4 d-inline p-2">
-            <div class="card h-100 border-0">
-                {% if session.user|lower == recipe.created_by|lower %}
-                    <a class="recipe-card" href="{{ url_for('view_recipe', recipe_id=recipe._id)}}">
-                        <img class="card-img-top img-fluid recipeimage" src="{{ recipe.image_url }}">
-                        <div class="hide centered p-3">See Recipe</div>
-                    </a>
-                    <div class="card-body recipename">
-                        <p>{{ recipe.recipe_name}}</p>
-                    </div>
-                {% endif %}
+<section class="text-style container">
+    <div class="row">
+        {% for recipe in recipes %}
+            <div class="col-sm-6 col-md-6 col-lg-4 d-inline p-2">
+                <div class="card h-100 border-0">
+                    {% if session.user|lower == recipe.created_by|lower %}
+                        <a class="recipe-card" href="{{ url_for('view_recipe', recipe_id=recipe._id)}}">
+                            <img class="card-img-top img-fluid recipeimage mt-3" src="{{ recipe.image_url }}">
+                            <div class="hide centered text-uppercase p-3">See Recipe</div>
+                        </a>
+                        <div class="card-body recipename text-center text-uppercase">
+                            <h3>{{ recipe.recipe_name}}</h3>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </section>
 
 {% endblock %}

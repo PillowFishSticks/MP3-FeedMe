@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 body { 
     padding-top: 150px;
     height: 100%;
-    background-color: #fcf7f2;;
+    background-color: #fcf7f2;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /** Flash messages **/
@@ -88,7 +90,7 @@ body {
 /** Genral **/
 
 .text-styleheading {
-    font-family: 'Love ya like a sister', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .text-style {
@@ -113,7 +115,7 @@ body {
 .navbar-brand {
     padding-top: 25px;
     padding-bottom: 25px;
-    font-family: 'Love ya like a sister', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 } 
 
 .navbar-nav { 
@@ -156,6 +158,11 @@ footer h2 {
     font-family: 'Love ya like a sister', sans-serif;
 }
 
+footer h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
 footer i {
     margin-left: 20px;
 }
@@ -196,11 +203,6 @@ footer a:hover {
 }
 
 /* -------------------------------- registration page */
-
-hr{
-	width: 10%;
-	color: #fff;
-}
 
 .form-group{
 	margin-bottom: 15px;
@@ -247,6 +249,10 @@ input::-webkit-input-placeholder {
 
 /* -------------------------------- recipe page */
 
+.card {
+    background-color: #fcf7f2;
+}
+
 .recipeimage {
     width: 400px;
     height: 270px;
@@ -268,12 +274,12 @@ input::-webkit-input-placeholder {
 .recipe-card {
     position: relative;
     text-align: center;
-    color: white;
   }
 
 .recipe-card div {
     color: black;
     border: 1px solid black;
+ 
     font-weight: 800;
 }
 
@@ -283,6 +289,13 @@ input::-webkit-input-placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+.recipename {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 
 .ingredients {
     margin-top: 40px;
@@ -310,14 +323,6 @@ input::-webkit-input-placeholder {
     margin-right: 40px;
 }
 
-.recipename {
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.recipename h1, h3 {
-    font-family: 'Love ya like a sister', sans-serif;
-}
 
 .recipestuff {
     padding-left: 10px;
