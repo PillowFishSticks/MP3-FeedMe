@@ -25,7 +25,7 @@ def home():
 
 @app.route("/get_recipes")
 def get_recipes():
-    recipes = mongo.db.recipes.find({"created_by": session["user"]})
+    recipes = list(mongo.db.recipes.find({"created_by": session["user"]}))
     return render_template("your_recipes.html", recipes=recipes)
 
 
@@ -74,7 +74,7 @@ def category_dessert():
 
 @app.route("/site_recipes")
 def site_recipes():
-    recipes = mongo.db.recipes.find()
+    recipes = list(mongo.db.recipes.find())
     return render_template("site_recipes.html", recipes=recipes)
 
 

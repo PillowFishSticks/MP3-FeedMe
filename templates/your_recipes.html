@@ -3,6 +3,7 @@
     
 
 <section class="text-style container">
+    {% if recipes|length > 0 %}
     <div class="row">
         {% for recipe in recipes %}
             <div class="col-sm-6 col-md-6 col-lg-4 d-inline p-2">
@@ -26,6 +27,7 @@
                     {% endif %}
                 </div>
             </div>
+            
 
              <!-- Modal for Recipe Book -->
             <div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
@@ -50,6 +52,9 @@
             <!-- Close Modal -->
         {% endfor %}
     </div>
+    {% else %}
+    <p>Looks like you havent added a recipe yet. Would you like to add your first?</p>
+    {% endif %}
 </section>
 
 {% endblock %}
