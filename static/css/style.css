@@ -195,7 +195,7 @@ nav li {
 }
 
 footer h2 {
-    font-family: 'Love ya like a sister', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 footer h5 {
@@ -416,7 +416,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 1200px) {
 
     .navbar-brand h1{
-        font-family: 'Love ya like a sister', sans-serif;
+        font-family: 'Playfair Display', serif;
         color: black;
         font-size: 1.5em;
         margin-top: 0;
@@ -438,7 +438,7 @@ input::-webkit-input-placeholder {
     /** Navbar **/
 
     .navbar-brand h1{
-        font-family: 'Love ya like a sister', sans-serif;
+        font-family: 'Playfair Display', serif;
         color: black;
         font-size: 1.5em;
         margin-top: 0;
@@ -470,7 +470,7 @@ input::-webkit-input-placeholder {
     /** Navbar **/
 
     .navbar-brand h1{
-        font-family: 'Love ya like a sister', sans-serif;
+        font-family: 'Playfair Display', serif;
         color: black;
         font-size: 1.5em;
         margin-top: 0;
@@ -502,7 +502,7 @@ input::-webkit-input-placeholder {
     /** Navbar **/
     
     .navbar-brand h1{
-        font-family: 'Love ya like a sister', sans-serif;
+        font-family: 'Playfair Display', serif;
         color: black;
         font-size: 25px;
         margin-top: 0;
