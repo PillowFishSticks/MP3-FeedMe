@@ -23,12 +23,14 @@ body {
   }
   
   .alert.success {
-      background-color: #a0b9bf;
+      background-color: #efd3d7;
+      font-family: 'Open Sans', sans-serif;
+      color: black;
   }
   
   .closebtn {
     margin-left: 15px;
-    color: white;
+    color: black;
     font-weight: bold;
     float: right;
     font-size: 22px;
