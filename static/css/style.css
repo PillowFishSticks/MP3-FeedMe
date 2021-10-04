@@ -131,6 +131,10 @@ body {
       color: #efd3d7;
     }
 
+.text-styleheading {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 /** Genral **/
 
 .text-style {
@@ -349,20 +353,9 @@ input::-webkit-input-placeholder {
     border-radius: 5px;
 }
 
-.ingredients {
-    margin-top: 40px;
-    background-color: #D0D0D0;
-    width: 74%;
-}
-
-.ingredients h3 {
-    font-family: 'Love ya like a sister', sans-serif;
+.accordion {
     text-align: center;
     padding-top: 10px;
-}
-
-.ingredients p {
-    font-family: 'Open Sans', sans-serif;
 }
 
 .border-recipe {
@@ -375,7 +368,6 @@ input::-webkit-input-placeholder {
     margin-right: 40px;
     background-color: white;
 }
-
 
 .recipestuff {
     padding-left: 10px;

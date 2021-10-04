@@ -53,8 +53,22 @@
         {% endfor %}
     </div>
     {% else %}
-    <p>Looks like you havent added a recipe yet. Would you like to add your first?</p>
+
+<div class="text-center">
+    <div class="row mb-5">
+        <div class="col-6 offset-3 home-banner mt-5">
+            <div class="">
+                <h1>Welcome</h1>
+                <p>Start adding your own recipes</p>
+            </div>
+        <div>
+            <a href="{{ url_for('add_recipe' )}}" class="btn btn-black mb-5">
+                Add a recipe
+            </a>
+        </div> 
+    </div>
     {% endif %}
+  
 </section>
 
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div>
-    <div class="col-md-5 mx-auto">
+    <div class="col-md-5 mx-auto mt-5">
         <div id="first">
             <div class="myform form ">
                 <div class="logo mb-3">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item ingredients">
                           <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Ingredients
@@ -186,8 +186,8 @@
                             {{- recipe.notes -}}
                         </textarea>
                     </div>
-                    <div class="form-group text-center ">
-                        <a href="{{ url_for('get_recipes', username=session['user'])}}" class="btn btn-success btn-lg btn-block login-button">
+                    <div class="form-group text-center mb-5">
+                        <a href="{{ url_for('get_recipes', username=session['user'])}}" class="btn btn-cream">
                             Cancel
                         </a>
                         <button type="submit" class="btn btn-cream">
