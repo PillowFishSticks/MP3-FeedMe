@@ -340,12 +340,26 @@ input::-webkit-input-placeholder {
   }
 
 .recipename {
-    padding-left: 10px;
     padding-top: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.recipe-card-info {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.recipe-card-info li {
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* -------------------------------- recipe page */
+
+.recipepage {
+    padding-top: 50px;
+}
 
 .recipe-image {
     width: 400px;

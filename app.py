@@ -243,12 +243,6 @@ def recipe_4():
     return render_template("recipe_4.html")
 
 
-@app.route("/admin")
-def admin():
-    recipes = mongo.db.recipes.find()
-    return render_template("admin_page.html", recipes=recipes)
-
-
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),

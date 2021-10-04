@@ -6,67 +6,69 @@
     <div class="row">
         <div class="col-6 offset-3 recipe-info-card">
             <div class="border-recipe">
-                <div class="recipename text-center">
+                <div class="recipe-card-info text-uppercase text-center pt-4">
                     <h1>{{ recipe.recipe_name}}</h1>
                 </div>
                 <div class="d-flex justify-content-center">
                     <img class="recipe-image mt-4 mb-5" src="{{ recipe.image_url }}">
                 </div>
-                <div class="recipename">
+                <div class="recipe-card-info">
                     <p>Author: {{ recipe.created_by}}</p>
                 </div>
-                <div class="recipename">
-                    <p>Course Type: {{ recipe.category_name }} |</p>
-                </div>
-                <div class="row recipestuff">
+                <div class="row recipe-card-info d-flex d-inline-flex">
                     <div class="col-10 offset-2">
+                        <p>Course Type: {{ recipe.category_name }} |</p>
+                    </div>
+                    <div class="d-flex d-inline">
                         <p><i class="fas fa-clock"></i> Time: {{ recipe.time}} |</p>
                     </div>
-                    <div class="col-10 offset-2">
+                    <div class="d-flex d-inline">
                         <p><i class="fas fa-users"></i> Servings: {{ recipe.servings}} |</p>
                     </div>
                 </div>
-                <div>
-                    <h3 class="pl-5">Ingredients</h3>
+                <div class="recipe-card-info">
+                    <h4 class="text-uppercase">Ingredients</h4>
+                        <ul>
                             {% if recipe.ingredient_1 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_1}}</p>
+                            <li>{{ recipe.ingredient_1}}</li>
                             {% endif %}
                             {% if recipe.ingredient_2 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_2}}</p>
+                            <li>{{ recipe.ingredient_2}}</li>
                             {% endif %}
                             {% if recipe.ingredient_3 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_3}}</p>
+                            <li>{{ recipe.ingredient_3}}</li>
                             {% endif %}
                             {% if recipe.ingredient_4 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_4}}</p>
+                            <li>{{ recipe.ingredient_4}}</li>
                             {% endif %}
                             {% if recipe.ingredient_5 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_5}}</p>
+                            <li>{{ recipe.ingredient_5}}</li>
                             {% endif %}
                             {% if recipe.ingredient_6 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_6}}</p>
+                            <li>{{ recipe.ingredient_6}}</li>
                             {% endif %}
                             {% if recipe.ingredient_7 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_7}}</p>
+                            <li>{{ recipe.ingredient_7}}</li>
                             {% endif %}
                             {% if recipe.ingredient_8 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_8}}</p>
+                            <li>{{ recipe.ingredient_8}}</li>
                             {% endif %}
                             {% if recipe.ingredient_9 == "" %}
                             {% else %}
-                            <p>{{ recipe.ingredient_9}}</p>
+                            <li>{{ recipe.ingredient_9}}</li>
                             {% endif %}
+                        </ul>
                 </div>
-                <div>
-                    <h3>Directions</h3>    
+                <div class="recipe-card-info">
+                    <h4 class="text-uppercase pr-5">Directions</h4>    
                     <ol>   
                         {% if recipe.direction_1 == "" %}
                         {% else %}
@@ -106,33 +108,49 @@
                         {% endif %}
                     </ol>
                 </div>
-                <div class="notes">
+                <div class="recipe-card-info">
                     <h3>Notes</h3>
-                    <p>{{ recipe.notes}}</p>
+                    <p class="pb-5">{{ recipe.notes}}</p>
                 </div>
             </div>
         </div>
     </div>
     {% endif %}
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <div class="form-group text-center ">
                 {% if session.user|lower == recipe.created_by|lower %}
-                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
-                    Edit
-                </a>
-                {% endif %}
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="form-group text-center ">
-                {% if session.user|lower == recipe.created_by|lower %}
-                <button type="submit" class="btn btn-success btn-lg btn-block login-button">
-                    Delete
-                </button>
+                <div class="text-center mb-5">
+                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-cream">
+                        Edit
+                    </a>
+                     <!-- Modal button for Delete Recipe modal -->
+                    <button class="btn btn-cream" data-bs-target="#modal-delete"
+                         data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
+                </div>
                 {% endif %}
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-delete-label">Delete Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this recipe?</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-block mybtn btn-secondary"
+                        href="{{ url_for('site_recipes', recipe_id=recipe._id )}}" role="button">Cancel</a>
+                    <a class="btn btn-block mybtn btn-danger"
+                        href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" role="button">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close Modal -->
 </section>
 {% endblock %}

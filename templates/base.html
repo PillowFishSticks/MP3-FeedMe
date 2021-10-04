@@ -33,11 +33,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('site_recipes' )}}">FeedMe Recipes</a>
                     </li>
-                    {% if session.user|lower == "admin"|lower %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('admin' )}}">Admin Page</a>
-                    </li>
-                    {% endif %}
                     {% if session.user %}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('get_recipes' )}}">Your Recipes</a>
