@@ -38,9 +38,70 @@
     </div>
 </section>
 
-<section class="text-center container-fluid mt-5">
+<section class="container">
+  <div class="row text-left">
+      <div>
+      <h2 class="font-weight-bold mt-5 mb-5">Top recipes this week</h2>
+      </div>
+      <div class="col-3">
+      <a href="{{ url_for('recipe_1' )}}">
+        <img src="static/images/recipe_1.jpg" class="hpimage rounded-1" alt="...">
+      </a>
+      <div class="recipename">
+        <h3>Shellys Homemade Pie</h3>
+      </div>
+      </div>
+      <div class="col-3">
+      <a href="{{ url_for('recipe_2' )}}">
+        <img src="static/images/recipe_2.jpg" class="hpimage rounded-1" alt="...">
+      </a>
+      <div class="recipename">
+        <h3>Italian Style Pepperoni</h3>
+      </div>
+      </div>
+      <div class="col-3">
+      <a href="{{ url_for('recipe_3' )}}">
+        <img src="static/images/recipe_3.jpg" class="hpimage rounded-1" alt="...">
+      </a>
+      <div class="recipename">
+        <h3>Staple Sandwich</h3>
+      </div>
+      </div>
+      <div class="col-3">
+      <a href="{{ url_for('recipe_4' )}}">
+        <img src="static/images/recipe_4.jpg" class="hpimage rounded-1" alt="...">
+      </a>
+      <div class="recipename mb-5">
+        <h3>Beefy Pasta</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-center container-fluid">
+<div class="row">
+  <div class="col-6 home-banner mt-5">
+    <div class="mt-5">
+      <h1>Feeling hungry?</h1>
+      <p>Checkout some of our recipes below.</p>
+    </div>
+    <div>
+      <a href="{{ url_for('site_recipes' )}}" class="btn btn-black">
+        See All Recipes
+      </a>
+    </div>
+  </div>
+  <div class="col-6 home-banner-image mt-5">
+    <a href="{{ url_for('site_recipes' )}}">
+      <img src="static/images/banner-image-1.jpg"  alt="...">
+    </a>
+  </div>
+</div>
+</section>
+
+<section class="text-center container mt-5">
   <div class="row toprecipes">
-    <h2 class="text-styleheading">Seach by category</h2>
+    <h2 class="text-styleheading">Search by category</h2>
       <div class="col-2">
         <a href="{{ url_for('category_appetizer')}}">
           <img src="static/images/appetizer.jpg" class="imagebuttons" alt="...">
@@ -80,51 +141,7 @@
   </div>
 </section>
 
-<section class="text-center container-fluid">
-    <div class="row text-center">
-        <div>
-        <h2 class="font-weight-bold pt-5 pb-4">Top recipes this week</h2>
-        </div>
-        <div class="col-3">
-        <a href="{{ url_for('recipe_1' )}}">
-          <img src="static/images/recipe_1.jpg" class="hpimage rounded-1" alt="...">
-        </a>
-        <div class="recipename">
-          <h3>Shellys Homemade Pie</h3>
-        </div>
-        </div>
-        <div class="col-3">
-        <a href="{{ url_for('recipe_2' )}}">
-          <img src="static/images/recipe_2.jpg" class="hpimage rounded-1" alt="...">
-        </a>
-        <div class="recipename">
-          <h3>Italian Style Pepperoni</h3>
-        </div>
-        </div>
-        <div class="col-3">
-        <a href="{{ url_for('recipe_3' )}}">
-          <img src="static/images/recipe_3.jpg" class="hpimage rounded-1" alt="...">
-        </a>
-        <div class="recipename">
-          <h3>Staple Sandwich</h3>
-        </div>
-        </div>
-        <div class="col-3">
-        <a href="{{ url_for('recipe_4' )}}">
-          <img src="static/images/recipe_4.jpg" class="hpimage rounded-1" alt="...">
-        </a>
-        <div class="recipename">
-          <h3>Beefy Pasta</h3>
-        </div>
-      </div>
-    </div>
-    <div class="text-center">
-      <button class="btn btn-grey mt-5 mb-5">
-      <a href="{{ url_for('site_recipes' )}}"></a>
-      See More 
-    </button>
-    </div>
-</section>
+
 
 
 {% endblock %}

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body { 
     padding-top: 150px;
@@ -87,6 +88,42 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
   }
 
+.home-banner {
+    background-color: #efd3d7;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-family: 100px;
+    font-weight: bolder;
+}
+
+.home-banner p {
+    font-size: 18px;
+}
+
+.home-banner h1 {
+    padding-top: 50px;
+}
+
+.home-banner-image img {
+    height: auto; 
+    width: 708px; 
+}
+
+.btn-black {
+    background: #efd3d7;
+    color: black;
+    border: 2px solid black;
+
+  }
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+      background: black;
+      color: #efd3d7;
+    }
+
 /** Genral **/
 
 .text-styleheading {
@@ -123,7 +160,7 @@ body {
     padding-top: 45px; 
 } 
 
- .navbar-brand h1 {
+.navbar-brand h1 {
    padding-top: 35px;
    padding-left: 30px;  
 }
@@ -286,7 +323,6 @@ input::-webkit-input-placeholder {
 .recipe-card div {
     color: black;
     border: 1px solid black;
- 
     font-weight: 800;
 }
 
