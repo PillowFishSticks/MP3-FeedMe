@@ -19,12 +19,10 @@
                 </div>
                 <div class="form-group text-center ">
                     {% if session.user|lower == recipe.created_by|lower %}
-                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
+                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-black">
                         Edit
                     </a>
-                    {% endif %}
-                    {% if session.user|lower == recipe.created_by|lower %}
-                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
+                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-black">
                         Delete
                     </a>
                     {% endif %}
