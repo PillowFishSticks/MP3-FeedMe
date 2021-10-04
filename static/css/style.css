@@ -131,10 +131,6 @@ body {
 
 /** Genral **/
 
-.text-styleheading {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
 .text-style {
     font-family: 'Open Sans', sans-serif;
 }
@@ -276,7 +272,6 @@ input::-webkit-input-placeholder {
  	margin: 0 auto;
  	max-width: 500px;
     padding: 40px 40px;
-
 }
 
 .login-button{

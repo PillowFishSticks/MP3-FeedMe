@@ -2,15 +2,13 @@
 {% block content %}
 <section class="padding text-style">
     <div class="container">
-        <div class="row main">
-               <div class="panel-title text-center">
-                    <h2 class="title">Sign up</h2>
-                </div>
-        </div> 
         <div class="main-login main-center">
             <form class="form-horizontal" method="POST" action="{{ url_for('register') }}">
 
                 <div class="form-group">
+                    <div class="text-center mb-4">
+                        <h3 class="title">Sign up</h3>
+                    </div>
                     <label for="username" class="cols-sm-2 control-label">
                         <i class="fa fa-users fa" aria-hidden="true"></i>
                         Username
@@ -40,8 +38,8 @@
                     </div>
                 </div>
                 <div class="form-group text-center p-3">
-                    <button type="submit" class="btn btn-grey">
-                        Register
+                    <button type="submit" class="btn btn-cream">
+                        Sign up
                     </button>
                 </div>
                 <div class="text-center">
