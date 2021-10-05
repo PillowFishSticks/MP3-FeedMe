@@ -103,7 +103,7 @@ body {
     font-family: 100px;
     font-weight: bolder;
 }
-
+  
 .home-banner p {
     font-size: 18px;
 }
@@ -303,7 +303,8 @@ input::-webkit-input-placeholder {
     background-color: #fcf7f2;
 }
 
-.recipeimage {
+.recipeimage,
+.home-image {
     width: 400px;
     height: 270px;
     border-radius: 5px;
@@ -415,10 +416,6 @@ input::-webkit-input-placeholder {
 
 /* -------------- accordian on add recipe page */
 
-
-
-
-
 @media (min-width: 1200px) {
 
     .navbar-brand h1{
@@ -438,6 +435,24 @@ input::-webkit-input-placeholder {
         border-bottom: 1px solid black;
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    .home-banner-image img {
+        height: 260px; 
+        width: auto; 
+    }
+
+    .imagebuttons {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .home-banner h1 {
+        padding-top: 20px;
+    }
+}
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -468,6 +483,7 @@ input::-webkit-input-placeholder {
         border-bottom: 1px solid black;
     }
 
+
     /** Navbar **/
 }
 
@@ -496,6 +512,16 @@ input::-webkit-input-placeholder {
        margin-top: 17px;
        margin-bottom: 20px;
        background-color: #bcd4de;
+    }
+
+    .home-image {
+        width: 400px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .home-banner {
+        height: 300px;
     }
 
     /** Navbar **/
@@ -532,6 +558,10 @@ input::-webkit-input-placeholder {
  
     }
 
+    .home-banner {
+        height: 300px;
+    }
+
     .recipe-image {
         width: 300px;
         height: 170px;
@@ -541,5 +571,12 @@ input::-webkit-input-placeholder {
     .recipepage {
         margin-left: 20px;
     }
+
+    .home-image {
+        width: 400px;
+        height: auto;
+        border-radius: 5px;
+    }
+    
 
 }
