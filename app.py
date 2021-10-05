@@ -95,7 +95,7 @@ def register():
         mongo.db.users.insert_one(register)
 
         session["user"] = request.form.get("username").lower()
-        flash("Registration Success")
+        flash("We are so excited to have you here!")
         return redirect(url_for("get_recipes", username=session["user"]))
     return render_template("register.html")
 
@@ -110,7 +110,7 @@ def login():
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    flash("Nice to see you again {}".format(request.form.get("username")))
                     return redirect(url_for("get_recipes", username=session["user"]))
             else:
                 flash("Incorrect Username and/or Password")
