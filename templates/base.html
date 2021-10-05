@@ -76,9 +76,9 @@
     
     <footer id="footer" class="container-fluid mx-auto">
         <div class="row mx-auto" style="width: 80%;">
-            <div class="col-md-3 col-6">
+            <div class="col-12 col-sm-6 col-lg-3 ">
                 <a href="#" class="nav-link">
-                    <h2 class="mt-4">FeedMe<i class="fas fa-cookie"></i></h2>
+                    <h4 class="mt-4">FeedMe <i class="fas fa-cookie"></i></h4>
                 </a>
                 <a href="#" target="_blank">
                     <i class="fab fa-facebook-square fa-2x text-black ml-5 mb-3"></i>
@@ -93,14 +93,14 @@
                     <i class="fab fa-instagram fa-2x text-black ml-3"></i>
                 </a>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-12 col-sm-6 col-lg-3 ">
                 <h5 class="mt-5"><strong>Contact us</strong></h5>
                 <ul>
                     <li>Sales@FeedMe.com</li>
                     <li>Tel: 029 678 2342</li>
                 </ul>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-12 col-sm-6 col-lg-3 ">
                 <h5 class="mt-5"><strong>Recipes</strong></h5>
                 <ul>
                     <li><a href="{{ url_for('category_appetizer' )}}">Appetizer</a></li>
@@ -111,7 +111,7 @@
                     <li><a href="{{ url_for('category_drinks' )}}">Drinks</a></li>
                 </ul>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-12 col-sm-6 col-lg-3 ">
                 {% if session.user %}
                     <h5 class="mt-5"><strong>My account</strong></h5>
                     <ul>
