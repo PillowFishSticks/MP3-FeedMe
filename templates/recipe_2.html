@@ -1,49 +1,53 @@
 {% extends "base.html" %}
 {% block content %}
-    
-<section class="text-style container-fluid">
+<section class="text-style container recipepage">
     <div class="row">
-        <div class="col-6">
-            <div>
-                <img class="recipeimage" src="static/images/recipe_2.jpg">
-            </div>
-            <div class="ingredients">
-                <h3></h3>
-                    <p>Beef</p>
-                    <p>Stock</p>
-                    <p>Egg</p>
-                    <p>Pastry</p>
-                    <p>Oil</p>
-                    <p>Carrots</p>
-                    <p>Onion</p>
-                    <p>Potato</p>
-                    <p>Chicken</p>
-                    <p>Milk</p>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="borderrecipe">
-                <div class="recipename">
-                    <h1>Itallian Style Pepperoni</h1>
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 recipe-info-card">
+            <div class="border-recipe">
+                <div class="recipe-card-info text-uppercase text-center pt-4">
+                    <h1>Italian style pepperoni</h1>
                 </div>
-                <div class="recipename">
-                    <p>FeedMe Recipe</p>
+                <div class="d-flex justify-content-center">
+                    <img class="recipe-image mt-4 mb-5" src="static/images/recipe_2.jpg">
                 </div>
-                    <div class="row recipestuff">
-                        <div class="col-3">
-                            <p><i class="fas fa-clock"></i> 30 minutes </p>
-                        </div>
-                        <div class="col-3">
-                            <p><i class="fas fa-users"></i>4</p>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <div>
+                            <p>Author: Admin</p>
                         </div>
                     </div>
-                <div class="directions">
-                    <h3>Directions</h3>    
-                    <ol>
-                        <li>Cook the beef</li>
-                        <li>Cook the beef</li>
-                        <li>Cook the beef</li>
-                        <li>Cook the beef</li>
+                    <div class="col-6 d-flex justify-content-start">
+                        <div>
+                            <p>Course Type: Meal </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <div>
+                            <p><i class="fas fa-clock"></i> Time: 40</p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-start">
+                        <div>
+                            <p><i class="fas fa-users"></i> Servings: 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container recipe-card-info">
+                    <h4 class="text-uppercase mt-3">Ingredients</h4>
+                        <ul>
+                            <li>Beef</li>
+                            <li>Beef</li>
+                            <li>Beef</li>
+                            <li>Beef</li>
+                            <li>Beef</li>
+                            <li>Beef</li>
+                        </ul>
+                </div>
+                <div class="container recipe-card-info">
+                    <h4 class="text-uppercase pr-5">Directions</h4>    
+                    <ol>   
                         <li>Cook the beef</li>
                         <li>Cook the beef</li>
                         <li>Cook the beef</li>
@@ -52,9 +56,9 @@
                         <li>Cook the beef</li>
                     </ol>
                 </div>
-                <div class="notes">
+                <div class="container recipe-card-info">
                     <h3>Notes</h3>
-                    <p>Cook the beef</p>
+                    <p class="pb-5">notes</p>
                 </div>
             </div>
         </div>
