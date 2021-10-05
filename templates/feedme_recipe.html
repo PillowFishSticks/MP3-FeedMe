@@ -1,92 +1,84 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="text-style container-fluid">
+<section class="text-style container recipepage">
     <div class="row">
-        <div class="col-6">
-            <div class="form-group text-center ">
-                {% if session.user|lower == recipe.created_by|lower %}
-                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success btn-lg btn-block login-button">
-                    Edit
-                </a>
-                {% endif %}
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="form-group text-center ">
-                {% if session.user|lower == recipe.created_by|lower %}
-                <button type="submit" class="btn btn-success btn-lg btn-block login-button">
-                    Delete
-                </button>
-                {% endif %}
-            </div>
-        </div>
-        <div class="col-4">
-            <div>
-                <img  class="recipeimage" src="{{ recipe.image_url }}">
-            </div>
-            <div class="ingredients">
-                <h3>Ingredients</h3>
-                {% if recipe.ingredient_1 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_1}}</p>
-                {% endif %}
-                {% if recipe.ingredient_2 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_2}}</p>
-                {% endif %}
-                {% if recipe.ingredient_3 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_3}}</p>
-                {% endif %}
-                {% if recipe.ingredient_4 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_4}}</p>
-                {% endif %}
-                {% if recipe.ingredient_5 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_5}}</p>
-                {% endif %}
-                {% if recipe.ingredient_6 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_6}}</p>
-                {% endif %}
-                {% if recipe.ingredient_7 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_7}}</p>
-                {% endif %}
-                {% if recipe.ingredient_8 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_8}}</p>
-                {% endif %}
-                {% if recipe.ingredient_9 == "" %}
-                {% else %}
-                <p>{{ recipe.ingredient_9}}</p>
-                {% endif %}
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="borderrecipe">
-                <div class="recipename">
+        <div class="col-6 offset-3 recipe-info-card">
+            <div class="border-recipe">
+                <div class="recipe-card-info text-uppercase text-center pt-4">
                     <h1>{{ recipe.recipe_name}}</h1>
                 </div>
-                <div class="recipename">
-                    <p>{{ recipe.created_by}}</p>
+                <div class="d-flex justify-content-center">
+                    <img class="recipe-image mt-4 mb-5" src="{{ recipe.image_url }}">
                 </div>
-                <div class="recipename">
-                    <p>{{ recipe.category_name }}</p>
-                </div>
-                    <div class="row recipestuff">
-                        <div class="col-3">
-                            <p><i class="fas fa-clock"></i> {{ recipe.time}} </p>
-                        </div>
-                        <div class="col-3">
-                            <p><i class="fas fa-users"></i> {{ recipe.servings}}</p>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <div>
+                            <p>Author: {{ recipe.created_by}}</p>
                         </div>
                     </div>
-                <div class="directions">
-                    <h3>Directions</h3>    
-                    <ol>
+                    <div class="col-6 d-flex justify-content-start">
+                        <div>
+                            <p>Course Type: {{ recipe.category_name }} </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <div>
+                            <p><i class="fas fa-clock"></i> Time: {{ recipe.time}}</p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-start">
+                        <div>
+                            <p><i class="fas fa-users"></i> Servings: {{ recipe.servings}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card-info">
+                    <h4 class="text-uppercase mt-3">Ingredients</h4>
+                        <ul>
+                            {% if recipe.ingredient_1 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_1}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_2 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_2}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_3 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_3}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_4 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_4}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_5 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_5}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_6 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_6}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_7 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_7}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_8 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_8}}</li>
+                            {% endif %}
+                            {% if recipe.ingredient_9 == "" %}
+                            {% else %}
+                            <li>{{ recipe.ingredient_9}}</li>
+                            {% endif %}
+                        </ul>
+                </div>
+                <div class="container recipe-card-info">
+                    <h4 class="text-uppercase pr-5">Directions</h4>    
+                    <ol>   
                         {% if recipe.direction_1 == "" %}
                         {% else %}
                         <li>{{ recipe.direction_1}}</li>
@@ -125,9 +117,9 @@
                         {% endif %}
                     </ol>
                 </div>
-                <div class="notes">
+                <div class="container recipe-card-info">
                     <h3>Notes</h3>
-                    <p>{{ recipe.notes}}</p>
+                    <p class="pb-5">{{ recipe.notes}}</p>
                 </div>
             </div>
         </div>
@@ -135,7 +127,7 @@
     <div class="row">
         <div class="col-12">
             <div class="form-group text-center ">
-                {% if session.user|lower == "admin"|lower %}
+                {% if session.user|lower == recipe.created_by|lower %}
                 <div class="text-center mb-5">
                     <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-cream">
                         Edit
@@ -148,7 +140,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal for Recipe Book -->
     <div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -161,7 +152,7 @@
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-block mybtn btn-secondary"
-                        href="{{ url_for('get_recipes' )}}" role="button">Cancel</a>
+                        href="{{ url_for('feedme_recipe', recipe_id=recipe._id )}}" role="button">Cancel</a>
                     <a class="btn btn-block mybtn btn-danger"
                         href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" role="button">Delete</a>
                 </div>
