@@ -121,22 +121,25 @@
                     <h3>Notes</h3>
                     <p class="pb-5">{{ recipe.notes}}</p>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group text-center ">
-                {% if session.user|lower == recipe.created_by|lower %}
-                <div class="text-center mb-5">
-                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-cream">
-                        Edit
-                    </a>
-                     <!-- Modal button for Delete Recipe modal -->
-                    <button class="btn btn-cream" data-bs-target="#modal-delete"
-                         data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
+                <hr>
+                <div class="form-group text-center ">
+                    {% if session.user|lower == recipe.created_by|lower %}
+                    <div class="text-center mb-5">
+                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-cream mb-3">
+                            Edit
+                        </a>
+                         <!-- Modal button for Delete Recipe modal -->
+                        <button class="btn btn-cream mb-3" data-bs-target="#modal-delete"
+                             data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
+                    </div>
+                    {% else %}
+                    <div class="text-center mb-5">
+                        <a href="{{ url_for('site_recipes', recipe_id=recipe._id)}}" class="btn btn-cream mb-3">
+                            See All Recipes
+                        </a>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
         </div>
     </div>
