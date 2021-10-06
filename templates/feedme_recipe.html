@@ -122,7 +122,7 @@
                             Edit
                         </a>
                          <!-- Modal button for Delete Recipe modal -->
-                        <button class="btn btn-cream mb-3" data-bs-target="#modal-delete"
+                        <button class="btn btn-cream mb-3" data-bs-target="#modal-delete{{ recipe._id }}"
                              data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
                     </div>
                     {% else %}
@@ -136,7 +136,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="modal-delete{{ recipe._id }}" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
