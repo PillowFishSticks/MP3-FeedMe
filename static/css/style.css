@@ -422,6 +422,12 @@ input::-webkit-input-placeholder {
 
 @media (min-width: 1200px) {
 
+    main {
+        min-height: 70vh;
+        height: 100%; 
+        margin: 0 auto -30px;
+    }
+
     .navbar-brand h1{
         font-family: 'Playfair Display', serif;
         color: black;
@@ -461,6 +467,11 @@ input::-webkit-input-placeholder {
 @media (min-width: 992px) and (max-width: 1199px) {
 
     /** Navbar **/
+    main {
+        min-height: 80vh;
+        height: 100%; 
+        margin: 0 auto -30px;
+    }
 
     .navbar-brand h1{
         font-family: 'Playfair Display', serif;
@@ -494,6 +505,11 @@ input::-webkit-input-placeholder {
 @media (min-width: 768px) and (max-width: 991px) {
 
     /** Navbar **/
+    main {
+        min-height: 80vh;
+        height: 100%; 
+        margin: 0 auto -30px;
+    }
 
     .navbar-brand h1{
         font-family: 'Playfair Display', serif;
