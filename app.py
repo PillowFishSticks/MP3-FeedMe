@@ -212,6 +212,13 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+@app.route("/admin_delete/<recipe_id>")
+def admin_delete(recipe_id):
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("Recipe Successfully Removed")
+    return redirect(url_for("site_recipes"))
+
+
 @app.route("/view_recipe/<recipe_id>", methods=["GET"])
 def view_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
