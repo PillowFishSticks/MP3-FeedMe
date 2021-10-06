@@ -351,6 +351,10 @@ input::-webkit-input-placeholder {
     font-family: 'Playfair Display', serif;
 }
 
+.recipe-card-info h1 {
+    text-align: center;
+}
+
 .recipe-card-info li {
     padding-top: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -558,18 +562,23 @@ input::-webkit-input-placeholder {
  
     }
 
+    .alert {
+        width: 70%;
+        left: 15%;
+    } 
+
     .home-banner {
         height: 300px;
     }
 
     .recipe-image {
-        width: 300px;
+        width: 250px;
         height: 170px;
         border-radius: 5px;
     }
 
     .recipepage {
-        margin-left: 20px;
+        padding-left: 50px;
     }
 
     .home-image {
