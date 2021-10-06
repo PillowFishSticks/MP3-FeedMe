@@ -303,8 +303,7 @@ input::-webkit-input-placeholder {
     background-color: #fcf7f2;
 }
 
-.recipeimage,
-.home-image {
+.recipeimage {
     width: 400px;
     height: 270px;
     border-radius: 5px;
@@ -313,9 +312,17 @@ input::-webkit-input-placeholder {
 .hide {
     display: none;
 }
+
+.recipe-image:hover {
+    opacity: 0.4;
+}
      
 .recipeimage:hover {
     opacity: 0.4;
+}
+
+.recipe-image:hover + .hide {
+    display: inline-block;
 }
 
 .recipeimage:hover + .hide {
@@ -575,6 +582,10 @@ input::-webkit-input-placeholder {
         width: 70%;
         left: 15%;
     } 
+
+    .carousel-image {
+        max-height: 100px;
+    }
 
     .home-banner {
         height: 300px;
