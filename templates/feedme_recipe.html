@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="text-style container recipepage">
+<section class="text-style container-fluid recipepage">
     <div class="row">
         <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 recipe-info-card">
             <div class="border-recipe">
@@ -11,8 +11,8 @@
                 <div class="d-flex justify-content-center">
                     <img class="recipe-image mt-4 mb-5" src="{{ recipe.image_url }}">
                 </div>
-                <div class="row">
-                    <div class="ol-12 col-md-6 d-flex justify-content-sm-center justify-content-md-end">
+                <div class="row recipe-content">
+                    <div class="col-12 col-md-6 d-flex justify-content-sm-center justify-content-md-end">
                         <p>Author: {{ recipe.created_by}}</p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-sm-center justify-content-md-start">
