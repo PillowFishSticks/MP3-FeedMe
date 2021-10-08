@@ -309,6 +309,12 @@ input::-webkit-input-placeholder {
     border-radius: 5px;
 }
 
+.recipe-detail-image {
+    width: 400px;
+    height: 270px;
+    border-radius: 5px;
+}
+
 .hide {
     display: none;
 }
