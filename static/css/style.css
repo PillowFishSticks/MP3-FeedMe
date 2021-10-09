@@ -667,10 +667,6 @@ input::-webkit-input-placeholder {
         left: 15%;
     } 
 
-    .carousel-image {
-        background-position: center 65%;
-      }
-
     .home-banner {
         height: 300px;
     }
