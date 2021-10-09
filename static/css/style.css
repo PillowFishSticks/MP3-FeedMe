@@ -44,11 +44,6 @@ body {
   }
 
   /** This template was made by Colorlib  **/
-
-  * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
   
   body {
     padding: 0;
@@ -712,9 +707,18 @@ input::-webkit-input-placeholder {
         border-radius: 5px;
     }
 
-    .recipe-content div {
-        padding-left: 200px;
+    .recipe-detail-image {
+        width: 250px;
+        height: 170px;
+        border-radius: 5px;
     }
-    
-
 }
+
+@media only screen and (max-width: 480px) {
+    .notfound .notfound-404 h1 {
+      font-size: 162px;
+    }
+    .notfound h2 {
+      font-size: 26px;
+    }
+  }

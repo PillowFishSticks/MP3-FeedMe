@@ -12,21 +12,11 @@
                 <div class="d-flex justify-content-center">
                     <img class="recipe-detail-image mt-4 mb-5" src="{{ recipe.image_url }}">
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 d-flex justify-content-sm-center justify-content-md-end">
-                        <p>Author: {{ recipe.created_by}}</p>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-sm-center justify-content-md-start">
-                        <p>Course Type: {{ recipe.category_name }} </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 d-flex justify-content-sm-center justify-content-md-end">
-                        <p><i class="fas fa-clock"></i> Time: {{ recipe.time}}</p>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-sm-center justify-content-md-start">
-                        <p><i class="fas fa-users"></i> Servings: {{ recipe.servings}}</p>
-                    </div>
+                <div class="row col-12 text-center recipe-content">
+                    <p>Author: {{ recipe.created_by}}</p>
+                    <p>Course Type: {{ recipe.category_name }} </p>
+                    <p><i class="fas fa-clock"></i> Time: {{ recipe.time}}</p>
+                    <p><i class="fas fa-users"></i> Servings: {{ recipe.servings}}</p>
                 </div>
                 <div class="container recipe-card-info">
                     <h4 class="text-uppercase mt-3">Ingredients</h4>
