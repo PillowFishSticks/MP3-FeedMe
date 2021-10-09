@@ -80,6 +80,11 @@ def site_recipes():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+
+    if 'user' in session:
+        return render_template('404.html')
+
+
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -102,6 +107,10 @@ def register():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+
+    if 'user' in session:
+        return render_template('404.html')
+
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
