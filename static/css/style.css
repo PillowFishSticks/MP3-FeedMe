@@ -590,8 +590,8 @@ input::-webkit-input-placeholder {
     } 
 
     .carousel-image {
-        max-height: 100px;
-    }
+        background-position: center 65%;
+      }
 
     .home-banner {
         height: 300px;
