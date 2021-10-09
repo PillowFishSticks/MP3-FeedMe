@@ -247,6 +247,11 @@ def admin_delete(recipe_id):
 @app.route("/view_recipe/<recipe_id>", methods=["GET"])
 def view_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    if 'user' not in session or (
+         recipe and (
+            recipe['created_by'] != session['user'] and
+            session['user'] != 'admin')):
+        return render_template('404.html')
     return render_template("recipe.html", recipe=recipe)
 
 @app.route("/feedme_recipe/<recipe_id>", methods=["GET"])
