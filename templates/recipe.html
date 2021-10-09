@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-
 <section class="text-style container-fluid recipepage">
     {% if session.user|lower == recipe.created_by|lower %}
     <div class="row">
@@ -152,5 +151,4 @@
     </div>
     <!-- Close Modal -->
 </section>
-
 {% endblock %}
