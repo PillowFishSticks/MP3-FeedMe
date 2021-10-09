@@ -132,6 +132,11 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+
+    if 'user' not in session:
+        return render_template('404.html')
+
+
     if request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
@@ -170,6 +175,18 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+
+    if 'user' not in session or (
+         recipe and (
+            recipe['created_by'] != session['user'] and
+            session['user'] != 'admin')):
+        return render_template('404.html')
+
+    if not recipe:
+        return render_template('404.html')
+
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -201,12 +218,20 @@ def edit_recipe(recipe_id):
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe Successfully Edited")
 
-    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipe.html", recipe=recipe, categories=categories)
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    if 'user' not in session or (
+         recipe and (
+            recipe['created_by'] != session['user'] and
+            session['user'] != 'admin')):
+        return render_template('404.html')
+
+
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Removed")
     return redirect(url_for("get_recipes"))
@@ -248,6 +273,11 @@ def recipe_3():
 @app.route("/recipe_4")
 def recipe_4():
     return render_template("recipe_4.html")
+
+
+@app.errorhandler(404)
+def handle_404(app_error):
+    return render_template('404.html'), 404
 
 
 if __name__ == "__main__":
