@@ -9,6 +9,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.push-footer-down {
+    min-height: calc(100vh - (312px + 131px));
+  } 
+  
 /** Flash messages **/
 .alert {
     padding: 20px;
@@ -543,6 +547,12 @@ input::-webkit-input-placeholder {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+    main {
+        min-height: 70vh;
+        height: 100%; 
+    }
+
     .home-banner-image img {
         height: 260px; 
         width: auto; 
