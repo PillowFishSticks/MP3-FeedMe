@@ -135,11 +135,12 @@ body {
 
 /** homepage **/
 
-.carousel-image {
-    max-height: 500px;
+.hero-image {
+    height: auto;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+    background-size: cover;
+  }
 
 .hpimage {
     width: 200px;
