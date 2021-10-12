@@ -330,11 +330,53 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ### Database Choice
 - According to project instructions, the document-based database MongoDB is used. 
 
-- The database 'theBookshelf' has two collections 'users' and 'your_picks'.
+- The database 'FeedMeDB' has three collections 'categories', 'recipes' and 'users'.
+
+**categories**
+
+| Key | Data Type | Comment |
+--- | --- | --- |
+_id | ObjectId | Unique identification number
+category_name | String | Name of category
+
+**recipes**
+
+| Key | Data Type | Comment |
+--- | --- | --- |
+_id | ObjectId | Unique identification number
+category_name | String | Name of category
+recipe_name | String | Name of recipe
+image_url | String | Recipe imge url
+time | String | Total time of recipe
+servings | String | Number of servings per recipe
+created_by | String | The. user who added the recipe
+ingredient_1 | String | Recipe ingredient
+ingredient_2 | String | Recipe ingredient
+ingredient_3 | String | Recipe ingredient
+ingredient_4 | String | Recipe ingredient
+ingredient_5 | String | Recipe ingredient
+ingredient_6 | String | Recipe ingredient
+ingredient_7 | String | Recipe ingredient
+ingredient_8 | String | Recipe ingredient
+ingredient_9 | String | Recipe ingredient
+direction_1 | String | Recipe direction
+direction_2 | String | Recipe direction
+direction_3 | String | Recipe direction
+direction_4 | String | Recipe direction
+direction_5 | String | Recipe direction
+direction_6 | String | Recipe direction
+direction_7 | String | Recipe direction
+direction_8 | String | Recipe direction
+direction_9 | String | Recipe direction
+notes | String | Additional recipe notes
 
 **users**
 
-![users](/static/images/db-users.png)
+| Key | Data Type | Comment |
+--- | --- | --- |
+_id | ObjectId | Unique identification number
+username | String | Name of user
+password | String | Hashed password
 
 - **users** contains information about the user, including a unique id, their username, and a hashed password. 
     
