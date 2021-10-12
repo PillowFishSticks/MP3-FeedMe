@@ -396,6 +396,9 @@ password | String | Hashed password
 - [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used to write the code.
 - [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
 - [Heroku](https://id.heroku.com/) - Container-based cloud platform for deployment and running of apps.
+- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating engine used.
+- [Favicon](https://favicon.io/) used to created the favicon used on the site.
+- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - Used to inspect page elements, test different CSS styles and debug site issues using the console.
 
 ### Databases
 - [MongoDB](https://www.postgresql.org/) a NoSQL database program, using JSON-like documents. 
@@ -405,6 +408,7 @@ password | String | Hashed password
 - [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
 - [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The House of Mouse webshop.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/) used to provide libraries and tools for the site such as Werkzeug.
 
 ### Languages
 - This project uses HTML, CSS, JavaScript and Python programming languages.
@@ -539,7 +543,6 @@ SECRET_KEY | `<your secret key>`
 ## Images
 - The hero image was taken from [Shutterstock](https://www.shutterstock.com/home). 
 - The recipe images were taken from [inspired taste](https://www.inspiredtaste.net/). 
-- The favicon icon was created using [favicon.io](https://favicon.io/). 
 
 ## Code
 
