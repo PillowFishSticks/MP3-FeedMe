@@ -492,24 +492,25 @@ SECRET_KEY | `<your secret key>`
 # Credits
 
 ## Content
-- Register, log in, log out, and add book form provided by [Bootsnipp](https://bootsnipp.com/).
-- Book synopses were taken from the [Goodreads](https://www.goodreads.com/) website. 
-- Book reviews were taken from the [Kirkus](https://www.kirkusreviews.com/) website.  
+- Recipe content was taken from [inspired taste](https://www.inspiredtaste.net/). 
 
 ## Images
-- Book cover images were taken from the [Goodreads](https://www.goodreads.com/) website. 
-- The founder image was taken from my personal collection of photos. 
-- The 'Why The Bookshelf?' image was created by myself with Powerpoint. 
+- The hero image was taken from [Shutterstock](https://www.shutterstock.com/home). 
+- The recipe images were taken from [inspired taste](https://www.inspiredtaste.net/). 
+- The favicon icon was created using [favicon.io](https://favicon.io/). 
 
 ## Code
 
 - The following websites helped me understand and create my website, by viewing examples and explanatons.
     - [W3schools](https://www.w3schools.com/)
     - [Bootsnipp](https://bootsnipp.com/)
-    - [Code with Mosh](https://codewithmosh.com/)
+    - [Code Institute](https://codeinstitute.net/)
 
 - The following website provided inspiration for my website.
-    - [Reese's Book Club](https://reesesbookclub.com/picks/)
+    - [Tasty](https://tasty.co/)
+    - [Pick Up Limes](https://www.pickuplimes.com/)
+
+- The 404 template was taken from [colorlib](https://colorlib.com/). 
 
 - The README file was taken from Anna Greave's 'The House of Mouse' project to use as a template.
     - [The House of Mouse by Anna Greaves ](https://github.com/AJGreaves/thehouseofmouse)
