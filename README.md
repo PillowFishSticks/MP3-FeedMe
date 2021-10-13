@@ -148,8 +148,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - [Mobile - Recipe page](/static/images/wireframes/mobile-recipe-page.png)
 - [Mobile - Add a recipe](/static/images/wireframes/mobile-add-recipe.png)
 
-
-
 # Features
  
 ## Existing Features
@@ -160,13 +158,13 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ![Navbar](/static/images/navbar.png)
 
-- The navbar features on every page. It is bright, with a mixture of two colours, creating an ombre effect. 
+- The navbar features on every page.
 
-- **In desktop view**  The navigation bar features the website name ‘The’ Bookshelf' on the far left, and website pages on the far right.
+- **In desktop view**  The navigation bar features the website name ‘FeedMe' on the far left, and website pages on the far right.
   
-- A user who is logged in will see the options of Who we are, Club picks, Your picks, Add book, and Log out. 
+- A user who is logged in will see the options of Home, FeedMe Recipes, Your Recipes, Add a recipe, and Log out. 
 
-- A user or visitor who is not logged in will see the options of Who we are, Log in, and Register. 
+- A user or visitor who is not logged in will see the options of Home, FeedMe Recipes, Log in, and Register. 
 
 - **In tablet and mobile view**  the name remains in the left side of the navigation bar, where users would expect it to be. The burger 
   icon to display the full navigation menu is on the far right. 
@@ -175,55 +173,45 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ![Footer](/static/images/footer.png)
 
-- The footer features on every page. It is deliberatly large and bright to attract visitors to sign up and become members and/or visit 
-  The Bookshelf's social media pages. 
+- The footer features on every page.
 
-- The footer includes a tag line 'Not a Bookshelf member? Sign up here' with a clickable link that takes the user to the register page. 
-  This is located on the left hand side of the footer.  
+- The footer has four sections - social media icons, contact us, recipes, and my account. 
 
-- The footer features links to The Bookshelf's social media accounts for Facebook, Instagram, and Twitter. These icons are located
-  on the right hand side of the footer. 
+- The social icons are links to FeedMee's social media accounts for Facebook, Instagram, Pinterest, and Twitter. They are located under the FeedMe heading. 
 
-### Who we are
+- Contact us, includes an email address and telephone number for FeedMe.  
 
-**About The Bookshelf**
+- Recipes, include all the different recipe categories. 
 
-![About The Bookshelf](/static/images/who-we-are.png)
+- My account, when logged in, shows 'Your Recipes' and 'Logout'. If not logged in, it shows 'Log in' and 'Register'. 
 
-- 'Who we are' includes a section about The Bookshelf. This includes a short blurb about The Bookshelf, the founder, and some of the
-  different features it includes. 
+### Home
 
-- The blurb is positioned on the left hand side. 
+**Top Recipes**
 
-- An image of the founder is located on the right hand side, shaped in an oval. 
+![Toop Recipes](/static/images/readme/top-recipes.png)
 
-- The blurb and image are encompassed in the same colour as the navbar. This creates a uniform background, blending the navbar with 
-  the blurb and image. 
+- The first section of the home page displays top recipes of the week. 
 
-**Why The Bookshelf?**
+- There are fur recipes, and if you click on them, they take you to the full recipe. 
 
-![Why The Bookshelf?](/static/images/why-the-bookshelf.png)
+**Home Banner**
 
-- This section is located in the middle of the 'Who we are' page. It includes six blocks with verious shapes and colours. Each block 
-  includes a unique shape with some information about The Bookshelf. 
+![Home Banner](/static/images/readme/home-banner.png)
 
-- This section is used to create a fun way of telling visitors more about The Bookshelf. Short sentences make it easy for visitors
-  to gain knowledge about the website, without having to read long paragraphs. 
+- This section includes a banner, which has been split in two. 
 
-**Donate Books**
+- The first half includes the phrase 'Feeling hungry? Checkout some of our recipes below', with the 'See All Recipes' button directly below. This button will take you to the FeeMe Recipes page. 
 
-![Donate Books](/static/images/donate-books.png)
+- The second half is a panorama image of pizza and pasta. 
 
-- This is the last section of the 'Who we are' page. 'Donate Books' is a section provided to visitors/users to give them an option of 
-  where to donate books they might not want anymore. It is divided into three sections, each section having its own column. 
+**Search by Category**
 
-- This includes a 'Who?' section, which tells the visitors/users who they could donate their books to, which includes a link to their 
-  website. 
+![Search by category](/static/images/readme/search-by-category.png)
 
-- The next section includes 'Why?', which tells the visitors/users why they should use Better World Books. 
+- This is the last section of the home page, with the sub-heading of 'Search by Category' and each of the categories below. 
 
-- The last section includes 'How?', which tells the visitors/users how they can go about donating books or how to support Better
-  World Books. 
+- The categories are displayed via a circular image, with it's category name below. 
 
 ### Log in
 
