@@ -339,6 +339,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 _id | ObjectId | Unique identification number
 category_name | String | Name of category
 
+- **categories** contains the various recipe categories on he FeedMe website, including a unique id, and category name. 
+
 **recipes**
 
 | Key | Data Type | Comment |
@@ -370,6 +372,9 @@ direction_8 | String | Recipe direction
 direction_9 | String | Recipe direction
 notes | String | Additional recipe notes
 
+- **recipes** contains information about the recipes added to the FeedMe website. 
+- This includes the recipe category, recipe name, a url for the recipe image, the total time it takes to make the recipe, number of servings per recipe, which user added the recipe, recipe ingredients, recipe direections, and addditional recipe. notes. 
+
 **users**
 
 | Key | Data Type | Comment |
@@ -379,14 +384,6 @@ username | String | Name of user
 password | String | Hashed password
 
 - **users** contains information about the user, including a unique id, their username, and a hashed password. 
-    
-**your_picks**
-
-![your_picks](/static/images/db-your-picks.png)
-
-- **your_picks** contains information about the books added to the 'Your picks' page. 
-- This includes the book's title, author, a link to the book cover, a link to the Amazon store, a synopsis, a review written by
-  the user, and who the added book was created by. 
 
 # Technologies Used
 
