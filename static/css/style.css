@@ -336,10 +336,6 @@ footer a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.bgcolor {
-    background-color: #ACE1AF;
-}
-
 /* -------------------------------- registration page */
 
 .form-group{
@@ -372,12 +368,6 @@ input::-webkit-input-placeholder {
  	margin: 0 auto;
  	max-width: 500px;
     padding: 40px 40px;
-}
-
-.login-button{
-	margin-top: 10px;
-    background-color:#ACE1AF;
-    border: none;
 }
 
 .makeaccount {

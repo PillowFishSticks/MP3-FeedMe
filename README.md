@@ -85,28 +85,23 @@ As a visitor to the FeedMe website I expect/want/need:
 3. The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good 
    on all of the devices.
 
-4. To learn more about The Bookshelf. 
+4. To learn more about FeedMe. 
 
-5. To be able to connect to The Bookshelf’s social media accounts. 
+5. To be able to connect to FeedMe's social media accounts. 
 
-6. To be able to click on books for further information about them. 
+6. To be able to click on recipes for further information about them. 
 
-7. A purchase link to be provided for each book, in the event that I would like to buy it. 
+7. To be able to add, edit, and delete recipes that I would like to share with others. 
 
-8. To be able to add, edit, and delete books that I would like to share with others. 
+8. To be able to search for recipes on the website using keywords.
 
-9. To be able to write reviews about the books I would like to share. 
+9. To be able to log in and out with ease. 
 
-10. To be able to log in and out with ease. 
+10. To be notified that I have logged in or out of my account. 
 
-11. To be notified that I have logged in or out of my account. 
-
-12. To be notified about changes that are made, inlcluding adding, editing, and deleting books. 
+11. To be notified about changes that are made, inlcluding adding, editing, and deleting recipes. 
 
 ## Design Choices
-
-The Bookshelf has a fun feel to it, with emphasis on displaying books in an easy to read manner. The following design choices were 
-made bearing this in mind:
 
 ### Fonts
 - The primary font 'Roboto' was chosen to be the main text of this site as it is easy to read, looks professional, and goes well 
@@ -114,28 +109,25 @@ made bearing this in mind:
 
 - The secondary font 'Rocknroll One' was chosen for the headings as it looks fun, and is easy to read. 
 
-### Icons
-- Very few icons were used, as to avoid overcrowding. 
-- The following icons were used in [Add book](https://the-bookshelf-milestone.herokuapp.com/add_book) page to emphasize each sections purpose:        
-   - The **book** icon was placed next to 'Title'. 
-   - The **user** icon was placed next to 'Author'.
-   - The **file image** icon was placed next to 'Image URL'. 
-   - The **credit card** icon was placed next to 'Amazon store URL'. 
-   - The **comment** icon was placed next to 'Synopsis'. 
-   - The **pencil** icon was placed next to 'Your review'. 
-- The **Facebook logo** icon, **Instagram logo** icon, **Twitter logo** icon, are included in the footer to lead visitors to The 
-  Bookshelf's social media accounts.
+### Colors
+- The colour scheme for this site was rendered on [Cooler](https://coolors.co/) and can be seen below:
 
-### Colours
-- Yellow: #ffff66
-- Orange: #ffcc99
-- Light blue: #87cefa
-- Light grey: #87cefa
+<div align="center">
+    <img src="/static/images/color-palette.png" alt="Colors used in the FeedMe website" aria-label="Colors used in the FeedMe website"/>
+</div>
 
-- The bright orange and yellow were chosen for the navbar and footer as they provide a fun, happy feel to the website. No other bright 
-  colours were used as the book covers provide an array of different colours. The light gray was chosen for the 'Donate Books' section
-  as it goes well with the bright colours, but provides a subtle colour to a page filled with bright colours. The light blue was chosen
-  to highlight monthly and user picks in the modals. 
+- Cadet Grey: #91A3B0
+- Columbia Blue: #BCD4DE
+- Pale Pink: #EFD3D7
+- Isabelline: #FCF7F2
+
+- The grey was used in the navbar and footer when you hover over the nav links. 
+
+- The blue was used as the background color for both the navbarr and footer.
+
+- The pale pink was used as the background color for succesful flash messages and for the banner on the home page. 
+
+- The cream color was used as the background color for the website. 
 
 ## Wireframes
 
