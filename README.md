@@ -12,13 +12,13 @@
 2. [Features](#features)
     - [Existing Features](#existing-features)
         - [Elements on every page](#elements-on-every-page)
-        - [Who we are](#who-we-are)
-	    - [Login](#log-in)
+        - [Home](#home)
+	    - [Login](#login)
 	    - [Register](#register)
-        - [Club picks](#club-picks)
-        - [Your picks](#your-picks)
-        - [Add book](#add-book)
-        - [Edit book](#edit-book)
+        - [FeedMe Recipes](#feedme-recipes)
+        - [Your Recipes](#your-recipes)
+        - [Add a Recipe](#add-a-recipe)
+        - [Edit Recipe](#edit-recipe)
    	    - [Log out](#log-out)
     - [Features for Future Releases](#features-for-future-releases)
 
@@ -189,7 +189,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 **Top Recipes**
 
-![Toop Recipes](/static/images/readme/top-recipes.png)
+![Top Recipes](/static/images/readme/top-recipes.png)
 
 - The first section of the home page displays top recipes of the week. 
 
@@ -215,11 +215,15 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Log in
 
+![Log in](/static/images/readme/login.png)
+
 - The login page features a standard login form asking for username and password.
 - Validation for this form is handled in the back end and a flash message displays 'Nice to see you again (username)'. 
 - Once logged in they are taken directly to their 'Your Recipes' page. 
 
 ### Register
+
+![Register](/static/images/readme/register.png)
 
 - A user who is not logged in can create a new account using the register page. The page on this form includes a username 
  (which must be unique), and a password. 
@@ -227,7 +231,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### FeedMe Recipes
 
-![FeedMe Recipes](/static/images/club-picks.png)
+![FeedMe Recipes](/static/images/feedme.png)
 
 - This page displays all the recipes that have been added to FeedMe by the various users.
 - At the top of the page, there is a search bar that uses can use to search for recipes. 
@@ -237,47 +241,39 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Your Recipes
 
-![Your Recipes](/static/images/your-picks.png)
+![Your Recipes](/static/images/your-recipes.png)
 
 - This page displays all the users recipes that they have added. 
 - The recipe is displayed by its image with the recipe name, and edit and delete buttons below.  
 - If you hover over the image it displays 'See Recipe' with the recipe image faded. 
-- If the image is clicked on, you can see thee recipe in full.  
+- If the image is clicked on, you can see the recipe in full.  
 
 **Recipe page**
 
-![Your picks](/static/images/your-picks-modal.png)
+![Recipe page](/static/images/readme/recipe-page.png)
 
-- The modal is divided into two parts. The first being further information about the book, and the second being a review of the 
-  book by the member. 
-- The first part contains the books image, when it was added, the title of the book, the author, a synopsis, and a link to Amazon
-  store if the member wishes to purchase the book. 
-- The second part is just a detailed review of the book by The Bookshelf. 
-- The modal also gives the option of editing or deleting the book. Clicking on the edit button will take the member to the edit book page,
-  which is detailed further down. 
-- If the user clicks on the delete button, they are met with another modal that pops up asking if they are sure they want to delete the 
-  book. If they click cancel, it takes them back to their profile page. If they click delete, the book is deleted from their profile.  
-- To close the modal, the member has the option of clicking the x icon on the top right hand side of the modal or the done button at 
-  the bottom of the modal. 
+- This is the page displayed when users view a recipe in full.  
+- It includes the recipe name on top, with the image, who the reecipe was uploaded by, the course type, total time of the recipe, and number of servings per recipe. 
+- Below this are the list of ingredients needed for the recipe, with the recipe. directions below the ingredients. 
+- At the bottom of the recipe card is a 'See All Recipes' button which takes the user to the FeedMe Recipes page. 
 
 ### Add a recipe
 
-![Add a recipe](/static/images/readme/add-book.png)
+![Add a recipe](/static/images/readme/add-recipe.png)
 
-- This page contains a form for members to add a book to their profile for other members to see. 
-- It includes a section for the book title, author, a link to the book cover, a link to the Amazon store for the book, a synopsis, 
-  and the members personal review of the book. 
-- Once the book has been added, a flash message displays 'Book successfully added'. 
+- This page contains a form for members to add a recipe to their profile for other members to see. 
+- It includes a section for the recipe name, recipe type, image url, time, servings, ingredients, directions, and notes. 
+- Once the recipe has been added, a flash message displays 'Recipe successfully added'. 
 
 ### Edit recipe
 
-![Edit recipe](/static/images/readme/edit-book.png)
+![Edit recipe](/static/images/readme/edit-recipe.png)
 
-- This page is accessed within the edit button of the book modals in Your picks. It contains a form for members to edit a book that they have 
+- This page is accessed within the edit button of the recipe in Your Recipes. It contains a form for members to edit a book that they have 
   previously added.  
-- It is identical to the Add book page. 
-- Once the book has been edited, a flash message displays 'Book successfully updated'.
-- Members only have access to edit their own books, and are unable to edit other members books. 
+- It is identical to the Add a Recipe page. 
+- Once the recipe has been edited, a flash message displays 'Recipe successfully updated'.
+- Members only have access to edit their own recipes, and are unable to edit other members recipes. 
 
 ### Log out
 
