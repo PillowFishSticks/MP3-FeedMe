@@ -137,6 +137,7 @@ def logout():
 
     if 'user' not in session:
         return render_template('404.html')
+        
     else:
         session.pop("user")
         flash("You have been logged out")
