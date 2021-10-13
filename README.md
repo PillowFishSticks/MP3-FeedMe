@@ -241,7 +241,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Your Recipes
 
-![Your Recipes](/static/images/your-recipes.png)
+![Your Recipes](/static/images/readme/your-recipes.png)
 
 - This page displays all the users recipes that they have added. 
 - The recipe is displayed by its image with the recipe name, and edit and delete buttons below.  
@@ -266,8 +266,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - Once the recipe has been added, a flash message displays 'Recipe successfully added'. 
 
 ### Edit recipe
-
-![Edit recipe](/static/images/readme/edit-recipe.png)
 
 - This page is accessed within the edit button of the recipe in Your Recipes. It contains a form for members to edit a book that they have 
   previously added.  
