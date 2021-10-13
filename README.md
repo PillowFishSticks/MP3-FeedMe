@@ -156,7 +156,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 #### Navbar
 
-![Navbar](/static/images/navbar.png)
+![Navbar](/static/images/readme/navbar.png)
 
 - The navbar features on every page.
 
@@ -171,7 +171,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 #### Footer
 
-![Footer](/static/images/footer.png)
+![Footer](/static/images/readme/footer.png)
 
 - The footer features on every page.
 
@@ -216,8 +216,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ### Log in
 
 - The login page features a standard login form asking for username and password.
-- Validation for this form is handled in the back end and a flash message displays 'Welcome (username)'. 
-- Once logged in they are taken directly to their profile page. 
+- Validation for this form is handled in the back end and a flash message displays 'Nice to see you again (username)'. 
+- Once logged in they are taken directly to their 'Your Recipes' page. 
 
 ### Register
 
@@ -225,36 +225,26 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
  (which must be unique), and a password. 
 - If a user who already has an account tries to register, a flash message display 'Username already exists'. 
 
-### Club picks
+### FeedMe Recipes
 
-![Clubs picks](/static/images/club-picks.png)
+![FeedMe Recipes](/static/images/club-picks.png)
 
-- This page displays all The Bookshelf's books added each month. There are four books in each row. 
-- The book is displayed by its cover image with a button under each book, displaying the month and year it was added. 
-- If the button is clicked on, it brings up a modal with futher information about the book. 
+- This page displays all the recipes that have been added to FeedMe by the various users.
+- At the top of the page, there is a search bar that uses can use to search for recipes. 
+- The recipe is displayed by its image with the recipe and the user who added it below.  
+- If you hover over the image it displays 'See Recipe' with the recipe image faded. 
+- If the image is clicked on, you can see thee recipe in full.  
 
-**Modals**
+### Your Recipes
 
-![Clubs picks modal](/static/images/club-picks-modal.png)
+![Your Recipes](/static/images/your-picks.png)
 
-- The modal is divided into two parts. The first being further information about the book, and the second being a review of the 
-  book by The Bookshelf. 
-- The first part contains the books image, when it was added, the title of the book, the author, a synopsis, and a link to Amazon
-  store if the member wishes to purchase the book. 
-- The second part is just a detailed review of the book by The Bookshelf. 
-- To close the modal, the member has the option of clicking the x icon on the top right hand side of the modal or the done button at 
-  the bottom of the modal. 
+- This page displays all the users recipes that they have added. 
+- The recipe is displayed by its image with the recipe name, and edit and delete buttons below.  
+- If you hover over the image it displays 'See Recipe' with the recipe image faded. 
+- If the image is clicked on, you can see thee recipe in full.  
 
-### Your picks
-
-![Your picks](/static/images/your-picks.png)
-
-- The top of the page displays the members name, username's picks, indicating that this is their profile. 
-- This page displays all if The Bookshelf's members books added. There are four books in each row. 
-- The book is displayed by its cover image with a button under each book, displaying the member's name who added it. 
-- If the button is clicked on, it brings up a modal with futher information about the book. 
-
-**Modals**
+**Recipe page**
 
 ![Your picks](/static/images/your-picks-modal.png)
 
@@ -270,18 +260,18 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - To close the modal, the member has the option of clicking the x icon on the top right hand side of the modal or the done button at 
   the bottom of the modal. 
 
-### Add book
+### Add a recipe
 
-![Add book](/static/images/add-book.png)
+![Add a recipe](/static/images/readme/add-book.png)
 
 - This page contains a form for members to add a book to their profile for other members to see. 
 - It includes a section for the book title, author, a link to the book cover, a link to the Amazon store for the book, a synopsis, 
   and the members personal review of the book. 
 - Once the book has been added, a flash message displays 'Book successfully added'. 
 
-### Edit book
+### Edit recipe
 
-![Edit book](/static/images/edit-book.png)
+![Edit recipe](/static/images/readme/edit-book.png)
 
 - This page is accessed within the edit button of the book modals in Your picks. It contains a form for members to edit a book that they have 
   previously added.  
@@ -291,14 +281,14 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Log out
 
-![Log out](/static/images/logout.png)
+![Log out](/static/images/readme/logout.png)
 
 - Any user who clicks on 'Log out' from the navigation bar is automatically logged out and their session data cleared. They are informed
   that they have been logged out with a flash message displaying 'You have been logged out'. 
 
 ## Features for Future Releases
 
-1. **Being able to upvote books**
+1. **Being able to comment on recipes**
     - Having a star rating available in a book's modal for users to vote for. 
     - The star rating is displayed in each book's modal, giving the user an idea of how other members felt about the book. 
 
@@ -522,6 +512,7 @@ SECRET_KEY | `<your secret key>`
 ## Images
 - The hero image was taken from [Shutterstock](https://www.shutterstock.com/home). 
 - The recipe images were taken from [inspired taste](https://www.inspiredtaste.net/). 
+- The mockup image in the README.md file was created using [Techsini](https://techsini.com/).
 
 ## Code
 
