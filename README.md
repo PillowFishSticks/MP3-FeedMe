@@ -1,5 +1,4 @@
-[FeedMe](https://flask-feedme-project.herokuapp.com/) was designed, built, and deployed, by myself, Mark Percy as the 
-third project for the Code Institute Full Stack Web Development diploma. The purpose of FeedMe is to be a recipe. website that allows members to view FeedMe recipes, as well as provide and share recipes of the users own liking.
+[FeedMe](https://flask-feedme-project.herokuapp.com/) was designed, built, and deployed, by myself, Mark Percy as the third project for the Code Institute Full Stack Web Development diploma. The purpose of FeedMe is to be a recipe website that allows members to view FeedMe recipes, as well as add and share recipes of the users own liking.
 
 ## Table of Contents
 1. [UX](#ux)
@@ -53,32 +52,31 @@ third project for the Code Institute Full Stack Web Development diploma. The pur
 
 ### Visitor Goals
 
-The target audience for The Bookshelf are:
-- People who enjoy reading. 
-- People who are interested in joining an online book club.
-- People who want to share good books they read. 
-- People looking for book recommendations. 
-- People looking for detailed book reviews for book recommendations. 
+The target audience for FeedMe are:
+- People who enjoy cooking. 
+- People who are interested in joining an online recipe website.
+- People who want to share good recipes they make. 
+- People looking for recipe recommendations. 
+- People looking for a website to store their recipes. 
 
 User goals are:
-- To join an online book club. 
-- Find new reading material via the book club. 
-- Share books that I have enjoyed with other book club members. 
-- Share reviews about the books I have read. 
-- To be able to add, edit, and delete books on the website. 
-- Be able to navigate the website easily and view detailed information on books. 
+- To join an online recipe website. 
+- Find new recipes via the FeedMe website. 
+- Share recipes that I have enjoyed with other FeedMe members. 
+- To be able to add, edit, and delete my recipes on the website. 
+- Be able to navigate the website easily and view the recipe in detail. 
 
-### The Bookshelf’s Goals
+### FeedMe's Goals
 
-The goals of The Bookshelf are:
-- Provide a platform where users can find book recommendations via the book club and its members. 
-- For book club members to be able to add, edit, and delete books that they would like to share. 
-- Provide a platform for book club members to share reviews about the books they would like to add. 
-- For book club members to be able to view books in detail, including a purchase link. 
+The goals of FeedMe are:
+- Provide a platform where users can find recipe recommendations via the FeedMe website and its members. 
+- For FeedMe members to be able to add, edit, and delete recipes that they would like to share. 
+- Provide a platform for FeedMe members to share recipes they would like to add. 
+- For FeedMe members to be able to view recipes in detail.  
 
 ## User Stories
 
-As a visitor to The Bookshelf website I expect/want/need:
+As a visitor to the FeedMe website I expect/want/need:
 
 1. To be able to easily find the information I am looking for, the layout needs to make sense so that I am not put off. 
 
@@ -229,15 +227,11 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Log in
 
-![Log in](/static/images/login.png)
-
 - The login page features a standard login form asking for username and password.
 - Validation for this form is handled in the back end and a flash message displays 'Welcome (username)'. 
 - Once logged in they are taken directly to their profile page. 
 
 ### Register
-
-![Register](/static/images/register.png)
 
 - A user who is not logged in can create a new account using the register page. The page on this form includes a username 
  (which must be unique), and a password. 
