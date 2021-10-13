@@ -104,10 +104,9 @@ As a visitor to the FeedMe website I expect/want/need:
 ## Design Choices
 
 ### Fonts
-- The primary font 'Roboto' was chosen to be the main text of this site as it is easy to read, looks professional, and goes well 
-  with the secondary font. 
+- The primary font 'Open Sans' was chosen to be the main text of this site as it is easy to read, looks professional, and goes well with the secondary font. "Open Sans Condensed' is used for headings and sub headings. 
 
-- The secondary font 'Rocknroll One' was chosen for the headings as it looks fun, and is easy to read. 
+- The secondary font 'Playfair Display' was chosen for the websites logo font, hoome banner and recipe headings as it looks fun, and is easy to read. 
 
 ### Colors
 - The colour scheme for this site was rendered on [Cooler](https://coolors.co/) and can be seen below:
@@ -133,14 +132,23 @@ As a visitor to the FeedMe website I expect/want/need:
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the design and planning process for this project. 
 
-- [Who we are](/static/images/wireframes/wireframe-who-we-are.png)
-- [Log in](/static/images/wireframes/wireframe-log-in.png)
-- [Register](/static/images/wireframes/wireframe-register.png)
-- [Club picks](/static/images/wireframes/wireframe-club-picks.png)
-- [Club picks modal](/static/images/wireframes/wireframe-club-picks-modal.png)
-- [Your picks](/static/images/wireframes/wireframe-your-picks.png)
-- [Your picks modal](/static/images/wireframes/wireframe-your-picks-modal.png)
-- [Add book](/static/images/wireframes/wireframe-add-book.png)
+- [Desktop - Home page](/static/images/wireframes/desktop-home-page.png)
+- [Desktop - FeedMe recipes](/static/images/wireframes/desktop-feedme-recipes.png)
+- [Desktop - Your recipes](/static/images/wireframes/desktop-your-recipes.png)
+- [Desktop - Recipe page](/static/images/wireframes/desktop-recipe-page.png)
+- [Desktop - Add a recipe](/static/images/wireframes/desktop-add-recipe.png)
+- [Tablet - Home page](/static/images/wireframes/tablet-home-page.png)
+- [Tablet - FeedMe recipes](/static/images/wireframes/tablet-feedme-recipes.png)
+- [Tablet - Your recipes](/static/images/wireframes/tablet-your-recipes.png)
+- [Tablet - Recipe page](/static/images/wireframes/tablet-recipe-page.png)
+- [Tablet - Add a recipe](/static/images/wireframes/tablet-add-recipe.png)
+- [Mobile - Home page](/static/images/wireframes/mobile-home-page.png)
+- [Mobile - FeedMe recipes](/static/images/wireframes/mobile-feedme-recipes.png)
+- [Mobile - Your recipes](/static/images/wireframes/mobile-your-recipes.png)
+- [Mobile - Recipe page](/static/images/wireframes/mobile-recipe-page.png)
+- [Mobile - Add a recipe](/static/images/wireframes/mobile-add-recipe.png)
+
+
 
 # Features
  
@@ -533,6 +541,7 @@ SECRET_KEY | `<your secret key>`
     - [W3schools](https://www.w3schools.com/)
     - [Bootsnipp](https://bootsnipp.com/)
     - [Code Institute](https://codeinstitute.net/)
+    - [Stack Overflow](https://stackoverflow.com/)
 
 - The following website provided inspiration for my website.
     - [Tasty](https://tasty.co/)
