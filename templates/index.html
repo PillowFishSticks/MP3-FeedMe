@@ -3,8 +3,8 @@
 
 <section class="text-center container-fluid">
   <div id="hero-img">
-    <img class="hero-image d-none d-sm-block" src="static/images/hero-image.jpg">
-    <img class="hero-image d-block d-sm-none" src="static/images/hero-image-2.jpg">
+    <img class="hero-image d-none d-sm-block" src="static/images/hero-image.jpg" alt="Hero image">
+    <img class="hero-image d-block d-sm-none" src="static/images/hero-image-2.jpg" alt="Mobile hero image">
     <div class="text-block">
       <h4>Welcome to FeedMe</h4>
       <p>"No one is born a great cook, one learns by doing" - Julia Child</p>
@@ -19,7 +19,7 @@
       </div>
       <div class="col-6 col-lg-3 card h-100 border-0">
             <a class="recipe-card" href="{{ url_for('recipe_1' )}}">
-                <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_1.jpg">
+                <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_1.jpg" alt="Homemade pie">
                 <div class="hide centered text-uppercase p-3">See Recipe</div>
             </a>
             <div class="card-body recipename text-center text-uppercase">
@@ -28,7 +28,7 @@
       </div>
       <div class="col-6 col-lg-3 card h-100 border-0">
         <a class="recipe-card" href="{{ url_for('recipe_2' )}}">
-            <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_2.jpg">
+            <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_2.jpg" alt="Pizza">
             <div class="hide centered text-uppercase p-3">See Recipe</div>
         </a>
         <div class="card-body recipename text-center text-uppercase">
@@ -37,7 +37,7 @@
       </div>
       <div class="col-6 col-lg-3 card h-100 border-0">
         <a class="recipe-card" href="{{ url_for('recipe_3' )}}">
-            <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_3.jpg">
+            <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_3.jpg" alt="Sandwich">
             <div class="hide centered text-uppercase p-3">See Recipe</div>
         </a>
         <div class="card-body recipename text-center text-uppercase">
@@ -46,7 +46,7 @@
       </div>
       <div class="col-6 col-lg-3 card h-100 border-0">
         <a class="recipe-card" href="{{ url_for('recipe_4' )}}">
-            <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_4.jpg">
+            <img class="card-img-top img-fluid recipe-image mt-3" src="static/images/recipe_4.jpg" alt="Beefy pasta">
             <div class="hide centered text-uppercase p-3">See Recipe</div>
         </a>
         <div class="card-body recipename text-center text-uppercase">
@@ -71,7 +71,7 @@
   </div>
   <div class="col-12 col-lg-6 d-none d-lg-block home-banner-image mt-5">
     <a href="{{ url_for('site_recipes' )}}">
-      <img src="static/images/banner-image-1.jpg"  alt="...">
+      <img src="static/images/banner-image-1.jpg"  alt="Home banner">
     </a>
   </div>
 </div>
@@ -82,37 +82,37 @@
     <h2 class="text-styleheading mb-5">Search by category</h2>
       <div class="col-6 col-md-4 col-lg-2 text-center">
         <a href="{{ url_for('category_appetizer')}}">
-          <img src="static/images/appetizer.jpg" class="imagebuttons" alt="...">
+          <img src="static/images/appetizer.jpg" class="imagebuttons" alt="Appetizers">
           <p class="mt-2 mb-4">Appetizer</p>
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-2 text-center">
         <a href="{{ url_for('category_meal' )}}">
-          <img src="static/images/meal.jpg" class="imagebuttons" alt="...">
+          <img src="static/images/meal.jpg" class="imagebuttons" alt="Meals">
           <p class="mt-2 mb-4">Meal</p>
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-2 text-center">
         <a href="{{ url_for('category_side' )}}">
-          <img src="static/images/side.jpg" class="imagebuttons" alt="...">
+          <img src="static/images/side.jpg" class="imagebuttons" alt="Sides">
           <p class="mt-2 mb-4">Side</p>
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-2 text-center">
         <a href="{{ url_for('category_breakfast' )}}">
-          <img src="static/images/breakfast.jpg" class="imagebuttons" alt="...">
+          <img src="static/images/breakfast.jpg" class="imagebuttons" alt="Breakfasts">
           <p class="mt-2 mb-4">Breakfast</p>
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-2 text-center">
         <a href="{{ url_for('category_dessert' )}}">
-          <img src="static/images/dessert.jpg" class="imagebuttons" alt="...">
+          <img src="static/images/dessert.jpg" class="imagebuttons" alt="Desserts">
           <p class="mt-2 mb-4">Dessert</p>
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-2 text-center">
         <a href="{{ url_for('category_drinks' )}}">
-          <img src="static/images/drinks.jpg" class="imagebuttons" alt="...">
+          <img src="static/images/drinks.jpg" class="imagebuttons" alt="Drinks">
           <p class="mt-2 mb-4">Drinks</p>
         </a>
       </div>

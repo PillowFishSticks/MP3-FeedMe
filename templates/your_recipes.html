@@ -9,7 +9,7 @@
                 <div class="card h-100 border-0">
                     {% if session.user|lower == recipe.created_by|lower or session.user == 'admin'  %}
                         <a class="recipe-card" href="{{ url_for('view_recipe', recipe_id=recipe._id)}}">
-                            <img class="card-img-top img-fluid recipeimage mt-3" src="{{ recipe.image_url }}">
+                            <img class="card-img-top img-fluid recipeimage mt-3" src="{{ recipe.image_url }}" alt="Recipe image">
                             <div class="hide centered text-uppercase p-3">See Recipe</div>
                         </a>
                         <div class="card-body recipename text-center text-uppercase">
@@ -52,22 +52,22 @@
         {% endfor %}
     </div>
     {% else %}
-
-<div class="container text-center">
-    <div class="row mb-5">
-        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 home-banner mt-5">
-            <div>
-                <h1>Welcome</h1>
-                <p>Start adding your own recipes</p>
+    <div class="container text-center">
+        <div class="row mb-5">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 home-banner mt-5">
+                <div>
+                    <h1>Welcome</h1>
+                    <p>Start adding your own recipes</p>
+                </div>
+                <div>
+                    <a href="{{ url_for('add_recipe' )}}" class="btn btn-black mb-5">
+                        Add a recipe
+                    </a>
+                </div> 
             </div>
-        <div>
-            <a href="{{ url_for('add_recipe' )}}" class="btn btn-black mb-5">
-                Add a recipe
-            </a>
-        </div> 
+        </div>
     </div>
-    {% endif %}
-  
+    {% endif %} 
 </section>
 
 {% endblock %}

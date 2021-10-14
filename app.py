@@ -17,6 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
 @app.route("/home")
 def home():
@@ -44,33 +45,33 @@ def category_appetizer():
 
 @app.route("/category_meal")
 def category_meal():
-    recipes = list(mongo.db.recipes.find({ "category_name": "Meal" }))
+    recipes = list(mongo.db.recipes.find({"category_name": "Meal"}))
     return render_template("site_recipes.html", recipes=recipes)
 
 
 @app.route("/category_drinks")
 def category_drinks():
-    recipes = list(mongo.db.recipes.find({ "category_name": "Drinks" }))
+    recipes = list(mongo.db.recipes.find({"category_name": "Drinks"}))
     return render_template("site_recipes.html", recipes=recipes)
 
       
 @app.route("/category_side")
 def category_side():
-    recipes = list(mongo.db.recipes.find({ "category_name": "Side" }))
+    recipes = list(mongo.db.recipes.find({"category_name": "Side"}))
     return render_template("site_recipes.html", recipes=recipes) 
 
 
 @app.route("/category_breakfast")
 def category_breakfast():
-    recipes = list(mongo.db.recipes.find({ "category_name": "Breakfast" }))
+    recipes = list(mongo.db.recipes.find({"category_name": "Breakfast"}))
     return render_template("site_recipes.html", recipes=recipes)
 
 
 @app.route("/category_dessert")
 def category_dessert():
-    recipes = list(mongo.db.recipes.find({ "category_name": "Dessert" }))
+    recipes = list(mongo.db.recipes.find({"category_name": "Dessert"}))
     return render_template("site_recipes.html", recipes=recipes)
-   
+  
 
 @app.route("/site_recipes")
 def site_recipes():
@@ -83,7 +84,6 @@ def register():
 
     if 'user' in session:
         return render_template('404.html')
-
 
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
@@ -117,10 +117,12 @@ def login():
 
         if existing_user:
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
-                    flash("Nice to see you again {}".format(request.form.get("username")))
-                    return redirect(url_for("get_recipes", username=session["user"]))
+                    flash("Nice to see you again {}".format(
+                        request.form.get("username")))
+                    return redirect(url_for(
+                        "get_recipes", username=session["user"]))
             else:
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
@@ -137,7 +139,7 @@ def logout():
 
     if 'user' not in session:
         return render_template('404.html')
-        
+       
     else:
         session.pop("user")
         flash("You have been logged out")
@@ -149,7 +151,6 @@ def add_recipe():
 
     if 'user' not in session:
         return render_template('404.html')
-
 
     if request.method == "POST":
         recipe = {
@@ -233,7 +234,9 @@ def edit_recipe(recipe_id):
         flash("Recipe Successfully Edited")
 
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+    return render_template(
+        "edit_recipe.html", recipe=recipe, categories=categories)
+
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
@@ -244,7 +247,6 @@ def delete_recipe(recipe_id):
             recipe['created_by'] != session['user'] and
             session['user'] != 'admin')):
         return render_template('404.html')
-
 
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Removed")
@@ -267,6 +269,7 @@ def view_recipe(recipe_id):
             session['user'] != 'admin')):
         return render_template('404.html')
     return render_template("recipe.html", recipe=recipe)
+
 
 @app.route("/feedme_recipe/<recipe_id>", methods=["GET"])
 def feedme_recipe(recipe_id):
@@ -301,5 +304,5 @@ def handle_404(app_error):
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
-        port=int(os.environ.get("PORT")),
-        debug=True)
+            port=int(os.environ.get("PORT")),
+            debug=True)

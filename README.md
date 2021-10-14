@@ -90,21 +90,19 @@ As a visitor to the FeedMe website I expect/want/need:
 3. The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good 
    on all of the devices.
 
-4. To learn more about FeedMe. 
+4. To be able to connect to FeedMe's social media accounts. 
 
-5. To be able to connect to FeedMe's social media accounts. 
+5. To be able to click on recipes for further information about them. 
 
-6. To be able to click on recipes for further information about them. 
+6. To be able to add, edit, and delete recipes that I would like to share with others. 
 
-7. To be able to add, edit, and delete recipes that I would like to share with others. 
+7. To be able to search for recipes on the website using keywords.
 
-8. To be able to search for recipes on the website using keywords.
+8. To be able to log in and out with ease. 
 
-9. To be able to log in and out with ease. 
+9. To be notified that I have logged in or out of my account. 
 
-10. To be notified that I have logged in or out of my account. 
-
-11. To be notified about changes that are made, inlcluding adding, editing, and deleting recipes. 
+10. To be notified about changes that are made, inlcluding adding, editing, and deleting recipes. 
 
 ## Design Choices
 

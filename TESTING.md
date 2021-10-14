@@ -29,29 +29,34 @@ CSS - Validated using [Jigsaw](https://jigsaw.w3.org/css-validator/) with no err
 style.css | PASS
 
 HTML - Validated using [W3C](https://validator.w3.org/#validate_by_input) 
-- With an error found in reviews.html - a duplicate id, Reviews, was found in reviews.html. If one id is removed or changed, the content in that div is not displayed. I decided to leave tackling this bug for a future release. 
 
 | Page | Test | 
 --- | --- | 
+base.html |PASS
 index.html |PASS
-items.html | PASS
-item_detail.html | PASS
-add_item.html | PASS
-edit_item.html | PASS
-profile.html | PASS
-reviews.html | PASS
-checkout.html | PASS
-checkout_success.html | PASS
-cart.html | PASS
+recipe_1.html |PASS
+recipe_2.html |PASS
+recipe_3.html |PASS
+recipe_4.html |PASS
+site_recipes.html | PASS
+your_recipes.html | PASS
+feedme_recipe.html | PASS
+recipe.html | PASS
+add_recipe.html | PASS
+edit_recipe.html | PASS
+register.html | PASS
+login.html | PASS
+404.html | PASS
 
 Javascript - Validated using [JSHint Validator](https://jshint.com/) with no errors found.
 
 Python - Validated using [PEP 8](http://pep8online.com/) with no errors found.
+
 ## User Stories Testing
 
 The following section goes through the user stories identified in the [Ux section of README.md](README.md#UX) to check that the site meets those needs.
 
-**As a visitor to The House of Mouse website I expect/want/need:**
+**As a visitor to the FeedMe website I expect/want/need:**
 
 1. **To easily find what I am looking for, I want the layout of the site to make sense so I am not confused or put off using it.**
     - Arrangement of site elements such as navbar, footer, icons, carousels, search, and forms conform to expected placement. Tag buttons are provided on pages where the user has moved deeper into the hierarchical data structure of the website to make it easier for the user to tell where they are.
@@ -295,4 +300,4 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
 
 ## Further testing: 
 1. Asked friends and family to look at the site on their devices and report any issues they found.
-2. Petpals viewed on all devices and orientations available in Chrome DevTools. 
+2. FeedMe viewed on all devices and orientations available in Chrome DevTools. 

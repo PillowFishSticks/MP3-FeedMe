@@ -23,7 +23,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 d-inline p-2">
                 <div class="card h-100 border-0">
                     <a class="recipe-card" href="{{ url_for('feedme_recipe', recipe_id=recipe._id)}}">
-                        <img class="card-img-top img-fluid recipeimage mt-3" src="{{ recipe.image_url }}">
+                        <img class="card-img-top img-fluid recipeimage mt-3" src="{{ recipe.image_url }}" alt="Recipe image">
                         <div class="hide centered text-uppercase p-3">See Recipe</div>
                     </a>
                     <div class="card-body recipename text-center text-uppercase">
