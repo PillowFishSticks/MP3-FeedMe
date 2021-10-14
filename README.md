@@ -288,13 +288,12 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ## Features for Future Releases
 
 1. **Being able to comment on recipes**
-    - Having a star rating available in a book's modal for users to vote for. 
-    - The star rating is displayed in each book's modal, giving the user an idea of how other members felt about the book. 
+    - Having a star rating available on the recipe page for users to vote for. 
+    - The star rating is displayed on the FeedMe Recipes page and full recipe page, under the recipe name, giving the user an idea of how other members felt about the recipe. 
 
-2. **Users being able to add reviews to The Bookshelf's picks and members books**
-    - Having an option for users to write a reviews on books added by The Bookshelf and its members. 
-    - The option would be available on each of the book's modals next to the done, edit, and delete buttons. 
-    - The reviews would appear under the orginal review added. 
+2.  **Being able to comment on recipes**
+    - Having an option for users to write a comments on recipes added by FeedMe and its members.
+    - The comments would appear below the full recipe.  
 
 # Information Arcitecture
 
