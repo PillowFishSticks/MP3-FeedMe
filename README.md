@@ -22,7 +22,7 @@
 	    - [Register](#register)
         - [FeedMe Recipes](#feedme-recipes)
         - [Your Recipes](#your-recipes)
-        - [Add a Recipe](#add-a-recipe)
+        - [Add Recipes](#add-recipes)
         - [Edit Recipe](#edit-recipe)
    	    - [Log out](#log-out)
     - [Features for Future Releases](#features-for-future-releases)
@@ -260,9 +260,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - Below this are the list of ingredients needed for the recipe, with the recipe. directions below the ingredients. 
 - At the bottom of the recipe card is a 'See All Recipes' button which takes the user to the FeedMe Recipes page. 
 
-### Add a recipe
+### Add Recipes
 
-![Add a recipe](/static/images/readme/add-recipe.png)
+![Add Recipes](/static/images/readme/add-recipe.png)
 
 - This page contains a form for members to add a recipe to their profile for other members to see. 
 - It includes a section for the recipe name, recipe type, image url, time, servings, ingredients, directions, and notes. 

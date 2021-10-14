@@ -58,58 +58,48 @@ The following section goes through the user stories identified in the [Ux sectio
 
 **As a visitor to the FeedMe website I expect/want/need:**
 
-1. **To easily find what I am looking for, I want the layout of the site to make sense so I am not confused or put off using it.**
-    - Arrangement of site elements such as navbar, footer, icons, carousels, search, and forms conform to expected placement. Tag buttons are provided on pages where the user has moved deeper into the hierarchical data structure of the website to make it easier for the user to tell where they are.
-    - The key pages of the site can be accessed from both the navigation bar and the footer, which can be found on all pages of the site.
+1. **To be able to easily find the information I am looking for, the layout needs to make sense so that I am not put off.**
+    - Arrangement of site elements such as navbar, footer, icons, and forms conform to expected placement.
 
-1. **The ability to search through small amounts of information to find what I need, and then be able to easily click to get more detailed information when I need it.**
-    - Some points for this already covered in previous user story details.
-    - Once the user moves to an item detail page the user can access more detailed information on that item.
-    - Item pages can be sorted by name A-Z or Z-A, category A-Z or Z-A, price high to low or price low to high.
-    - The search bar allows the user to run a text search through all item titles, descriptions and tags to find what they are looking for.
+1. **The site to be laid out in a way that is easy to navigate, so that I can find what I need.**
+    - The navbar offers easy navigation for the user and is clearly labeled.
+    - Icons and images are used to help the user digest information quickly.
 
-1. **The site to be easily navigable from any device, desktop, tablet or phone. For the content to look good and be useable on all of these devices.**
+1. **The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good on all of the devices.**
     - The use of the site has been extensively tested on desktop, tablet and phone size screens.
     - The user can load the website on mobile, tablet, and desktop devices.
     - All elements have been given a responsive design, so nothing to too squashed, squeezed or hard to read on any screen size a user might be using.
-    - The navbar has a collapsed menu for tablet and mobile viewing, this makes navigation easier for smaller devices.  
+    - The navbar has a collapsed menu for tablet and mobile viewing, this makes navigation easier for smaller devices.
 
-1. **To be able to read reviews of items bought from previous customers, to build trust in my purchase.**
-    - All previous item reviews can be seen at the bottom of each product page.
+1. **To be able to connect to FeedMe's social media accounts.**
+    - The footer contains links to FeedMe's different social media accounts, including Facebook, Instagram, Pinterest, and Twitter. 
 
-1. **Leave a review on a product so that I can inform other shoppers about whether it was a good purchase or not.**
-    - Users can leave a review using the "Write a review" tab at the bottom of each item page
-    - This feature is only available to logged in users, and if a user is not logged in they will be prompted to either log in or sign up.
-    - Upon submission of the review form, the item page will reload and the user will be able to see their review in the reviews tab.
-    - Users are also able to edit and delete their reviews once written. 
+1. **To be able to click on recipes for further information about them.**
+    - The recipe image can be clicked on for further information on each of the recipes.
+    - The recipe contains the recipe name, recipe image, author, course type, time, servings, ingredients, directions, and notes. 
 
-1. **For all information and images to be laid out in a clear and easy to understand way, on whatever size screen I am viewing the website on.**
-    - Attention has been paid to ensuring product images are clean,professional and responsive, never squashed or squeezed and that the users operation of the site pages work on all devices. Text is never too large or too small, buttons are always large enough to click with a finger easily on touch screen devices.
+1. **To be able to add, edit, and delete recipes that I would like to share with others.**
+    - The Add Recipes page allows users to add recipes that they would like to share with others, by filling in the form and submitting the information.
+    - Members are able to edit their own recipe additions by clicking the edit button on the Your Recipe page or the full recipe page. The edit recipe page allows members to cancel or save their edited recipe information.
+    - Members are able to delete their own recipe additions by clicking the delete button on the Your Recipe page or the full recipe page. This brings up a modal askng whether they are sure they want to delete this recipe, giving them the option to cancel or delete.
 
-1. **To be able to easily find out all the information I need to make an informed purchase. I expect information about the description, ingredients, and instructions where necessary.** 
-    - Information about the items description, ingredients, and instructions are available on the items page, in a tab, below the image and add to cart section. The Tab displays information relevent to that item. 
+1. **To be able to search for recipes on the website using keywords.**
+    - Users are able to search for recipes on the top of FeedMe Recipes page, within the search bar. 
+    - If no recipes are found, the page will displaly 'No results found'. 
 
-1. **A text search function so that I can quickly narrow down my search when looking for something specific.**
-    - A text search is available in the navbar. It searches through the items titles, description and tags to find the results for the user.
+1. **To be able to log in and out with ease.**
+    - Both log in and log out pages are displayed in the navbar, making it easy to do both functions.
+    - The log in form is able to store your username and password if desired, making it easier and faster to log in.
 
-1. **To be able to see a summary of my order during the checkout process.**
-    - Users can see full detail of all items in their cart, as well as a cart total by clicking on the cart icon in the navigation bar which will redirect them to the cart page
+1. **To be notified that I have logged in or out of my account.** 
+    - When a member logs into their account, they are taken to their profile page, where a flash message displays 'Nice to see you again (Username)'.
+    - When logged out, a flash message displays 'You have been logged out', and bringing them back to the log in page.
 
-1. **That once I am logged in I can access my delivery details and update them if I need to.** 
-    - The profile page gives the logged in user the ability to update their default delivery information.
-
-1. **To be able to find information on my past orders.**
-    - The profile page provides a list of all the users previous purchases, with full details of their order, date it was placed, products, quantities and total amount paid.
-
-1. **To be able to connect to the businesses social media channels, to keep up to date with new items and deals on the site.**
-    - Facebook, Instagram, Twitters, and Pinterest icons can be found in the footer on every page. 
-
-1. **To be able to easily get in contact with the shop owner via a telephone number or email.**
-    - The PetPals contact number and email address can be found in the footer on every page. 
-
-1. **Feedback from the website I am using when I interact with it, I expect pop ups and modals to inform me when my forms have been completed and sent correctly. Or to let me know when an error has ocurred and what to do next.**
-    - Popups appear to inform the user when their forms are completed, when items are added to their cart, when they checkout successfully, as well as if there are any errors when cheecking out. 
-    - Error messages are also returned to the user when there is a problem with the site's functionality.
+1. **To be notified about changes that are made, inlcluding adding, editing, and deleting recipes.**
+    - Flash messages have been designed to notify members when any changes have been made.
+    - When a member has added a recipe, a flash message displays 'Recipe successfully added'.
+    - When a book has been edited, a flash message displays 'Recipe successfully updated'.
+    - When a member deletes a recipe, a flash message displays 'Recipe successfully removed'.
 
 ## Manual Testing
 Below is a detailed account of all the manual testing that has been done to confirm all areas of the site work as expected. 
