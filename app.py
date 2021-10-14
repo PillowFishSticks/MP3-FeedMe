@@ -60,7 +60,7 @@ def category_drinks():
     recipes = list(mongo.db.recipes.find({"category_name": "Drinks"}))
     return render_template("site_recipes.html", recipes=recipes)
 
-      
+
 @app.route("/category_side")
 def category_side():
     recipes = list(mongo.db.recipes.find({"category_name": "Side"}))
@@ -265,13 +265,6 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Removed")
     return redirect(url_for("get_recipes"))
-
-
-@app.route("/admin_delete/<recipe_id>")
-def admin_delete(recipe_id):
-    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Recipe Successfully Removed")
-    return redirect(url_for("site_recipes"))
 
 
 @app.route("/view_recipe/<recipe_id>", methods=["GET"])
