@@ -58,9 +58,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   
   .notfound {
@@ -77,9 +75,7 @@ body {
     height: 100px;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     z-index: -1;
   }
   
@@ -92,9 +88,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   
   .notfound h2 {
@@ -127,7 +121,6 @@ body {
     border-radius: 5px;
     color: black;
     font-weight: 400;
-    -webkit-transition: 0.2s all;
     transition: 0.2s all;
   }
   
@@ -215,7 +208,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    font-family: 100px;
     font-weight: bolder;
 }
   
@@ -337,7 +329,6 @@ footer ul {
   
 footer a {
     color: black;
-    -webkit-transition: 0.1s all ease-in-out 0.1s;
     transition: 0.1s all ease-in-out 0.1s;
     text-decoration: none;
   }
@@ -366,21 +357,15 @@ label{
 	margin-bottom: 15px;
 }
 
-input,
-input::-webkit-input-placeholder {
+input {
     font-size: 11px;
     padding-top: 3px;
 }
 
 .main-login{
  	background-color: #fff;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
 }
 
 .main-center{
@@ -494,11 +479,7 @@ input::-webkit-input-placeholder {
 }
 
 .border-recipe {
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
-    -moz-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
     margin-right: 40px;
     background-color: white;
@@ -556,7 +537,7 @@ input::-webkit-input-placeholder {
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait)  {
 
     main {
         min-height: 70vh;

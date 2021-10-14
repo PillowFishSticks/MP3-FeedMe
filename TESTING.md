@@ -26,9 +26,7 @@ CSS - Validated using [Jigsaw](https://jigsaw.w3.org/css-validator/) with no err
 
 | Page | Test | 
 --- | --- | 
-base.css | PASS
-checkout.css | PASS
-profile.css | PASS
+style.css | PASS
 
 HTML - Validated using [W3C](https://validator.w3.org/#validate_by_input) 
 - With an error found in reviews.html - a duplicate id, Reviews, was found in reviews.html. If one id is removed or changed, the content in that div is not displayed. I decided to leave tackling this bug for a future release. 
