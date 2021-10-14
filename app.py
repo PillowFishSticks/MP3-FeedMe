@@ -1,6 +1,6 @@
 import os
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -26,6 +26,12 @@ def home():
 
 @app.route("/get_recipes")
 def get_recipes():
+
+    if 'user' not in session:
+        flash("Sorry, you are unable to access this page")
+        return render_template('index.html')
+        
+
     recipes = list(mongo.db.recipes.find({"created_by": session["user"]}))
     return render_template("your_recipes.html", recipes=recipes)
 
@@ -83,7 +89,9 @@ def site_recipes():
 def register():
 
     if 'user' in session:
-        return render_template('404.html')
+        flash("Sorry, you are unable to access this page")
+        return render_template('index.html')
+        
 
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
@@ -109,7 +117,9 @@ def register():
 def login():
 
     if 'user' in session:
-        return render_template('404.html')
+        flash("Sorry, you are unable to access this page")
+        return render_template('index.html')
+        
 
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
@@ -138,7 +148,9 @@ def login():
 def logout():
 
     if 'user' not in session:
-        return render_template('404.html')
+        flash("Sorry, you are unable to access this page")
+        return render_template('index.html')
+        
        
     else:
         session.pop("user")
@@ -150,7 +162,9 @@ def logout():
 def add_recipe():
 
     if 'user' not in session:
-        return render_template('404.html')
+        flash("Sorry, you are unable to access this page")
+        return render_template('index.html')
+        
 
     if request.method == "POST":
         recipe = {
