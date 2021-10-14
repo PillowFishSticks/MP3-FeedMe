@@ -1,3 +1,8 @@
+<div align="center">
+    <img src="/static/images/readme/mockup.png" target="_blank" rel="noopener" alt="FeedMe" aria-label="FeedMe"/>
+</div>
+
+
 [FeedMe](https://flask-feedme-project.herokuapp.com/) was designed, built, and deployed, by myself, Mark Percy as the third project for the Code Institute Full Stack Web Development diploma. The purpose of FeedMe is to be a recipe website that allows members to view FeedMe recipes, as well as add and share recipes of the users own liking.
 
 ## Table of Contents
