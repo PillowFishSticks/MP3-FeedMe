@@ -608,6 +608,10 @@ input::-webkit-input-placeholder {
         border-bottom: 1px solid black;
     }
 
+    .text-block h4 {
+        font-size: 40px;
+    }
+
 
     /** Navbar **/
 }
@@ -637,6 +641,10 @@ input::-webkit-input-placeholder {
        margin-top: 17px;
        margin-bottom: 20px;
        background-color: #bcd4de;
+    }
+
+    .text-block h4 {
+        font-size: 30px;
     }
 
     .home-image {
@@ -687,6 +695,10 @@ input::-webkit-input-placeholder {
         width: 70%;
         left: 15%;
     } 
+    
+    .text-block h4 {
+        font-size: 30px;
+    }
 
     .home-banner {
         height: 300px;
