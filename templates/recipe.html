@@ -4,7 +4,7 @@
 <section class="text-style container-fluid recipepage">
     {% if session.user|lower == recipe.created_by|lower %}
     <div class="row">
-        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 recipe-info-card">
+        <div class="col-12 col-md-8 offset-md-2 recipe-info-card">
             <div class="border-recipe">
                 <div class="recipe-card-info text-uppercase text-center pt-4">
                     <h1>{{ recipe.recipe_name}}</h1>
