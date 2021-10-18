@@ -386,6 +386,10 @@ input {
      width: 60%;
 }
 
+.no-results {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 /* -------------------------------- recipe page */
 
 .card {
@@ -518,6 +522,11 @@ input {
 /* -------------- accordian on add recipe page */
 
 @media (min-width: 1200px) {
+
+    main {
+        min-height: 70vh;
+        height: 100%; 
+    }
 
     .navbar-brand h1{
         font-family: 'Playfair Display', serif;
