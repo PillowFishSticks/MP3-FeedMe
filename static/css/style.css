@@ -402,8 +402,7 @@ input {
 }
 
 .notes {
-    padding-left: 10px;
-    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .notes h3 {

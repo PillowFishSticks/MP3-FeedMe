@@ -3,50 +3,50 @@
 
 <section class="padding text-style">
     <div class="container">
-            <div class="main-login main-center">
-                <form class="form-horizontal" method="POST" action="{{ url_for('login') }}">
-                    <div class="form-group">
-                        <div class="text-center mb-4">
-                            <h3 class="title">Log in</h3>
-                        </div>
-                        <label for="username" class="cols-sm-2 control-label">
-                            <i class="fa fa-users fa" aria-hidden="true"></i>
-                            Username
-                        </label>
-                        <div class="cols-sm-10">
-                            <div class="input-group">
-                                <span class="input-group-addon"></span>
-                                <input type="text" class="form-control" name="username"
-                                minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" id="username"  
-                                placeholder="Enter your Username" required/>
-                            </div>
-                        </div>
+        <div class="main-login main-center">
+            <form class="form-horizontal" method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <div class="text-center mb-4">
+                        <h3 class="title">Log in</h3>
                     </div>
-                    <div class="form-group">
-                        <label for="password" class="cols-sm-2 control-label">
-                            <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
-                            Password
-                        </label>
-                        <div class="cols-sm-10">
-                            <div class="input-group">
-                                <span class="input-group-addon"></span>
-                                <input type="password" class="form-control" minlength="5"
-                                maxlength="15" name="password" pattern="^[a-zA-Z0-9]{5,15}$" id="password"  
-                                placeholder="Enter your Password" required/>
-                            </div>
+                    <label for="username" class="cols-sm-2 control-label">
+                        <i class="fa fa-users fa" aria-hidden="true"></i>
+                        Username
+                    </label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            <input type="text" class="form-control" name="username" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,15}$" id="username" placeholder="Enter your Username"
+                                required />
                         </div>
                     </div>
-                    <div class="form-group text-center p-3">
-                        <button type="submit" class="btn btn-cream">
-                            Login
-                        </button>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">
+                        <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                        Password
+                    </label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"></span>
+                            <input type="password" class="form-control" minlength="5" maxlength="15" name="password"
+                                pattern="^[a-zA-Z0-9]{5,15}$" id="password" placeholder="Enter your Password"
+                                required />
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <p class="makeaccount">
-                            New here? <a href="{{ url_for('register')}}">Sign up here</a>
-                        </p>
-                    </div>
-                </form>
+                </div>
+                <div class="form-group text-center p-3">
+                    <button type="submit" class="btn btn-cream">
+                        Login
+                    </button>
+                </div>
+                <div class="text-center">
+                    <p class="makeaccount">
+                        New here? <a href="{{ url_for('register')}}">Sign up here</a>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </section>

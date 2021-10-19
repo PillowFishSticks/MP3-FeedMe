@@ -20,89 +20,89 @@
                 </div>
                 <div class="container recipe-card-info">
                     <h4 class="text-uppercase mt-3">Ingredients</h4>
-                        <ul>
-                            {% if recipe.ingredient_1 == "" %}
-                            {% else %}
+                    <ul>
+                        {% if recipe.ingredient_1 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_1}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_2 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_2 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_2}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_3 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_3 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_3}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_4 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_4 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_4}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_5 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_5 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_5}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_6 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_6 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_6}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_7 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_7 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_7}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_8 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_8 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_8}}</li>
-                            {% endif %}
-                            {% if recipe.ingredient_9 == "" %}
-                            {% else %}
+                        {% endif %}
+                        {% if recipe.ingredient_9 == "" %}
+                        {% else %}
                             <li>{{ recipe.ingredient_9}}</li>
-                            {% endif %}
-                        </ul>
+                        {% endif %}
+                    </ul>
                 </div>
                 <div class="container recipe-card-info">
-                    <h4 class="text-uppercase pr-5">Directions</h4>    
-                    <ol>   
+                    <h4 class="text-uppercase pr-5">Directions</h4>
+                    <ol>
                         {% if recipe.direction_1 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_1}}</li>
+                            <li>{{ recipe.direction_1}}</li>
                         {% endif %}
                         {% if recipe.direction_2 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_2}}</li>
+                            <li>{{ recipe.direction_2}}</li>
                         {% endif %}
                         {% if recipe.direction_3 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_3}}</li>
+                            <li>{{ recipe.direction_3}}</li>
                         {% endif %}
                         {% if recipe.direction_4 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_4}}</li>
+                            <li>{{ recipe.direction_4}}</li>
                         {% endif %}
                         {% if recipe.direction_5 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_5}}</li>
+                            <li>{{ recipe.direction_5}}</li>
                         {% endif %}
                         {% if recipe.direction_6 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_6}}</li>
+                            <li>{{ recipe.direction_6}}</li>
                         {% endif %}
                         {% if recipe.direction_7 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_7}}</li>
+                            <li>{{ recipe.direction_7}}</li>
                         {% endif %}
                         {% if recipe.direction_8 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_8}}</li>
+                            <li>{{ recipe.direction_8}}</li>
                         {% endif %}
                         {% if recipe.direction_9 == "" %}
                         {% else %}
-                        <li>{{ recipe.direction_9}}</li>
+                            <li>{{ recipe.direction_9}}</li>
                         {% endif %}
                     </ol>
                 </div>
                 <div class="container recipe-card-info">
                     <h3>Notes</h3>
-                    <p class="pb-5">{{ recipe.notes}}</p>
+                    <p class="notes pb-5">{{ recipe.notes}}</p>
                 </div>
                 <hr>
                 <div class="form-group text-center ">
@@ -111,9 +111,9 @@
                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-cream mb-3">
                             Edit
                         </a>
-                         <!-- Modal button for Delete Recipe modal -->
+                        <!-- Modal button for Delete Recipe modal -->
                         <button class="btn btn-cream mb-3" data-bs-target="#modal-delete{{ recipe._id }}"
-                             data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
+                            data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
                     </div>
                     {% endif %}
                 </div>
@@ -134,8 +134,8 @@
                 <div class="modal-footer">
                     <a class="btn btn-block mybtn btn-secondary"
                         href="{{ url_for('view_recipe', recipe_id=recipe._id )}}" role="button">Cancel</a>
-                    <a class="btn btn-block mybtn btn-danger"
-                        href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" role="button">Delete</a>
+                    <a class="btn btn-block mybtn btn-danger" href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}"
+                        role="button">Delete</a>
                 </div>
             </div>
         </div>
