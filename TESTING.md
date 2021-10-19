@@ -48,8 +48,6 @@ register.html | PASS
 login.html | PASS
 404.html | PASS
 
-Javascript - Validated using [JSHint Validator](https://jshint.com/) with no errors found.
-
 Python - Validated using [PEP 8](http://pep8online.com/) with no errors found.
 
 ## User Stories Testing
@@ -80,7 +78,7 @@ The following section goes through the user stories identified in the [Ux sectio
 
 1. **To be able to add, edit, and delete recipes that I would like to share with others.**
     - The Add Recipes page allows users to add recipes that they would like to share with others, by filling in the form and submitting the information.
-    - Members are able to edit their own recipe additions by clicking the edit button on the Your Recipe page or the full recipe page. The edit recipe page allows members to cancel or save their edited recipe information.
+    - Members are able to edit their own recipe additions by clicking the edit button on the My Recipe page or the full recipe page. The edit recipe page allows members to cancel or save their edited recipe information.
     - Members are able to delete their own recipe additions by clicking the delete button on the Your Recipe page or the full recipe page. This brings up a modal askng whether they are sure they want to delete this recipe, giving them the option to cancel or delete.
 
 1. **To be able to search for recipes on the website using keywords.**
@@ -92,7 +90,7 @@ The following section goes through the user stories identified in the [Ux sectio
     - The log in form is able to store your username and password if desired, making it easier and faster to log in.
 
 1. **To be notified that I have logged in or out of my account.** 
-    - When a member logs into their account, they are taken to their profile page, where a flash message displays 'Nice to see you again (Username)'.
+    - When a member logs into their account, they are taken to their My Recipes page, where a flash message displays 'Nice to see you again (Username)'.
     - When logged out, a flash message displays 'You have been logged out', and bringing them back to the log in page.
 
 1. **To be notified about changes that are made, inlcluding adding, editing, and deleting recipes.**
@@ -192,7 +190,7 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Safari.
 #### 401 error
 
 - Try and access a page not displayed when logged out. 
-- The following flash message is displayed 'Sorry, you are unable to access this page". 
+- The following flash message is displayed "Sorry, you are unable to access this page". 
 
 #### 404 error
 
@@ -228,56 +226,16 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
 ## Bugs discovered: 
 ### Solved bugs
 
-1. **Was getting the following error on the console**
+1. **The accordian in Add Recipe was giving a console error**
+    - Removed the accordian and displayed ingredients and directions without it. 
 
-<div align="center">
-    <img src="/static/images/readme/console-error.png" target="_blank" rel="noopener" alt="console error"               aria-label="console error"/>
-</div>
+2. **Favicon error** 
+    - Kept getting a favicon error in the console. 
+    - Used the favicon website to add a favicon.  
 
-
-    ```js
-    document.getElementById("defaultOpen").click();
-    }
-    ```
-
-    was changed to
-
-
-    ```js
-    if (document.getElementById("openDefault")) {
-        const element = document.getElementById("defaultOpen").click();
-    }
-    ```
-
-2. **Secret keys were not being read by gitpod** 
-    - Secret keys were not being read by gitpod, despite being added as gitpod variables. 
-    - Created an env.py file to store the secret keys in. 
-
-3. **Tab in item details was not changing tabs** 
-    - Tab in items details was not changing tabs, all content was displaying the the first tab. 
-    - JS was in a link tag and loading as a style sheet as follows:
-
-
-    ```html
-    <link rel="stylesheet" href="{% static 'js/scripts.js' %}">
-    ```
-
-    was changed to 
-
-
-    ```html
-    <script src="{% static 'js/scripts.js' %}"></script>
-    ```
-
-4. **Reptile tag buttons were not displaying at the top of the reptile page**
-    - This was because friendly_name and Name were written incorrectly. 
-
-
-### Unsolved bugs
-
-1. **Duplicate id in reviews.html**
-    - A duplicate id, Reviews, was found in reviews.html. If one id is removed or changed, the content in that div is not displayed. 
-    - I decided to leave tackling this bug for a future release.
+3. **Website security** 
+    - Users were able to add and edit recipes, and access various FeedMe pages without being logged in. 
+    - Added security for a 401 error, displaying the flash message "Sorry, you are unable to access this page". 
 
 ## Further testing: 
 1. Asked friends and family to look at the site on their devices and report any issues they found.

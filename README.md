@@ -126,7 +126,7 @@ As a visitor to the FeedMe website I expect/want/need:
 
 - The grey was used in the navbar and footer when you hover over the nav links. 
 
-- The blue was used as the background color for both the navbarr and footer.
+- The blue was used as the background color for both the navbar and footer.
 
 - The pale pink was used as the background color for succesful flash messages and for the banner on the home page. 
 
@@ -166,7 +166,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - **In desktop view**  The navigation bar features the website name ‘FeedMe' on the far left, and website pages on the far right.
   
-- A user who is logged in will see the options of Home, FeedMe Recipes, Your Recipes, Add a recipe, and Log out. 
+- A user who is logged in will see the options of Home, FeedMe Recipes, My Recipes, Add recipe, and Log out. 
 
 - A user or visitor who is not logged in will see the options of Home, FeedMe Recipes, Log in, and Register. 
 
@@ -181,13 +181,13 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - The footer has four sections - social media icons, contact us, recipes, and my account. 
 
-- The social icons are links to FeedMee's social media accounts for Facebook, Instagram, Pinterest, and Twitter. They are located under the FeedMe heading. 
+- The social icons are links to FeedMe's social media accounts for Facebook, Instagram, Pinterest, and Twitter. They are located under the FeedMe heading. 
 
 - Contact us, includes an email address and telephone number for FeedMe.  
 
 - Recipes, include all the different recipe categories. 
 
-- My account, when logged in, shows 'Your Recipes' and 'Logout'. If not logged in, it shows 'Log in' and 'Register'. 
+- My account, when logged in, shows 'My Recipes' and 'Logout'. If not logged in, it shows 'Log in' and 'Register'. 
 
 ### Home
 
@@ -196,17 +196,14 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ![Top Recipes](/static/images/readme/top-recipes.png)
 
 - The first section of the home page displays top recipes of the week. 
-
-- There are fur recipes, and if you click on them, they take you to the full recipe. 
+- There are four recipes, and if you click on them, they take you to the full recipe. 
 
 **Home Banner**
 
 ![Home Banner](/static/images/readme/home-banner.png)
 
-- This section includes a banner, which has been split in two. 
-
-- The first half includes the phrase 'Feeling hungry? Checkout some of our recipes below', with the 'See All Recipes' button directly below. This button will take you to the FeeMe Recipes page. 
-
+- This section includes a banner, which has been split in two.
+- The first half includes the phrase 'Feeling hungry? Checkout some of our recipes below', with the 'See All Recipes' button directly below. This button will take you to the FeedMe Recipes page. 
 - The second half is a panorama image of pizza and pasta. 
 
 **Search by Category**
@@ -214,7 +211,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ![Search by category](/static/images/readme/search-by-category.png)
 
 - This is the last section of the home page, with the sub-heading of 'Search by Category' and each of the categories below. 
-
 - The categories are displayed via a circular image, with it's category name below. 
 
 ### Log in
@@ -223,7 +219,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - The login page features a standard login form asking for username and password.
 - Validation for this form is handled in the back end and a flash message displays 'Nice to see you again (username)'. 
-- Once logged in they are taken directly to their 'Your Recipes' page. 
+- Once logged in they are taken directly to their 'My Recipes' page. 
 
 ### Register
 
@@ -231,21 +227,21 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - A user who is not logged in can create a new account using the register page. The page on this form includes a username 
  (which must be unique), and a password. 
-- If a user who already has an account tries to register, a flash message display 'Username already exists'. 
+- If a user who already has an account tries to register, a flash message displays 'Username already exists'. 
 
 ### FeedMe Recipes
 
 ![FeedMe Recipes](/static/images/feedme.png)
 
 - This page displays all the recipes that have been added to FeedMe by the various users.
-- At the top of the page, there is a search bar that uses can use to search for recipes. 
+- At the top of the page, there is a search bar that users can use to search for recipes. 
 - The recipe is displayed by its image with the recipe and the user who added it below.  
 - If you hover over the image it displays 'See Recipe' with the recipe image faded. 
 - If the image is clicked on, you can see thee recipe in full.  
 
 ### My Recipes
 
-![Your Recipes](/static/images/readme/your-recipes.png)
+![My Recipes](/static/images/readme/your-recipes.png)
 
 - This page displays all the users recipes that they have added. 
 - The recipe is displayed by its image with the recipe name, and edit and delete buttons below.  
@@ -271,9 +267,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Edit recipe
 
-- This page is accessed within the edit button of the recipe in Your Recipes. It contains a form for members to edit a book that they have 
+- This page is accessed within the edit button of the recipe in My Recipes. It contains a form for members to edit a recipe that they have 
   previously added.  
-- It is identical to the Add a Recipe page. 
+- It is identical to the Add Recipe page. 
 - Once the recipe has been edited, a flash message displays 'Recipe successfully updated'.
 - Members only have access to edit their own recipes, and are unable to edit other members recipes. 
 
@@ -349,7 +345,7 @@ direction_9 | String | Recipe direction
 notes | String | Additional recipe notes
 
 - **recipes** contains information about the recipes added to the FeedMe website. 
-- This includes the recipe category, recipe name, a url for the recipe image, the total time it takes to make the recipe, number of servings per recipe, which user added the recipe, recipe ingredients, recipe direections, and addditional recipe. notes. 
+- This includes the recipe category, recipe name, a url for the recipe image, the total time it takes to make the recipe, number of servings per recipe, which user added the recipe, recipe ingredients, recipe direections, and additional recipe. notes. 
 
 **users**
 
@@ -475,7 +471,7 @@ _Again this **command may differ depending on your operating system**, please ch
 
 ## Heroku Deployment
 
-To deploy The Bookshelf website to heroku, take the following steps:
+To deploy the FeedMe website to heroku, take the following steps:
 
 1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
 
