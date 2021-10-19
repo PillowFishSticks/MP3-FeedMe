@@ -24,7 +24,7 @@ $("#signin").click(function () {
 });
 
 $(function () {
-    $("form[name='login']").validate({
+    const regForm = $("form[name='login']").validate({
         rules: {
             username: {
                 required: true,
@@ -44,6 +44,8 @@ $(function () {
             form.submit();
         }
     });
+
+    console.log(regForm) 
 });
 
 $(function () {
