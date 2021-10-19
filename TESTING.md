@@ -221,12 +221,7 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
     - No content squashed or squeezed or disproportionate in size.
     - Confirm that all links and buttons in footer are easy to click with a finger on the smallest screen sizes.
 
-3. Club picks and Your picks pages
-    - Confirm that the books ar displayed 2 to a row on mobile, and 3 to a row on tablet.
-    - Confirm that all clicks and swipes operate as expected on touch screen.
-    - Check that modals are the correct proportions and that all their buttons are easily clickable with a finger.
-
-5. All pages
+3. All pages
     - Navigate to all pages on the site, check that the layout is as expected for the screen size.
     - Check that all buttons, forms and other elements are the correct proportions and easily clickable with a finger.
 

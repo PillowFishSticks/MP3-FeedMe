@@ -31,7 +31,6 @@ def get_recipes():
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
         
-
     recipes = list(mongo.db.recipes.find({"created_by": session["user"]}))
     return render_template("your_recipes.html", recipes=recipes)
 
@@ -92,7 +91,6 @@ def register():
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
         
-
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -120,7 +118,6 @@ def login():
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
         
-
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -151,7 +148,6 @@ def logout():
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
         
-       
     else:
         session.pop("user")
         flash("You have been logged out")
@@ -163,8 +159,7 @@ def add_recipe():
 
     if 'user' not in session:
         flash("Sorry, you are unable to access this page")
-        return render_template('index.html')
-        
+        return render_template('index.html') 
 
     if request.method == "POST":
         recipe = {
