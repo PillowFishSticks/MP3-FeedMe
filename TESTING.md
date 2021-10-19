@@ -106,133 +106,129 @@ Below is a detailed account of all the manual testing that has been done to conf
 
 ### Testing undertaken on desktop
 
-All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on two different desktop screen sizes.
+All steps on desktop were repeated in browsers: Firefox, Chrome and Safari. 
 
 #### Elements on every page
 
 1. Navbar 
     - Clicked each link in the navbar to confirm that it leads to the correct page.
-    - Confirm that when logged out the options "Register" and "Log in" are visible and that "Log out" is not.
-    - Log into the site, confirm that "Log out" is visible and that "Register" and "Log in" are not.
-    - Click the "Shop" link in the navbar, confirm that all sections of the shop are listed in the dropdown menu.
-    - Add an item to the users cart, confirm that the grand total appears under the shopping cart icon with the correct grand total. 
-    - Delete all items from the users cart, confirm that the grand total is no longer visible in the navbar.
+    - Confirm that when logged out the options "Register" and "Log in" are visible and that "My Recipes", "Add Recipes" and 
+      "Log out" are not.
+    - Log into the site, confirm that options "My Recipes", "Add Recipe" and "Log out" are visible and that "Register" and 
+      "Log in" are not.
 
-2. Search bar
-    - Enter a search word that applies to many items. 
-        - Confirm that the items returned match the items. Confirm that the message "0 items found for (item)" is displayed when hitting enter.
-
-3. Footer
+2. Footer
     - Hover over links in the footer, confirm the animation works as expected.
     - Click all links in the footer, confirm that they take the user to the relevant pages within the site.
     - Click the social icons, confirm that they open a new tab and take the user to the correct page.
     - Check date of copyright information, confirm year displayed matches the current year.
 
-#### Home Page
+#### Home
+1. Top Recipes 
+    - Adjust width of browser window, confirm hero image is responsive. 
+    - Ajust browser width, confirm top recipes change to taken to the correct recipe page. 
+    - When hovering over the image, ensure it fades and 'See Recipe' appears. 
 
-1. Carousel images
-    - Click slider buttons, confirm that they work as expected.
-    - Adjust width of browser window, confirm image is responsive.
+2. Home Banner 
+    - Adjust width of browser window, confirm that the image is not present on iPad and mobile device screens. 
+    - Click on the 'See All Recipes' button to check that is directs the user to the FeedMe Recipes page. 
+    - When hovering over the button, ensure that the colors are reversed. 
 
-2. On Sale section
-    - Click on each of the items to ensure it takes the user to the correect item detail page.
+3. Search by Category
+    - Click each of the category's to ensure that they take show the correct recipes. 
 
-3. Shop by pet
-    - Hover over each of the buttons to ensure that the pet name display. 
-    - Click each of the buttons to ensure the user is taken to the correct items display page. 
-
-#### Pet pages
-
-1. Types of items
-    - Click tag buttons, confirm they work and go to the correct locations.
-    - Click each of the dropdown links, confirm they go to the correct location. 
-    - Click the All items link, confirm all items for that pet are displayed. 
-    - Confirm that the image and prices displayed are correct.
-    - Click multiple items, confirm that the user is taken to the correct items detail page.
-
-2. Sorting options
-    - Select the different sorting options from the menu one by one, confirm that the iteems are sorted in the orders selected.
-
-#### On Sale Page
-
-1. Prices 
-    - Ensure that the original price is displayed in red, with a line through it. 
-    - Ensure the on sale price is slightly bigger and is displayed in blue. 
-    - Check that the on sale price is used when the item is added to the cart. 
-
-#### Register Page
-
-- Log out then go to the register page again. Confirm that the register form is displayed as expected.
-- Fill in the form with a username already in the database, confirm that the user is informed that they must use a unique username.
-- Fill in the email input with a non-email address, confirm the user is shown an error asking the to use an email address.
-- Fill in the form with two different passwords, confirm the error is caught again and the user is informed of their mistake.
-
-#### Login Page
+#### Log in
 
 - Attempt to log in with a username not in the database, confirm the relevant error message is shown.
 - Attempt to log in with a correct username but wrong password, confirm the relevant error message is shown.
-- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to the hoome page. 
+- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to the My Recipes page.
 
-#### Account Page
+#### Register
 
-- Go to the account page of a newly created user. Confirm that te profile info form is populated with the users username and email address.
-- Confirm that the first name and last name fields are also available.
-- Fill in the form with a non-email address, confirm that the applicable error is shown to the user
-- Fill in the form correctly, confirm that the "Your account info has been updated." message is shown to the user and that the reloaded form is now populated with the new data.
-- Confirm that a user with no previous orders has the "no orders to show" text in the Orders section.
-- Make 2 separate orders on the website. 
-- Return to the account page, confirm that the orders are displayed in the Orders section of the account page. With the top order being the most recent and open to show the full details. Confirm that all orders after it in the list are closed accordions, but that can be opened with a click.
-- Confirm that all data in the orders on the account page is accurate.
-- Go into the admin panel, mark one of the orders as shipped. Confirm that the information to the user in their account page is updated to show that the order selected has been shipped.
+- Log out then go to the register page. Confirm that the register form is displayed as expected.
+- Fill in the form with a username already in the database, confirm that the user is informed that the username already exists. 
+- Fill in the registration form correctly, confirm that the user is automatically directed to the My Recipes page, and the message 
+  "Weclome `<username>`." is displayed above. 
 
-#### Log Out Page
+#### FeedMe Recipes
 
-- Attempt to log out and ensure the the user is taken to the log out page, asking if they are sure they want to log out.
-- Click cancel, and ensure tthat the user is redirected to the home page. 
-- Log out and and ensure that the user is redirected to the home page. 
+- Go to the FeedMe Recipes page and check that it is laid out correctly, 3 recipes to a row. 
+- Ajust browser width, confirm top recipes change to the correct cloumn sizing. 
+- Click on each of the recipes and ensure the user is taken to the correct recipe page. 
+- When hovering over the image, ensure it fades and 'See Recipe' appears. 
+- Search for recipes in the search bar using keywords to ensure it works. 
+- Search for a recipe or keyword that does not exist, with the message "Sorry, we couldn't find any recipes matching your search..." displaying. 
 
-#### Cart Page
+#### My Recipes
 
-- Log in and go to the cart page with nothing in the cart. Confirm that the message "Your cart is empty!" is shown and the call to action button "Let's go shopping" is provided and that the checkout button is not displayed. 
-- Click the button and confirm it takes the user to the all items page.
-- Add items to the cart and return to the cart page, confirm that all items in the cart are displayed correctly, with the correct amounts requested by the user.
-- Adjust the quantity field, confirm that the shopping cart subtotal is updated to reflect the change.
-- Click the delete button on an item, confirm that the item removed from the cart.
-- Delete all items from the cart, confirm that the cart is empty. 
+- Go to the FeedMe Recipes page and check that it is laid out correctly, 3 recipes to a row. 
+- Ajust browser width, confirm top recipes change to the correct cloumn sizing. 
+- Click on each of the recipes and ensure the user is taken to the correct recipe page. 
+- When hovering over the image, ensure it fades and 'See Recipe' appears. 
 
-#### Checkout Pages
+**Recipe page**
 
-- Go to the checkout page when not logged in to the site, confirm that the user is taken to the login page to sign in.
-- Confirm that the items are displayed correctly in the order summary, that the quantity, subtotal, and grand total are correct
-- Try to send the form without all the required fields filled in. Confirm that the appropriate error message is given to the user.
-- Return to the payment page , use the stripe checkout test [card numbers](https://stripe.com/docs/testing) to check the various responses to different errors.
-- Make a successful payment. Confirm that the user is returned to checkout success page.
-- Check that the checkout success page loads all item and delivery information correctly. 
+- Check that the page is displayed correclty. 
+- Adjust browser width, ensure the the recipe page is responsive. 
+- Click the "See All Recipes' button to check that is takes the user to the FeedMe Recipes page.
+
+#### Add Recipes
+
+- Go to the Add Recipe page and ensure the form is laid out correctly. 
+- Try and publish the form with information missing to ensure that it doesn't send. 
+- Fill out the form correctly and click the publish button, ensure that the user is redirected to the My Recipes page and that the message 
+  "Recipe successfully added" displays at the top of the page. 
+- Check that when a recipe has been added, that is displays on the My recipes page and the information is added to the database. 
+
+#### Edit Recipes
+
+- Go to the My Recipes page and click on the edit button of a recipe added, to open up the Edit recipe page. 
+- Check that the form is laid out correctly, with all previous recipe information present in the form. 
+- Edit the content and click the publish button, ensure that the user is redirected to the My Recipes page and that the message 
+  "Recipe successfully updated" displays at the top of the page. 
+- Check that when a recipe has been edited, that the changes are displayed on the My Recipes page and the information has been updated in 
+  the database. 
+
+#### 401 error
+
+- Try and access a page not displayed when logged out. 
+- The following flash message is displayed 'Sorry, you are unable to access this page". 
+
+#### 404 error
+
+- Try and access a page that does not exist, by adding text onto the url. 
+- Ensure that the user is redirected to the 404 page, stating that the page does not exist and giving them the option to return to the home page. 
+
+#### Log out
+
+- Click Logout in the navbar to ensure that the user is logged out and redirected to the log in page with the following message 
+  displayed "You have been logged out". 
 
 ### Testing undertaken on tablet and phone devices
-All steps below were repeated to test mobile and tablet specific elements on my Samsung phone and tablet, in both the firefox browser and samsung internet browser.
+All steps below were repeated to test mobile and tablet specific elements on my iPhone and iPad, in both the Safari browser and Google 
+Chrome browser.
 
 Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
 
 #### Elements on every page
 
 1. Navbar 
-    - Open the website on mobile, confirm that the navbar is collapsed into a burger icon
+    - Open the website on mobile and tablet, confirm that the navbar is collapsed into a burger icon
     - click the burger icon, confirm that the navbar list appears are expected.
-    - Add something to the cart, confirm that the user shopping cart grand total appears and displays correctly.
 
 2. Footer
-    - Scroll to the bottom of the page, confirm that the footer contents is displayed as expected with the bootstrap grid.
+    - Scroll to the bottom of the page, confirm that the footer content is displayed as expected with the bootstrap grid.
     - No content squashed or squeezed or disproportionate in size.
     - Confirm that all links and buttons in footer are easy to click with a finger on the smallest screen sizes.
 
-3. Pet pages
-    - Confirm that the item list is displayed one on top of each other on mobile, and 3 or 2 to a row on tablet, depending on its size.
+3. Club picks and Your picks pages
+    - Confirm that the books ar displayed 2 to a row on mobile, and 3 to a row on tablet.
     - Confirm that all clicks and swipes operate as expected on touch screen.
+    - Check that modals are the correct proportions and that all their buttons are easily clickable with a finger.
 
-4. All pages
+5. All pages
     - Navigate to all pages on the site, check that the layout is as expected for the screen size.
-    - Check that all buttons, menus, forms and other elements are the correct proportions and easily clickable with a finger.
+    - Check that all buttons, forms and other elements are the correct proportions and easily clickable with a finger.
 
 ## Bugs discovered: 
 ### Solved bugs

@@ -21,7 +21,7 @@
 	    - [Login](#login)
 	    - [Register](#register)
         - [FeedMe Recipes](#feedme-recipes)
-        - [Your Recipes](#your-recipes)
+        - [My Recipes](#my-recipes)
         - [Add Recipes](#add-recipes)
         - [Edit Recipe](#edit-recipe)
         - [404 error](#404-error)
@@ -243,7 +243,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - If you hover over the image it displays 'See Recipe' with the recipe image faded. 
 - If the image is clicked on, you can see thee recipe in full.  
 
-### Your Recipes
+### My Recipes
 
 ![Your Recipes](/static/images/readme/your-recipes.png)
 
@@ -405,11 +405,11 @@ The following **must be installed** on your machine:
     - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
 ### Instructions
-1. Save a copy of the github repository located at https://github.com/MAN95-dev/the-bookshelf by clicking the "download zip" button at 
+1. Save a copy of the github repository located at https://github.com/PillowFishSticks/MP3-FeedMe by clicking the "download zip" button at 
    the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the 
    repository with the following command.
     ```
-    git clone https://github.com/MAN95-dev/the-bookshelf
+    git clone https://github.com/PillowFishSticks/MP3-FeedMe
     ```
 
 2. Open your preferred IDE, open a terminal session in the unzip folder or cd to the correct location.
