@@ -9,6 +9,27 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+
 /* -------------------------------- Flash messages */
 .alert {
     padding: 20px;
@@ -249,36 +270,64 @@ footer a:hover {
     padding-bottom: 100px;
 }
 
-/* -------------------------------- Registration page */
+/** Login / Register page **/
+.myform {
+    margin-top: 100px;
+    margin-bottom: 60px;
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1rem;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 1.1rem;
+	outline: 0;
+    max-width: 1000px;
+}
+
 .form-group{
-	margin-bottom: 15px;
+    margin: 5px;
 }
 
-label{
-	margin-bottom: 15px;
+.mybtn {
+    margin-top: 20px;
+}
+  
+.tx-tfm{
+    text-transform:uppercase;
+}
+                 
+.login-or {
+    position: relative;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-input {
-    font-size: 11px;
-    padding-top: 3px;
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
 }
-
-.main-login{
- 	background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+         
+.hr-or {
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
-
-.main-center{
- 	margin-top: 30px;
- 	margin: 0 auto;
- 	max-width: 500px;
-    padding: 40px 40px;
-}
-
-.makeaccount {
-    font-family: 'Open Sans', sans-serif;
-}
+/** End of Login / Register page **/
 
 /* -------------------------------- FeedMe recipe page */
 .search-bar input {
