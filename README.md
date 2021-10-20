@@ -528,8 +528,9 @@ SECRET_KEY | `<your secret key>`
 
 - The 404 template was taken from [colorlib](https://colorlib.com/). 
 
-- The README file was taken from Anna Greave's 'The House of Mouse' project to use as a template.
+- The README file was taken from Anna Greave's 'The House of Mouse' project to use as a template, as well as Michelle Newell's 'The Bookshelf'.
     - [The House of Mouse by Anna Greaves ](https://github.com/AJGreaves/thehouseofmouse)
+    - [The Bookshelf by Michelle Newell](https://github.com/MAN95-dev/the-bookshelf)
 
 ## Acknowledgements
 
