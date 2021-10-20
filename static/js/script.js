@@ -26,3 +26,17 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function validate()
+{
+      var obj1 = document.getElementById('direction_1');
+         if(trimTextarea(obj1.value) == '') 
+         {      
+              return false;       
+         }
+}
+ 
+function trimTextarea(str) 
+{ 
+    return str.replace(/^\s+|\s+$/g,''); 
+}

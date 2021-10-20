@@ -10,7 +10,7 @@
                         <h3>Add recipe</h3>
                     </div>
                 </div>
-                <form method="POST" action="{{ url_for('add_recipe') }}">
+                <form method="POST" onclick="validate();" action="{{ url_for('add_recipe') }}">
                     <div class="form-group">
                         <i class="fa fa-signature" aria-hidden="true"></i>
                         <label for="recipe_name">Recipe Name</label>
@@ -35,7 +35,7 @@
                     <div class="form-group pt-2">
                         <i class="fa fa-clock" aria-hidden="true"></i>
                         <label for="time">Time</label>
-                        <input type="text" pattern="^[1-9][0-9]*$" class="validate form-control" id="time" name="time" required>
+                        <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="time" name="time" required>
                     </div>
                     <div class="form-group pt-2">
                         <i class="fa fa-glass-cheers" aria-hidden="true"></i>
@@ -47,44 +47,50 @@
                         <p>Please add your ingredients below:</p>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <label for="ingredient_1">Ingredients</label>
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_1" name="ingredient_1"
+                                required>
+                        </div>
+                        <div class="form-group pt-2">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_2">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_2" name="ingredient_2"
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_2" name="ingredient_2"
                                 required>
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_3">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_3" name="ingredient_3">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_3" name="ingredient_3">
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_4">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_4" name="ingredient_4">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_4" name="ingredient_4">
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_5">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_5" name="ingredient_5">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_5" name="ingredient_5">
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_6">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_6" name="ingredient_6">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_6" name="ingredient_6">
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_7">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_7" name="ingredient_7">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_7" name="ingredient_7">
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_8">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_8" name="ingredient_8">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_8" name="ingredient_8">
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_9">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="ingredient_9" name="ingredient_9">
+                            <input type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control" id="ingredient_9" name="ingredient_9">
                         </div>
                     </div>
                     <div>
@@ -92,13 +98,13 @@
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="direction_1">Directions: Step 1</label>
-                            <textarea class="form-control" rows="6" id="direction_1" name="direction_1"
+                            <textarea class="validate form-control" rows="6" id="direction_1"  name="direction_1"
                                 required></textarea>
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="direction_2">Directions: Step 2</label>
-                            <textarea class="form-control" rows="6" id="direction_2" name="direction_2"></textarea>
+                            <textarea class="validate form-control" rows="6" id="direction_2" name="direction_2"></textarea>
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -139,7 +145,7 @@
                     <div class="form-group pt-2">
                         <i class="fa fa-sticky-note mt-3" aria-hidden="true"></i>
                         <label for="notes">Notes</label>
-                        <textarea class="form-control" rows="6" id="notes" name="notes" required></textarea>
+                        <textarea class="validate form-control" rows="6" id="notes" name="notes" required></textarea>
                     </div>
                     <div class="form-group text-center mb-5">
                         <button type="submit" class="btn btn-cream">
