@@ -27,6 +27,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// Form validation for add and edit recipes //
 function validate()
 {
       var obj1 = document.getElementById('direction_1');
