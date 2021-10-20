@@ -48,6 +48,8 @@ register.html | PASS
 login.html | PASS
 404.html | PASS
 
+Javascript - Validated using [JSHint Validator](https://jshint.com/) with no errors found.
+
 Python - Validated using [PEP 8](http://pep8online.com/) with no errors found.
 
 ## User Stories Testing
