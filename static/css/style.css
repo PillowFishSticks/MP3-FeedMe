@@ -9,27 +9,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.success-icon,
-.failure-icon {
-  right: 0;
-  opacity: 0;
-}
-
-.failure-icon,
-.error {
-  color: red;
-}
-
-.success-icon {
-  color: green;
-}
-
-.error {
-  font-size: 14.5px;
-  margin-top: 5px;
-}
-
-
 /* -------------------------------- Flash messages */
 .alert {
     padding: 20px;
@@ -425,10 +404,6 @@ footer a:hover {
     border-radius: 5px;
 }
 
-.accordion {
-    padding-top: 10px;
-}
-
 .border-recipe {
     border-radius: 2px;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
@@ -457,6 +432,45 @@ footer a:hover {
 .notes h3 {
     font-family: 'Love ya like a sister', sans-serif;
 }
+
+/* -------------------------------- FAQ page */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #efd3d7;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #f6e7e6;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #fcf7f2;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #efd5d3;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
 
 /* -------------------------------- 404 page */
 /** This template was made by Colorlib  **/

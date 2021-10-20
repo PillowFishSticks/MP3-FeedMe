@@ -10,65 +10,19 @@ for (i = 0; i < close.length; i++) {
     };
 }
 
-/* Login / Registration page */
-$("#signup").click(function () {
-    $("#first").fadeOut("fast", function () {
-        $("#second").fadeIn("fast");
-    });
-});
+// Accordian for FAQ page //
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-$("#signin").click(function () {
-    $("#second").fadeOut("fast", function () {
-        $("#first").fadeIn("fast");
-    });
-});
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
 
-$(function () {
-    const regForm = $("form[name='login']");
-    console.log(regForm);
-  
-        rules: {
-            username: {
-                required: true,
-                username: true
-            },
-            password: {
-                required: true,
-            }
-        },
-        messages: {
-            username: "Please enter a valid username",
-            password: {
-                required: "Please enter password",
-            }
-        },
-        submitHandler: function (form) {
-            form.submit();
-        }
-    });
-});
-
-$(function () {
-    $("form[name='registration']").validate({
-        rules: {
-            username: "required",
-            lastname: "required",
-            password: {
-                required: true,
-                minlength: 5
-            }
-        },
-
-        messages: {
-            username: "Please enter your username",
-            password: {
-                required: "Please provide a password",
-                minlength: "Your password must be at least 5 characters long"
-            },
-        },
-
-        submitHandler: function (form) {
-            form.submit();
-        }
-    });
-});
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}

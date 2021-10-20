@@ -46,16 +46,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('home')}}">Home</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('site_recipes' )}}">FeedMe Recipes</a>
+                            <a class="nav-link" href="{{ url_for('site_recipes')}}">FeedMe Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">FAQ</a>
                         </li>
                         {% if session.user %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('get_recipes' )}}">My Recipes</a>
+                            <a class="nav-link" href="{{ url_for('get_recipes')}}">My Recipes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('add_recipe') }}">Add Recipes</a>
+                            <a class="nav-link" href="{{ url_for('add_recipe')}}">Add Recipes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('logout')}}">Log out</a>
