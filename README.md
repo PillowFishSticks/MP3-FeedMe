@@ -304,58 +304,22 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - The database 'FeedMeDB' has three collections 'categories', 'recipes' and 'users'.
 
-**categories**
+## Setting up a database
+In order to set up a database in MongoDB:
 
-| Key | Data Type | Comment |
---- | --- | --- |
-_id | ObjectId | Unique identification number
-category_name | String | Name of category
+1. Signup or login to MongoDB
+2. Create a cluster as well as a database.
+3. Create three collections within your database following the data structure below.
+
+![Database structure](/static/images/readme/database-structure.png)
+
+
+- **users** contains information about the user, including a unique id, their username, and a hashed password. 
 
 - **categories** contains the various recipe categories on he FeedMe website, including a unique id, and category name. 
 
-**recipes**
-
-| Key | Data Type | Comment |
---- | --- | --- |
-_id | ObjectId | Unique identification number
-category_name | String | Name of category
-recipe_name | String | Name of recipe
-image_url | String | Recipe imge url
-time | String | Total time of recipe
-servings | String | Number of servings per recipe
-created_by | String | The. user who added the recipe
-ingredient_1 | String | Recipe ingredient
-ingredient_2 | String | Recipe ingredient
-ingredient_3 | String | Recipe ingredient
-ingredient_4 | String | Recipe ingredient
-ingredient_5 | String | Recipe ingredient
-ingredient_6 | String | Recipe ingredient
-ingredient_7 | String | Recipe ingredient
-ingredient_8 | String | Recipe ingredient
-ingredient_9 | String | Recipe ingredient
-direction_1 | String | Recipe direction
-direction_2 | String | Recipe direction
-direction_3 | String | Recipe direction
-direction_4 | String | Recipe direction
-direction_5 | String | Recipe direction
-direction_6 | String | Recipe direction
-direction_7 | String | Recipe direction
-direction_8 | String | Recipe direction
-direction_9 | String | Recipe direction
-notes | String | Additional recipe notes
-
 - **recipes** contains information about the recipes added to the FeedMe website. 
 - This includes the recipe category, recipe name, a url for the recipe image, the total time it takes to make the recipe, number of servings per recipe, which user added the recipe, recipe ingredients, recipe direections, and additional recipe. notes. 
-
-**users**
-
-| Key | Data Type | Comment |
---- | --- | --- |
-_id | ObjectId | Unique identification number
-username | String | Name of user
-password | String | Hashed password
-
-- **users** contains information about the user, including a unique id, their username, and a hashed password. 
 
 # Technologies Used
 

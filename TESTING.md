@@ -213,7 +213,7 @@ All steps below were repeated to test mobile and tablet specific elements on iPh
 
 ### Browser compatibilty
 
-![Browser compatibilty](/images/readme/browser-compatibility.png)
+![Browser compatibilty](/static/images/readme/browser-compatibility.png)
 
 ## Bugs discovered: 
 ### Solved bugs

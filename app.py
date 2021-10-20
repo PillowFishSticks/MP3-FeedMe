@@ -299,6 +299,11 @@ def recipe_4():
     return render_template("recipe_4.html")
 
 
+@app.route("/faq")
+def faq():
+    return render_template("faq.html")
+
+
 @app.errorhandler(404)
 def handle_404(app_error):
     return render_template('404.html'), 404
@@ -310,6 +315,3 @@ if __name__ == "__main__":
             debug=True)
 
 
-@app.route("/faq")
-def faq():
-    return render_template("faq.html")
