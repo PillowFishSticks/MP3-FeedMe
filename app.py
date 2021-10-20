@@ -17,16 +17,18 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+# Home
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template("index.html")
 
 
+# Users recipe page
 @app.route("/get_recipes")
 def get_recipes():
 
+    # Only logged iin users can access this page
     if 'user' not in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
@@ -35,6 +37,7 @@ def get_recipes():
     return render_template("your_recipes.html", recipes=recipes)
 
 
+# Search bar function 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -42,51 +45,60 @@ def search():
     return render_template("site_recipes.html", recipes=recipes)
 
 
+# Appetizer category
 @app.route("/category_appetizer")
 def category_appetizer():
     recipes = list(mongo.db.recipes.find({"category_name": "Appetizer"}))
     return render_template("site_recipes.html", recipes=recipes)
 
 
+# Meal category
 @app.route("/category_meal")
 def category_meal():
     recipes = list(mongo.db.recipes.find({"category_name": "Meal"}))
     return render_template("site_recipes.html", recipes=recipes)
 
 
+# Drinks category
 @app.route("/category_drinks")
 def category_drinks():
     recipes = list(mongo.db.recipes.find({"category_name": "Drinks"}))
     return render_template("site_recipes.html", recipes=recipes)
 
 
+# Side category
 @app.route("/category_side")
 def category_side():
     recipes = list(mongo.db.recipes.find({"category_name": "Side"}))
     return render_template("site_recipes.html", recipes=recipes) 
 
 
+# Breakfast category
 @app.route("/category_breakfast")
 def category_breakfast():
     recipes = list(mongo.db.recipes.find({"category_name": "Breakfast"}))
     return render_template("site_recipes.html", recipes=recipes)
 
 
+# Dessert category
 @app.route("/category_dessert")
 def category_dessert():
     recipes = list(mongo.db.recipes.find({"category_name": "Dessert"}))
     return render_template("site_recipes.html", recipes=recipes)
   
 
+# FeedMe recipes
 @app.route("/site_recipes")
 def site_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("site_recipes.html", recipes=recipes)
 
 
+# Register
 @app.route("/register", methods=["GET", "POST"])
 def register():
 
+    # Only logged iin users can access this page
     if 'user' in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
@@ -111,9 +123,11 @@ def register():
     return render_template("register.html")
 
 
+# Login
 @app.route("/login", methods=["GET", "POST"])
 def login():
 
+    # Only logged iin users can access this page
     if 'user' in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
@@ -141,9 +155,11 @@ def login():
     return render_template("login.html")
 
 
+# Logout
 @app.route("/logout")
 def logout():
 
+    # Only logged iin users can access this page
     if 'user' not in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
@@ -154,9 +170,11 @@ def logout():
         return redirect(url_for("login"))
 
 
+# Add recipe
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
 
+    # Only logged iin users can access this page
     if 'user' not in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html') 
@@ -197,6 +215,7 @@ def add_recipe():
     return render_template("add_recipe.html", categories=categories)
 
 
+# Edit recipe
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
 
@@ -247,6 +266,7 @@ def edit_recipe(recipe_id):
         "edit_recipe.html", recipe=recipe, categories=categories)
 
 
+# Delete recipe
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
 
@@ -262,6 +282,7 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+# Full recipe page
 @app.route("/view_recipe/<recipe_id>", methods=["GET"])
 def view_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -273,37 +294,44 @@ def view_recipe(recipe_id):
     return render_template("recipe.html", recipe=recipe)
 
 
+# Full FeedMe recipe page
 @app.route("/feedme_recipe/<recipe_id>", methods=["GET"])
 def feedme_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("feedme_recipe.html", recipe=recipe)
 
 
+# Recipe 1 on home page
 @app.route("/recipe_1")
 def recipe_1():
     return render_template("recipe_1.html")
 
 
+# Recipe 2 on home page
 @app.route("/recipe_2")
 def recipe_2():
     return render_template("recipe_2.html")
 
 
+# Recipe 3 on home page
 @app.route("/recipe_3")
 def recipe_3():
     return render_template("recipe_3.html")
 
 
+# Recipe 4 on home page
 @app.route("/recipe_4")
 def recipe_4():
     return render_template("recipe_4.html")
 
 
+# FAQ
 @app.route("/faq")
 def faq():
     return render_template("faq.html")
 
 
+# 404 error
 @app.errorhandler(404)
 def handle_404(app_error):
     return render_template('404.html'), 404
@@ -313,5 +341,4 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
 
