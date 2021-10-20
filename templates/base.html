@@ -49,9 +49,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('site_recipes')}}">FeedMe Recipes</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('faq')}}">FAQ</a>
-                        </li>
                         {% if session.user %}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('get_recipes')}}">My Recipes</a>

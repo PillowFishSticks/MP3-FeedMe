@@ -52,13 +52,13 @@
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_1">Ingredients</label>
-                            <input value="{{ recipe.ingredient_1}}" type="text" pattern="^[^\s][A-Za-z/g0-9\s][!@#$%^&*()/g]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_1}}" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate form-control"
                                 id="ingredient_1" name="ingredient_1" required>
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_2">Ingredients</label>
-                            <input value="{{ recipe.ingredient_2}}" type="text" pattern="^[^\s][A-Za-z/g0-9\s][!@#$%^&*()/g]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_2}}" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate form-control"
                                 id="ingredient_2" name="ingredient_2" required>
                         </div>
                         <div class="form-group">

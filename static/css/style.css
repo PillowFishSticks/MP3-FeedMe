@@ -435,17 +435,25 @@ footer a:hover {
 
 /* -------------------------------- FAQ page */
 
+.faq {
+    font-family: 'Playfair Display', serif;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #efd3d7;
     cursor: pointer;
     padding: 18px;
-    width: 80%;
+    width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    margin-bottom: 10px;
   }
+
+.bottom-accordian {
+    margin-bottom: 70px;
+}
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
@@ -458,6 +466,10 @@ footer a:hover {
     background-color: #fcf7f2;
     display: none;
     overflow: hidden;
+  }
+
+  .botton-panel {
+      padding-bottom: 30px;
   }
 
   .accordion:after {
