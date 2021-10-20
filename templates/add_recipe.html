@@ -11,11 +11,13 @@
                     </div>
                 </div>
                 <form method="POST" onclick="validate();" action="{{ url_for('add_recipe') }}">
+                    <!-- Recipe name -->
                     <div class="form-group">
                         <i class="fa fa-signature" aria-hidden="true"></i>
                         <label for="recipe_name">Recipe Name</label>
                         <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="recipe_name" name="recipe_name">
                     </div>
+                    <!-- Choose the recipe type from a drop down -->
                     <div class="form-group pt-2">
                         <i class="fa fa-folder-open" aria-hidden="true"></i>
                         <label for="category_name">Recipe Type</label>
@@ -27,16 +29,19 @@
                             {% endfor %}
                         </select>
                     </div>
+                    <!-- Provide an image url of the recipe -->
                     <div class="form-group pt-2">
                         <i class="fa fa-images" aria-hidden="true"></i>
                         <label for="image_url">Image URL</label>
                         <input type="url" pattern="https?://.+" class="validate form-control" id="image_url" name="image_url" required>
                     </div>
+                    <!-- Total time of recipe -->
                     <div class="form-group pt-2">
                         <i class="fa fa-clock" aria-hidden="true"></i>
                         <label for="time">Time</label>
                         <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="time" name="time" required>
                     </div>
+                    <!-- Number of serviings per recipe -->
                     <div class="form-group pt-2">
                         <i class="fa fa-glass-cheers" aria-hidden="true"></i>
                         <label for="servings">Servings</label>
@@ -44,17 +49,18 @@
                             required>
                     </div>
                     <div>
+                        <!-- Add recipe ingredients -->
                         <p>Please add your ingredients below:</p>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_1">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate form-control" id="ingredient_1" name="ingredient_1"
+                            <input type="text" class="validate form-control" id="ingredient_1" name="ingredient_1"
                                 required>
                         </div>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_2">Ingredients</label>
-                            <input type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate form-control" id="ingredient_2" name="ingredient_2"
+                            <input type="text" class="validate form-control" id="ingredient_2" name="ingredient_2"
                                 required>
                         </div>
                         <div class="form-group pt-2">
@@ -94,6 +100,7 @@
                         </div>
                     </div>
                     <div>
+                        <!-- Add recipe directions -->
                         <p>Please add your recipe directions below:</p>
                         <div class="form-group pt-2">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -142,11 +149,13 @@
                             <textarea class="validate form-control" rows="6" id="direction_9" name="direction_9"></textarea>
                         </div>
                     </div>
+                    <!-- Add recipe notes -->
                     <div class="form-group pt-2">
                         <i class="fa fa-sticky-note mt-3" aria-hidden="true"></i>
                         <label for="notes">Notes</label>
                         <textarea class="validate form-control" rows="6" id="notes" name="notes" required></textarea>
                     </div>
+                    <!-- Publish the recipe -->
                     <div class="form-group text-center mb-5">
                         <button type="submit" class="btn btn-cream">
                             Publish

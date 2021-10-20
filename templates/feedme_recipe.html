@@ -5,18 +5,24 @@
     <div class="row">
         <div class="col-12 col-md-8 offset-md-2 recipe-info-card">
             <div class="border-recipe">
+                 <!-- Recipe name -->
                 <div class="recipe-card-info text-uppercase text-center pt-4">
                     <h1>{{ recipe.recipe_name}}</h1>
                 </div>
                 <div class="d-flex justify-content-center">
                     <img class="recipe-detail-image mt-4 mb-5" src="{{ recipe.image_url }}" alt="Recipe image">
                 </div>
+                 <!-- Recipe author -->
                 <div class="row col-12 text-center recipe-content">
                     <p>Author: {{ recipe.created_by}}</p>
+                     <!-- Recipe type -->
                     <p>Course Type: {{ recipe.category_name }} </p>
+                     <!-- Total recipe time -->
                     <p><i class="fas fa-clock"></i> Time: {{ recipe.time}}</p>
+                     <!-- Number of servings per recipe -->
                     <p><i class="fas fa-users"></i> Servings: {{ recipe.servings}}</p>
                 </div>
+                 <!-- Recipe ingredients -->
                 <div class="container recipe-card-info">
                     <h4 class="text-uppercase mt-3">Ingredients</h4>
                     <ul>
@@ -58,6 +64,7 @@
                         {% endif %}
                     </ul>
                 </div>
+                 <!-- Recipe directons -->
                 <div class="container recipe-card-info">
                     <h4 class="text-uppercase pr-5">Directions</h4>
                     <ol>
@@ -99,6 +106,7 @@
                         {% endif %}
                     </ol>
                 </div>
+                 <!-- Recipe notes -->
                 <div class="container recipe-card-info">
                     <h3>Notes</h3>
                     <p class="pb-5 notes">{{ recipe.notes}}</p>
@@ -125,6 +133,7 @@
             </div>
         </div>
     </div>
+     <!-- Delete Recipe modal -->
     <div class="modal fade" id="modal-delete{{ recipe._id }}" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

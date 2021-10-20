@@ -3,6 +3,7 @@
 
 <section class="text-style container">
     <div class="row">
+        <!-- Search bar -->
         <form method="POST" action="{{ url_for('search') }}">
             <div class="form-group search-bar d-flex justify-content-center mt-5">
                 <input type="text" class="validate form-control" id="query" name="query" required>
@@ -22,13 +23,16 @@
         {% for recipe in recipes %}
         <div class="col-sm-6 col-md-6 col-lg-4 d-inline p-2">
             <div class="card h-100 border-0">
+                <!-- Recipe image -->
                 <a class="recipe-card" href="{{ url_for('feedme_recipe', recipe_id=recipe._id)}}">
                     <img class="card-img-top img-fluid recipeimage mt-3" src="{{ recipe.image_url }}"
                         alt="Recipe image">
                     <div class="hide centered text-uppercase p-3">See Recipe</div>
                 </a>
                 <div class="card-body recipename text-center text-uppercase">
+                    <!-- Recipe name -->
                     <h3>{{ recipe.recipe_name}}</h3>
+                    <!-- Recipe author -->
                     <p>{{ recipe.created_by}}</p>
                 </div>
                 {% if session.user|lower == "admin"|lower %}
@@ -43,6 +47,7 @@
                 {% endif %}
             </div>
         </div>
+        <!-- Delete Recipe modal -->
         <div class="modal fade" id="modal-delete{{ recipe._id }}" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -65,6 +70,7 @@
         <!-- Close Modal -->
         {% endfor %}
     </div>
+    <!-- If no mathces are found in the search bar -->
     {% else %}
     <h3 class="no-results text-center mt-5">Sorry, we couldn't find any recipes matching your search...</h3>
     {% endif %}

@@ -11,11 +11,13 @@
                     </div>
                 </div>
                 <form method="POST" action="{{url_for('login') }}">
+                    <!-- Username -->
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input name="username" id="username" minlength="5" maxlength="15" type="text"
                             pattern="^[a-zA-Z0-9]{5,15}$" class="form-control validate" placeholder="Enter Username" required>
                     </div>
+                    <!-- Password -->
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" minlength="5" maxlength="15" type="text"
@@ -30,6 +32,7 @@
                             <span class="span-or">or</span>
                         </div>
                     </div>
+                    <!-- Link to register -->
                     <div class="form-group">
                         <p class="text-center">Don't have account? <a href="{{url_for('register') }}" id="signup">Sign
                                 up here</a></p>
