@@ -5,46 +5,46 @@
     <div class="row">
         <div class="col-12 col-md-8 offset-md-2 recipe-info-card">
             <div class="border-recipe">
-                 <!-- Recipe name -->
+                <!-- Recipe name -->
                 <div class="recipe-card-info text-uppercase text-center pt-4">
                     <h1>{{ recipe.recipe_name}}</h1>
                 </div>
                 <div class="d-flex justify-content-center">
                     <img class="recipe-detail-image mt-4 mb-5" src="{{ recipe.image_url }}" alt="Recipe image">
                 </div>
-                 <!-- Recipe author -->
+                <!-- Recipe author -->
                 <div class="row col-12 text-center recipe-content">
                     <p>Author: {{ recipe.created_by}}</p>
-                     <!-- Recipe type -->
+                    <!-- Recipe type -->
                     <p>Course Type: {{ recipe.category_name }} </p>
-                     <!-- Total recipe time -->
+                    <!-- Total recipe time -->
                     <p><i class="fas fa-clock"></i> Time: {{ recipe.time}}</p>
-                     <!-- Number of servings per recipe -->
+                    <!-- Number of servings per recipe -->
                     <p><i class="fas fa-users"></i> Servings: {{ recipe.servings}}</p>
                 </div>
-                 <!-- Recipe ingredients -->
+                <!-- Recipe ingredients -->
                 <div class="container recipe-card-info">
                     <h4 class="text-uppercase mt-3">Ingredients</h4>
                     <ul>
                         {% if recipe.ingredient_1 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_1}}</li>
+                        <li>{{ recipe.ingredient_1}}</li>
                         {% endif %}
                         {% if recipe.ingredient_2 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_2}}</li>
+                        <li>{{ recipe.ingredient_2}}</li>
                         {% endif %}
                         {% if recipe.ingredient_3 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_3}}</li>
+                        <li>{{ recipe.ingredient_3}}</li>
                         {% endif %}
                         {% if recipe.ingredient_4 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_4}}</li>
+                        <li>{{ recipe.ingredient_4}}</li>
                         {% endif %}
                         {% if recipe.ingredient_5 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_5}}</li>
+                        <li>{{ recipe.ingredient_5}}</li>
                         {% endif %}
                         {% if recipe.ingredient_6 == "" %}
                         {% else %}
@@ -52,61 +52,61 @@
                         {% endif %}
                         {% if recipe.ingredient_7 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_7}}</li>
+                        <li>{{ recipe.ingredient_7}}</li>
                         {% endif %}
                         {% if recipe.ingredient_8 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_8}}</li>
+                        <li>{{ recipe.ingredient_8}}</li>
                         {% endif %}
                         {% if recipe.ingredient_9 == "" %}
                         {% else %}
-                            <li>{{ recipe.ingredient_9}}</li>
+                        <li>{{ recipe.ingredient_9}}</li>
                         {% endif %}
                     </ul>
                 </div>
-                 <!-- Recipe directons -->
+                <!-- Recipe directons -->
                 <div class="container recipe-card-info">
                     <h4 class="text-uppercase pr-5">Directions</h4>
                     <ol>
                         {% if recipe.direction_1 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_1}}</li>
+                        <li>{{ recipe.direction_1}}</li>
                         {% endif %}
                         {% if recipe.direction_2 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_2}}</li>
+                        <li>{{ recipe.direction_2}}</li>
                         {% endif %}
                         {% if recipe.direction_3 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_3}}</li>
+                        <li>{{ recipe.direction_3}}</li>
                         {% endif %}
                         {% if recipe.direction_4 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_4}}</li>
+                        <li>{{ recipe.direction_4}}</li>
                         {% endif %}
                         {% if recipe.direction_5 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_5}}</li>
+                        <li>{{ recipe.direction_5}}</li>
                         {% endif %}
                         {% if recipe.direction_6 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_6}}</li>
+                        <li>{{ recipe.direction_6}}</li>
                         {% endif %}
                         {% if recipe.direction_7 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_7}}</li>
+                        <li>{{ recipe.direction_7}}</li>
                         {% endif %}
                         {% if recipe.direction_8 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_8}}</li>
+                        <li>{{ recipe.direction_8}}</li>
                         {% endif %}
                         {% if recipe.direction_9 == "" %}
                         {% else %}
-                            <li>{{ recipe.direction_9}}</li>
+                        <li>{{ recipe.direction_9}}</li>
                         {% endif %}
                     </ol>
                 </div>
-                 <!-- Recipe notes -->
+                <!-- Recipe notes -->
                 <div class="container recipe-card-info">
                     <h3>Notes</h3>
                     <p class="pb-5 notes">{{ recipe.notes}}</p>
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-     <!-- Delete Recipe modal -->
+    <!-- Delete Recipe modal -->
     <div class="modal fade" id="modal-delete{{ recipe._id }}" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

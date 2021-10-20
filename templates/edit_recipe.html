@@ -15,7 +15,8 @@
                     <div class="form-group">
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <label for="recipe_name">Recipe Name</label>
-                        <input value="{{ recipe.recipe_name}}" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="recipe_name" name="recipe_name">
+                        <input value="{{ recipe.recipe_name}}" type="text" class="validate form-control"
+                            id="recipe_name" name="recipe_name">
                     </div>
                     <!-- Choose the recipe type from a drop down -->
                     <div class="form-group">
@@ -37,20 +38,22 @@
                     <div class="form-group">
                         <i class="fa fa-images" aria-hidden="true"></i>
                         <label for="image_url">Image URL</label>
-                        <input value="{{ recipe.image_url}}" type="url" pattern="https?://.+" class="validate form-control" id="image_url" name="image_url" required>
+                        <input value="{{ recipe.image_url}}" type="url" pattern="https?://.+"
+                            class="validate form-control" id="image_url" name="image_url" required>
                     </div>
                     <!-- Edit total time of recipe -->
                     <div class="form-group">
                         <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                         <label for="time">Time</label>
-                        <input value="{{ recipe.time}}" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate form-control" id="time" name="time" required>
+                        <input value="{{ recipe.time}}" type="text" class="validate form-control" id="time" name="time"
+                            required>
                     </div>
                     <!-- Edit number of serviings per recipe -->
                     <div class="form-group">
                         <i class="fa fa-glass-cheers" aria-hidden="true"></i>
                         <label for="servings">Servings</label>
-                        <input value="{{ recipe.servings}}" type="text" pattern="^[1-9][0-9]*$" class="validate form-control" id="servings" name="servings"
-                            required>
+                        <input value="{{ recipe.servings}}" type="text" pattern="^[1-9][0-9]*$"
+                            class="validate form-control" id="servings" name="servings" required>
                     </div>
                     <div>
                         <!-- Edit recipe ingredients -->
@@ -70,43 +73,43 @@
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_3">Ingredients</label>
-                            <input value="{{ recipe.ingredient_3}}" type="text" pattern="^[^\s][A-Za-z!@#$%^&*()/g0-9\s]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_3}}" type="text" class="validate form-control"
                                 id="ingredient_3" name="ingredient_3">
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_4">Ingredients</label>
-                            <input value="{{ recipe.ingredient_4}}" type="text" pattern="^[^\s][A-Za-z!@#$%^&*()/g0-9\s]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_4}}" type="text" class="validate form-control"
                                 id="ingredient_4" name="ingredient_4">
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_5">Ingredients</label>
-                            <input value="{{ recipe.ingredient_5}}" type="text" pattern="^[^\s][A-Za-z!@#$%^&*()/g0-9\s]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_5}}" type="text" class="validate form-control"
                                 id="ingredient_5" name="ingredient_5">
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_6">Ingredients</label>
-                            <input value="{{ recipe.ingredient_6}}" type="text" pattern="^[^\s][A-Za-z!@#$%^&*()/g0-9\s]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_6}}" type="text" class="validate form-control"
                                 id="ingredient_6" name="ingredient_6">
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_7">Ingredients</label>
-                            <input value="{{ recipe.ingredient_7}}" type="text" pattern="^[^\s][A-Za-z!@#$%^&*()/g0-9\s]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_7}}" type="text" class="validate form-control"
                                 id="ingredient_7" name="ingredient_7">
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_8">Ingredients</label>
-                            <input value="{{ recipe.ingredient_8}}" type="text" pattern="^[^\s][A-Za-z/g0-9\s][!@#$%^&*()]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_8}}" type="text" class="validate form-control"
                                 id="ingredient_8" name="ingredient_8">
                         </div>
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="ingredient_9">Ingredients</label>
-                            <input value="{{ recipe.ingredient_9}}" type="text" pattern="^[^\s][A-Za-z!@#$%^&*()]/g0-9\s]{1,50}$" class="validate form-control"
+                            <input value="{{ recipe.ingredient_9}}" type="text" class="validate form-control"
                                 id="ingredient_9" name="ingredient_9">
                         </div>
                     </div>
@@ -116,7 +119,8 @@
                         <div class="form-group">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                             <label for="direction_1">Directions: Step 1</label>
-                            <textarea class="validate form-control" rows="6" id="direction_1" name="direction_1" required>
+                            <textarea class="validate form-control" rows="6" id="direction_1" name="direction_1"
+                                required>
                                 {{- recipe.direction_1 -}}
                             </textarea>
                         </div>
