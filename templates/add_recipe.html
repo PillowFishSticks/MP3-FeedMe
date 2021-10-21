@@ -15,14 +15,14 @@
                     <div class="form-group">
                         <i class="fa fa-signature" aria-hidden="true"></i>
                         <label for="recipe_name">Recipe Name</label>
-                        <input type="text" class="validate form-control" id="recipe_name" name="recipe_name">
+                        <input type="text" class="validate form-control" id="recipe_name" name="recipe_name" required>
                     </div>
                     <!-- Choose the recipe type from a drop down -->
                     <div class="form-group pt-2">
                         <i class="fa fa-folder-open" aria-hidden="true"></i>
                         <label for="category_name">Recipe Type</label>
                         <select class="form-select" aria-label="Default select example" id="category_name"
-                            name="category_name validate">
+                            name="category_name validate" required>
                             <option value="" disabled selected>Choose the course type:</option>
                             {% for category in categories %}
                             <option value="{{ category.category_name }}">{{ category.category_name }}</option>
