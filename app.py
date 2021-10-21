@@ -29,7 +29,7 @@ def home():
 @app.route("/get_recipes")
 def get_recipes():
 
-    # Only logged iin users can access this page
+    # Only logged in users can access this page
     if 'user' not in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
@@ -86,7 +86,7 @@ def category_breakfast():
 def category_dessert():
     recipes = list(mongo.db.recipes.find({"category_name": "Dessert"}))
     return render_template("site_recipes.html", recipes=recipes)
-  
+
 
 # FeedMe recipes
 @app.route("/site_recipes")
@@ -103,7 +103,7 @@ def register():
     if 'user' in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
-        
+
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -164,7 +164,7 @@ def logout():
     if 'user' not in session:
         flash("Sorry, you are unable to access this page")
         return render_template('index.html')
-        
+
     else:
         session.pop("user")
         flash("You have been logged out")
@@ -222,6 +222,8 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
+    # If the user is not the owner of this recipe or the admin, they will 
+    # receive this error
     if 'user' not in session or (
          recipe and (
             recipe['created_by'] != session['user'] and
@@ -272,6 +274,8 @@ def edit_recipe(recipe_id):
 def delete_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    # If the user is not the owner of this recipe or the admin, they will 
+    # receive this error
     if 'user' not in session or (
          recipe and (
             recipe['created_by'] != session['user'] and

@@ -208,7 +208,7 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Safari.
   displayed "You have been logged out". 
 
 ### Testing undertaken on tablet and phone devices
-All steps below were repeated to test mobile and tablet specific elements on iPhone 5, 6, 7, 8, iPad, and iPad Pro. 
+All steps below were repeated to test mobile and tablet specific elements on iPhone 6, 7, 8, iPad, and iPad Pro. 
 
    - Check that different page sections are stacked on top of one another. 
    - Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
