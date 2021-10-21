@@ -24,6 +24,7 @@
         - [My Recipes](#my-recipes)
         - [Add Recipes](#add-recipes)
         - [Edit Recipe](#edit-recipe)
+        - [FAQ](#faq)
         - [404 error](#404-error)
    	    - [Log out](#log-out)
     - [Features for Future Releases](#features-for-future-releases)
@@ -272,6 +273,12 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - It is identical to the Add Recipe page. 
 - Once the recipe has been edited, a flash message displays 'Recipe successfully updated'.
 - Members only have access to edit their own recipes, and are unable to edit other members recipes. 
+
+### Frequently asked questions
+
+![FAQ](/static/images/readme/faq.png)
+
+- This page can be acced via the 
 
 ### 404 error
 

@@ -449,10 +449,6 @@ footer a:hover {
     outline: none;
     margin-bottom: 10px;
   }
-
-.bottom-accordian {
-    margin-bottom: 70px;
-}
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
@@ -465,10 +461,6 @@ footer a:hover {
     background-color: #fcf7f2;
     display: none;
     overflow: hidden;
-  }
-
-  .botton-panel {
-      padding-bottom: 30px;
   }
 
   .accordion:after {
