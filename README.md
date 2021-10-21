@@ -106,6 +106,8 @@ As a visitor to the FeedMe website I expect/want/need:
 
 10. To be notified about changes that are made, inlcluding adding, editing, and deleting recipes. 
 
+11. To be able to find out more about FeedMe and how the website works. 
+
 ## Design Choices
 
 ### Fonts
@@ -278,7 +280,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ![FAQ](/static/images/readme/faq.png)
 
-- This page can be acced via the 
+- This page can be accessed via the FAQ banner on the home page, as well as the Questions section in the footer. 
+- The FAQ is presented as an accordian. 
+- It answers some of the questions users may have. 
 
 ### 404 error
 

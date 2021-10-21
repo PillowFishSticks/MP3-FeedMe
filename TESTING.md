@@ -101,6 +101,9 @@ The following section goes through the user stories identified in the [Ux sectio
     - When a book has been edited, a flash message displays 'Recipe successfully updated'.
     - When a member deletes a recipe, a flash message displays 'Recipe successfully removed'.
 
+1. **To be able to find out more about FeedMe and how the website works.**
+    - Users have access to frequently asked questions page, where FeedMe has answered questions they think their users may have.
+
 ## Manual Testing
 Below is a detailed account of all the manual testing that has been done to confirm all areas of the site work as expected. 
 
